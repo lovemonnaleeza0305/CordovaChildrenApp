@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            podInventory
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- Enable all requests, inline styles, and eval() -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready data:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+        <!-- Uncomment link and meta tags below to activate PWA icons and theme color -->
+        <!-- link rel="manifest" href="../manifest.json" crossOrigin="use-credentials" -->
+        <!-- meta name="theme-color" content="#ffffff" -->
+        <link href="../css/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="../css/theme/ios7_Ios7_JQM_1_4_Theme/ios7_Ios7_JQM_1_4_Theme.css" rel="stylesheet"
+        />
+        <link href="../libs/apperyio/iphone-fix.css" rel="stylesheet" type="text/css" />
+        <link href="../libs/jquerymobile/1.4.5/jquery.mobile.structure-1.4.5.css" rel="stylesheet"
+        />
+        <link type="text/css" rel="stylesheet" href="../css/PDFPreview.css" />
+        <link type="text/css" rel="stylesheet" href="../css/styling1.css" />
+        <link type="text/css" rel="stylesheet" href="../css/Reports.css" />
+        <link type="text/css" rel="stylesheet" href="../css/loginFlowCSS.css" />
+        <link type="text/css" rel="stylesheet" href="../css/Navbar.css" />
+        <!-- Uncomment this script to activate service worker -->
+        <!-- <script>
+        if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('../sw.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.error('Error', err));
+        }
+        </script>
+        -->
+        <script type="text/javascript" src="../libs/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="../libs/store/json2.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-ajaxTransport.js">
+        </script>
+        <script type="text/javascript">
+            $(document).bind("mobileinit", function() {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1) {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                } else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1) {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                } else if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
+                    $.mobile.hashListeningEnabled = false;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="../libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.js">
+        </script>
+        <script type="text/javascript" src="../libs/apperyio/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="../libs/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/appery.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/login.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="../get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="../cordova.js">
+        </script>
+        <script type="text/javascript">
+            if (typeof cordova !== "undefined" && cordova.platformId === 'ios') {
+                document.documentElement.style.setProperty('--iphone-safe-area-inset-top', '44px');
+                document.documentElement.style.setProperty('--iphone-safe-area-inset-bottom', '34px');
+            }
+        </script>
+        <link href="../libs/apperyio/mobilebase.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="../js/services/model.js">
+        </script>
+        <script type="text/javascript" src="../js/Helper.js">
+        </script>
+        <script type="text/javascript" src="../js/services/service.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/databaseUtils.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+        </script>
+        <div data-role="page" style="min-height:686px;" dsid="podInventory" id="podInventory"
+        class="type-interior" data-theme="b">
+            <!-- mobilecontainer -->
+            <div data-role="content" id="podInventory_mobilecontainer" name="mobilecontainer"
+            class="podInventory_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="b">
+                <link href="podInventory.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="podInventory.js">
+                </script>
+                <!-- mobilegrid_72 -->
+                <div class="podInventory_mobilegrid_72_wrapper" data-wrapper-for="mobilegrid_72">
+                    <table id="podInventory_mobilegrid_72" class="podInventory_mobilegrid_72" dsid="mobilegrid_72"
+                    name="mobilegrid_72" cellpadding=0 cellspacing=0>
+                        <col style="width:54px;" />
+                        <col style="width:198px;" />
+                        <col style="width:auto;" />
+                        <tr class="podInventory_mobilegrid_72_row_0">
+                            <!-- mobilegridcell_73 -->
+                            <td id="podInventory_mobilegridcell_73" name="mobilegridcell_73" class="podInventory_mobilegridcell_73"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilebutton_77 --><!--
+                                    --><a data-role="button" name="mobilebutton_77" dsid="mobilebutton_77" class="backButtonIcon  podInventory_mobilebutton_77"
+                                    style='min-height:20px; ' id="podInventory_mobilebutton_77" data-corners="true" data-icon="carat-l"
+                                    data-iconpos="notext" x-apple-data-detectors="false" data-mini="false" data-theme="b"
+                                    tabindex="18">
+                                    Button
+                                    </a>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_74 -->
+                            <td id="podInventory_mobilegridcell_74" name="mobilegridcell_74" class="podInventory_mobilegridcell_74"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_14 -->
+                                    <div name="mobilelabel_14" id="podInventory_mobilelabel_14" dsid="mobilelabel_14"
+                                    data-role="appery_label" class="podInventory_mobilelabel_14">
+                                        Learning Pod Inventory
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_337 -->
+                            <td id="podInventory_mobilegridcell_337" name="mobilegridcell_337" class="podInventory_mobilegridcell_337"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilebutton_338 --><!--
+                                    --><a data-role="button" name="mobilebutton_338" dsid="mobilebutton_338" class="redSmallButton2  podInventory_mobilebutton_338"
+                                    id="podInventory_mobilebutton_338" data-corners="true" data-icon="plus" data-iconpos="left"
+                                    x-apple-data-detectors="false" data-mini="false" data-theme="b" tabindex="40">
+                                    Create New 
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- s_over -->
+                <div class="podInventory_s_over_wrapper" data-wrapper-for="s_over">
+                    <table id="podInventory_s_over" class="podInventory_s_over" dsid="s_over" name="s_over"
+                    cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <tr class="podInventory_s_over_row_0">
+                            <!-- mobilegridcell_340 -->
+                            <td id="podInventory_mobilegridcell_340" name="mobilegridcell_340" class="podInventory_mobilegridcell_340"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_269 -->
+                                    <div name="mobilelabel_269" id="podInventory_mobilelabel_269" dsid="mobilelabel_269"
+                                    data-role="appery_label" class="podInventory_mobilelabel_269">
+                                        Select a Pod to Search Inventory Reports
+                                    </div>
+                                    <!-- searchPod -->
+                                    <div data-role="fieldcontain" class="podInventory_searchPod ">
+                                        <select name="searchPod" id="podInventory_searchPod" dsid="searchPod" data-theme="h"
+                                        data-role="appery_selectmenu" data-inline="false" data-mini="false" data-icon="carat-d"
+                                        data-iconpos="right" data-native-menu="true" tabindex="39" appery-class="podInventory_searchPod">
+                                            <option id="podInventory_searchPod-0" value="-" reRender="searchPod" dsid="searchPod-0"
+                                            selected="selected">
+                                                Select Learning Pod
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <!-- loopGrid -->
+                                    <div class="podInventory_loopGrid_wrapper" data-wrapper-for="loopGrid">
+                                        <table id="podInventory_loopGrid" class="roundRedGrid  podInventory_loopGrid" dsid="loopGrid"
+                                        name="loopGrid" cellpadding=0 cellspacing=0>
+                                            <col style="width:auto;" />
+                                            <tr class="podInventory_loopGrid_row_0">
+                                                <!-- mobilegridcell_333 -->
+                                                <td id="podInventory_mobilegridcell_333" name="mobilegridcell_333" class="podInventory_mobilegridcell_333"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- edit_button --><!--
+                                                        --><a data-role="button" name="edit_button" dsid="edit_button" class="podInventory_edit_button"
+                                                        id="podInventory_edit_button" data-corners="true" data-icon="edit" data-iconpos="left"
+                                                        x-apple-data-detectors="false" data-mini="true" data-theme="b" tabindex="43">
+                                                        Edit
+                                                        </a><!--
+                                                        --><!-- ownershipLabel -->
+                                                        <div name="ownershipLabel" id="podInventory_ownershipLabel" dsid="ownershipLabel"
+                                                        data-role="appery_label" class="podInventory_ownershipLabel">
+                                                        </div>
+                                                        <!-- dateCreated -->
+                                                        <div name="dateCreated" id="podInventory_dateCreated" dsid="dateCreated" data-role="appery_label"
+                                                        class="podInventory_dateCreated">
+                                                        </div>
+                                                        <!-- mobilegrid_278 -->
+                                                        <div class="podInventory_mobilegrid_278_wrapper" data-wrapper-for="mobilegrid_278">
+                                                            <table id="podInventory_mobilegrid_278" class="podInventory_mobilegrid_278" dsid="mobilegrid_278"
+                                                            name="mobilegrid_278" cellpadding=0 cellspacing=0>
+                                                                <col style="width:auto;" />
+                                                                <col style="width:auto;" />
+                                                                <col style="width:auto;" />
+                                                                <tr class="podInventory_mobilegrid_278_row_0">
+                                                                    <!-- mobilegridcell_279 -->
+                                                                    <td id="podInventory_mobilegridcell_279" name="mobilegridcell_279" class="podInventory_mobilegridcell_279"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobilelabel_285 -->
+                                                                            <div name="mobilelabel_285" id="podInventory_mobilelabel_285" dsid="mobilelabel_285"
+                                                                            data-role="appery_label" class="podInventory_mobilelabel_285">
+                                                                                Item
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_280 -->
+                                                                    <td id="podInventory_mobilegridcell_280" name="mobilegridcell_280" class="podInventory_mobilegridcell_280"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobilelabel_286 -->
+                                                                            <div name="mobilelabel_286" id="podInventory_mobilelabel_286" dsid="mobilelabel_286"
+                                                                            data-role="appery_label" class="podInventory_mobilelabel_286">
+                                                                                Quantity
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_283 -->
+                                                                    <td id="podInventory_mobilegridcell_283" name="mobilegridcell_283" class="podInventory_mobilegridcell_283"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobilelabel_287 -->
+                                                                            <div name="mobilelabel_287" id="podInventory_mobilelabel_287" dsid="mobilelabel_287"
+                                                                            data-role="appery_label" class="podInventory_mobilelabel_287">
+                                                                                # Broken
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                        <!-- mobilegrid_272 -->
+                                                        <div class="podInventory_mobilegrid_272_wrapper" data-wrapper-for="mobilegrid_272">
+                                                            <table id="podInventory_mobilegrid_272" class="podInventory_mobilegrid_272" dsid="mobilegrid_272"
+                                                            name="mobilegrid_272" cellpadding=0 cellspacing=0>
+                                                                <col style="width:auto;" />
+                                                                <col style="width:auto;" />
+                                                                <col style="width:auto;" />
+                                                                <tr class="podInventory_mobilegrid_272_row_0">
+                                                                    <!-- mobilegridcell_273 -->
+                                                                    <td id="podInventory_mobilegridcell_273" name="mobilegridcell_273" class="podInventory_mobilegridcell_273"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobilelabel_311 -->
+                                                                            <div name="mobilelabel_311" id="podInventory_mobilelabel_311" dsid="mobilelabel_311"
+                                                                            data-role="appery_label" class="podInventory_mobilelabel_311">
+                                                                                Laptops
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_274 -->
+                                                                    <td id="podInventory_mobilegridcell_274" name="mobilegridcell_274" class="podInventory_mobilegridcell_274"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- LQO -->
+                                                                            <div name="LQO" id="podInventory_LQO" dsid="LQO" data-role="appery_label" class="podInventory_LQO">
+                                                                                -
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_284 -->
+                                                                    <td id="podInventory_mobilegridcell_284" name="mobilegridcell_284" class="podInventory_mobilegridcell_284"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- LBO -->
+                                                                            <div name="LBO" id="podInventory_LBO" dsid="LBO" data-role="appery_label" class="podInventory_LBO">
+                                                                                -
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="podInventory_mobilegrid_272_row_1">
+                                                                    <!-- mobilegridcell_292 -->
+                                                                    <td id="podInventory_mobilegridcell_292" name="mobilegridcell_292" class="podInventory_mobilegridcell_292"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobilelabel_312 -->
+                                                                            <div name="mobilelabel_312" id="podInventory_mobilelabel_312" dsid="mobilelabel_312"
+                                                                            data-role="appery_label" class="podInventory_mobilelabel_312">
+                                                                                Tablets
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_293 -->
+                                                                    <td id="podInventory_mobilegridcell_293" name="mobilegridcell_293" class="podInventory_mobilegridcell_293"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- TQO -->
+                                                                            <div name="TQO" id="podInventory_TQO" dsid="TQO" data-role="appery_label" class="podInventory_TQO">
+                                                                                -
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_294 -->
+                                                                    <td id="podInventory_mobilegridcell_294" name="mobilegridcell_294" class="podInventory_mobilegridcell_294"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- TBO -->
+                                                                            <div name="TBO" id="podInventory_TBO" dsid="TBO" data-role="appery_label" class="podInventory_TBO">
+                                                                                -
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="podInventory_mobilegrid_272_row_2">
+                                                                    <!-- mobilegridcell_295 -->
+                                                                    <td id="podInventory_mobilegridcell_295" name="mobilegridcell_295" class="podInventory_mobilegridcell_295"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobilelabel_314 -->
+                                                                            <div name="mobilelabel_314" id="podInventory_mobilelabel_314" dsid="mobilelabel_314"
+                                                                            data-role="appery_label" class="podInventory_mobilelabel_314">
+                                                                                Projectors
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_296 -->
+                                                                    <td id="podInventory_mobilegridcell_296" name="mobilegridcell_296" class="podInventory_mobilegridcell_296"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- PQO -->
+                                                                            <div name="PQO" id="podInventory_PQO" dsid="PQO" data-role="appery_label" class="podInventory_PQO">
+                                                                                -
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_297 -->
+                                                                    <td id="podInventory_mobilegridcell_297" name="mobilegridcell_297" class="podInventory_mobilegridcell_297"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- PBO -->
+                                                                            <div name="PBO" id="podInventory_PBO" dsid="PBO" data-role="appery_label" class="podInventory_PBO">
+                                                                                -
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="podInventory_mobilegrid_272_row_3">
+                                                                    <!-- mobilegridcell_298 -->
+                                                                    <td id="podInventory_mobilegridcell_298" name="mobilegridcell_298" class="podInventory_mobilegridcell_298"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobilelabel_315 -->
+                                                                            <div name="mobilelabel_315" id="podInventory_mobilelabel_315" dsid="mobilelabel_315"
+                                                                            data-role="appery_label" class="podInventory_mobilelabel_315">
+                                                                                Robot Kits
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_299 -->
+                                                                    <td id="podInventory_mobilegridcell_299" name="mobilegridcell_299" class="podInventory_mobilegridcell_299"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- RQO -->
+                                                                            <div name="RQO" id="podInventory_RQO" dsid="RQO" data-role="appery_label" class="podInventory_RQO">
+                                                                                -
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_300 -->
+                                                                    <td id="podInventory_mobilegridcell_300" name="mobilegridcell_300" class="podInventory_mobilegridcell_300"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- RBO -->
+                                                                            <div name="RBO" id="podInventory_RBO" dsid="RBO" data-role="appery_label" class="podInventory_RBO">
+                                                                                -
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="podInventory_mobilegrid_272_row_4">
+                                                                    <!-- mobilegridcell_301 -->
+                                                                    <td id="podInventory_mobilegridcell_301" name="mobilegridcell_301" class="podInventory_mobilegridcell_301"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobilelabel_313 -->
+                                                                            <div name="mobilelabel_313" id="podInventory_mobilelabel_313" dsid="mobilelabel_313"
+                                                                            data-role="appery_label" class="podInventory_mobilelabel_313">
+                                                                                Fire Extinguisher
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_302 -->
+                                                                    <td id="podInventory_mobilegridcell_302" name="mobilegridcell_302" class="podInventory_mobilegridcell_302"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- FQO -->
+                                                                            <div name="FQO" id="podInventory_FQO" dsid="FQO" data-role="appery_label" class="podInventory_FQO">
+                                                                                -
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_303 -->
+                                                                    <td id="podInventory_mobilegridcell_303" name="mobilegridcell_303" class="podInventory_mobilegridcell_303"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- FBO -->
+                                                                            <div name="FBO" id="podInventory_FBO" dsid="FBO" data-role="appery_label" class="podInventory_FBO">
+                                                                                -
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="podInventory_mobilegrid_272_row_5">
+                                                                    <!-- mobilegridcell_304 -->
+                                                                    <td id="podInventory_mobilegridcell_304" name="mobilegridcell_304" class="podInventory_mobilegridcell_304"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobilelabel_316 -->
+                                                                            <div name="mobilelabel_316" id="podInventory_mobilelabel_316" dsid="mobilelabel_316"
+                                                                            data-role="appery_label" class="podInventory_mobilelabel_316">
+                                                                                Books
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_305 -->
+                                                                    <td id="podInventory_mobilegridcell_305" name="mobilegridcell_305" class="podInventory_mobilegridcell_305"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- BQO -->
+                                                                            <div name="BQO" id="podInventory_BQO" dsid="BQO" data-role="appery_label" class="podInventory_BQO">
+                                                                                -
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_306 -->
+                                                                    <td id="podInventory_mobilegridcell_306" name="mobilegridcell_306" class="podInventory_mobilegridcell_306"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- BBO -->
+                                                                            <div name="BBO" id="podInventory_BBO" dsid="BBO" data-role="appery_label" class="podInventory_BBO">
+                                                                                -
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="podInventory_mobilegrid_272_row_6">
+                                                                    <!-- mobilegridcell_307 -->
+                                                                    <td id="podInventory_mobilegridcell_307" name="mobilegridcell_307" class="podInventory_mobilegridcell_307"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobilelabel_317 -->
+                                                                            <div name="mobilelabel_317" id="podInventory_mobilelabel_317" dsid="mobilelabel_317"
+                                                                            data-role="appery_label" class="podInventory_mobilelabel_317">
+                                                                                First Aid Kits
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_308 -->
+                                                                    <td id="podInventory_mobilegridcell_308" name="mobilegridcell_308" class="podInventory_mobilegridcell_308"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- FAQO -->
+                                                                            <div name="FAQO" id="podInventory_FAQO" dsid="FAQO" data-role="appery_label" class="podInventory_FAQO">
+                                                                                -
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_309 -->
+                                                                    <td id="podInventory_mobilegridcell_309" name="mobilegridcell_309" class="podInventory_mobilegridcell_309"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- FAQBO -->
+                                                                            <div name="FAQBO" id="podInventory_FAQBO" dsid="FAQBO" data-role="appery_label"
+                                                                            class="podInventory_FAQBO">
+                                                                                -
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="podInventory_mobilegrid_272_row_7">
+                                                                    <!-- mobilegridcell_341 -->
+                                                                    <td id="podInventory_mobilegridcell_341" name="mobilegridcell_341" class="podInventory_mobilegridcell_341"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobilelabel_344 -->
+                                                                            <div name="mobilelabel_344" id="podInventory_mobilelabel_344" dsid="mobilelabel_344"
+                                                                            data-role="appery_label" class="podInventory_mobilelabel_344">
+                                                                                Speakers
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_342 -->
+                                                                    <td id="podInventory_mobilegridcell_342" name="mobilegridcell_342" class="podInventory_mobilegridcell_342"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- speakers_label -->
+                                                                            <div name="speakers_label" id="podInventory_speakers_label" dsid="speakers_label"
+                                                                            data-role="appery_label" class="podInventory_speakers_label">
+                                                                                -
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_343 -->
+                                                                    <td id="podInventory_mobilegridcell_343" name="mobilegridcell_343" class="podInventory_mobilegridcell_343"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- speakersBroken_label -->
+                                                                            <div name="speakersBroken_label" id="podInventory_speakersBroken_label" dsid="speakersBroken_label"
+                                                                            data-role="appery_label" class="podInventory_speakersBroken_label">
+                                                                                -
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- inventoryCreateGrid -->
+                <div class="podInventory_inventoryCreateGrid_wrapper" data-wrapper-for="inventoryCreateGrid">
+                    <table id="podInventory_inventoryCreateGrid" class="podInventory_inventoryCreateGrid"
+                    dsid="inventoryCreateGrid" name="inventoryCreateGrid" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <tr class="podInventory_inventoryCreateGrid_row_0">
+                            <!-- mobilegridcell_268 -->
+                            <td id="podInventory_mobilegridcell_268" name="mobilegridcell_268" class="podInventory_mobilegridcell_268"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_62 -->
+                                    <div name="mobilelabel_62" id="podInventory_mobilelabel_62" dsid="mobilelabel_62"
+                                    data-role="appery_label" class="podInventory_mobilelabel_62">
+                                        Select a learning pod to create an inventory report:
+                                    </div>
+                                    <!-- mobileselectmenu_63 -->
+                                    <div data-role="fieldcontain" class="podInventory_mobileselectmenu_63 ">
+                                        <select name="mobileselectmenu_63" id="podInventory_mobileselectmenu_63" dsid="mobileselectmenu_63"
+                                        data-theme="h" data-role="appery_selectmenu" data-inline="false" data-mini="false"
+                                        data-icon="carat-d" data-iconpos="right" data-native-menu="true" tabindex="15" appery-class="podInventory_mobileselectmenu_63">
+                                            <option id="podInventory_mobileselectmenu_63-0" value="-" reRender="mobileselectmenu_63"
+                                            dsid="mobileselectmenu_63-0" selected="selected">
+                                                Select Learning Pod
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <!-- select_ownership -->
+                                    <div data-role="fieldcontain" class="podInventory_select_ownership ">
+                                        <select name="select_ownership" id="podInventory_select_ownership" dsid="select_ownership"
+                                        data-theme="h" data-role="appery_selectmenu" data-inline="false" data-mini="false"
+                                        data-icon="carat-d" data-iconpos="right" data-native-menu="true" tabindex="38" appery-class="podInventory_select_ownership">
+                                            <option id="podInventory_select_ownership-0" value="-" reRender="select_ownership"
+                                            dsid="select_ownership-0" selected="selected">
+                                                Select Ownership
+                                            </option>
+                                            <option id="podInventory_select_ownership-1" value="STEMGuyana" reRender="select_ownership"
+                                            dsid="select_ownership-1">
+                                                STEMGuyana
+                                            </option>
+                                            <option id="podInventory_select_ownership-2" value="This Location" reRender="select_ownership"
+                                            dsid="select_ownership-2">
+                                                This Location
+                                            </option>
+                                            <option id="podInventory_select_ownership-3" value="Other" reRender="select_ownership"
+                                            dsid="select_ownership-3">
+                                                Other
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <!-- mobilegrid_242 -->
+                                    <div class="podInventory_mobilegrid_242_wrapper" data-wrapper-for="mobilegrid_242">
+                                        <table id="podInventory_mobilegrid_242" class="podInventory_mobilegrid_242" dsid="mobilegrid_242"
+                                        name="mobilegrid_242" cellpadding=0 cellspacing=0>
+                                            <col style="width:33%;" />
+                                            <col style="width:auto;" />
+                                            <col style="width:auto;" />
+                                            <tr class="podInventory_mobilegrid_242_row_0">
+                                                <!-- mobilegridcell_243 -->
+                                                <td id="podInventory_mobilegridcell_243" name="mobilegridcell_243" class="podInventory_mobilegridcell_243"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilelabel_248 -->
+                                                        <div name="mobilelabel_248" id="podInventory_mobilelabel_248" dsid="mobilelabel_248"
+                                                        data-role="appery_label" class="podInventory_mobilelabel_248">
+                                                            Item
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_244 -->
+                                                <td id="podInventory_mobilegridcell_244" name="mobilegridcell_244" class="podInventory_mobilegridcell_244"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilelabel_249 -->
+                                                        <div name="mobilelabel_249" id="podInventory_mobilelabel_249" dsid="mobilelabel_249"
+                                                        data-role="appery_label" class="podInventory_mobilelabel_249">
+                                                            Total Quantity
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_247 -->
+                                                <td id="podInventory_mobilegridcell_247" name="mobilegridcell_247" class="podInventory_mobilegridcell_247"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilelabel_250 -->
+                                                        <div name="mobilelabel_250" id="podInventory_mobilelabel_250" dsid="mobilelabel_250"
+                                                        data-role="appery_label" class="podInventory_mobilelabel_250">
+                                                            # Broken
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!-- mobilegrid_213 -->
+                                    <div class="podInventory_mobilegrid_213_wrapper" data-wrapper-for="mobilegrid_213">
+                                        <table id="podInventory_mobilegrid_213" class="podInventory_mobilegrid_213" dsid="mobilegrid_213"
+                                        name="mobilegrid_213" cellpadding=0 cellspacing=0>
+                                            <col style="width:33%;" />
+                                            <col style="width:auto;" />
+                                            <col style="width:auto;" />
+                                            <tr class="podInventory_mobilegrid_213_row_0">
+                                                <!-- mobilegridcell_214 -->
+                                                <td id="podInventory_mobilegridcell_214" name="mobilegridcell_214" class="podInventory_mobilegridcell_214"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilelabel_235 -->
+                                                        <div name="mobilelabel_235" id="podInventory_mobilelabel_235" dsid="mobilelabel_235"
+                                                        data-role="appery_label" class="podInventory_mobilelabel_235">
+                                                            Laptops
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_215 -->
+                                                <td id="podInventory_mobilegridcell_215" name="mobilegridcell_215" class="podInventory_mobilegridcell_215"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- LQ -->
+                                                        <div data-role="fieldcontain" class="podInventory_LQ ">
+                                                            <input type="text" name="LQ" dsid="LQ" value="" placeholder="ex. 1" id="podInventory_LQ"
+                                                            tabindex="24" multiple data-theme="b" data-mini="true" class="podInventory_LQ" />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_228 -->
+                                                <td id="podInventory_mobilegridcell_228" name="mobilegridcell_228" class="podInventory_mobilegridcell_228"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- LB -->
+                                                        <div data-role="fieldcontain" class="podInventory_LB ">
+                                                            <input type="text" name="LB" dsid="LB" value="" placeholder="ex. 1" id="podInventory_LB"
+                                                            tabindex="31" multiple data-theme="b" data-mini="true" class="podInventory_LB" />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="podInventory_mobilegrid_213_row_1">
+                                                <!-- mobilegridcell_216 -->
+                                                <td id="podInventory_mobilegridcell_216" name="mobilegridcell_216" class="podInventory_mobilegridcell_216"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilelabel_236 -->
+                                                        <div name="mobilelabel_236" id="podInventory_mobilelabel_236" dsid="mobilelabel_236"
+                                                        data-role="appery_label" class="podInventory_mobilelabel_236">
+                                                            Tablets
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_217 -->
+                                                <td id="podInventory_mobilegridcell_217" name="mobilegridcell_217" class="podInventory_mobilegridcell_217"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- TQ -->
+                                                        <div data-role="fieldcontain" class="podInventory_TQ ">
+                                                            <input type="text" name="TQ" dsid="TQ" value="" placeholder="ex. 1" id="podInventory_TQ"
+                                                            tabindex="25" multiple data-theme="b" data-mini="true" class="podInventory_TQ" />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_229 -->
+                                                <td id="podInventory_mobilegridcell_229" name="mobilegridcell_229" class="podInventory_mobilegridcell_229"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- TB -->
+                                                        <div data-role="fieldcontain" class="podInventory_TB ">
+                                                            <input type="text" name="TB" dsid="TB" value="" placeholder="ex. 1" id="podInventory_TB"
+                                                            tabindex="32" multiple data-theme="b" data-mini="true" class="podInventory_TB" />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="podInventory_mobilegrid_213_row_2">
+                                                <!-- mobilegridcell_218 -->
+                                                <td id="podInventory_mobilegridcell_218" name="mobilegridcell_218" class="podInventory_mobilegridcell_218"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilelabel_237 -->
+                                                        <div name="mobilelabel_237" id="podInventory_mobilelabel_237" dsid="mobilelabel_237"
+                                                        data-role="appery_label" class="podInventory_mobilelabel_237">
+                                                            Projectors
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_219 -->
+                                                <td id="podInventory_mobilegridcell_219" name="mobilegridcell_219" class="podInventory_mobilegridcell_219"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- PQ -->
+                                                        <div data-role="fieldcontain" class="podInventory_PQ ">
+                                                            <input type="text" name="PQ" dsid="PQ" value="" placeholder="ex. 1" id="podInventory_PQ"
+                                                            tabindex="26" multiple data-theme="b" data-mini="true" class="podInventory_PQ" />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_230 -->
+                                                <td id="podInventory_mobilegridcell_230" name="mobilegridcell_230" class="podInventory_mobilegridcell_230"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- PB -->
+                                                        <div data-role="fieldcontain" class="podInventory_PB ">
+                                                            <input type="text" name="PB" dsid="PB" value="" placeholder="ex. 1" id="podInventory_PB"
+                                                            tabindex="33" multiple data-theme="b" data-mini="true" class="podInventory_PB" />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="podInventory_mobilegrid_213_row_3">
+                                                <!-- mobilegridcell_220 -->
+                                                <td id="podInventory_mobilegridcell_220" name="mobilegridcell_220" class="podInventory_mobilegridcell_220"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilelabel_238 -->
+                                                        <div name="mobilelabel_238" id="podInventory_mobilelabel_238" dsid="mobilelabel_238"
+                                                        data-role="appery_label" class="podInventory_mobilelabel_238">
+                                                            Robot Kits
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_221 -->
+                                                <td id="podInventory_mobilegridcell_221" name="mobilegridcell_221" class="podInventory_mobilegridcell_221"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- RQ -->
+                                                        <div data-role="fieldcontain" class="podInventory_RQ ">
+                                                            <input type="text" name="RQ" dsid="RQ" value="" placeholder="ex. 1" id="podInventory_RQ"
+                                                            tabindex="27" multiple data-theme="b" data-mini="true" class="podInventory_RQ" />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_231 -->
+                                                <td id="podInventory_mobilegridcell_231" name="mobilegridcell_231" class="podInventory_mobilegridcell_231"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- RB -->
+                                                        <div data-role="fieldcontain" class="podInventory_RB ">
+                                                            <input type="text" name="RB" dsid="RB" value="" placeholder="ex. 1" id="podInventory_RB"
+                                                            tabindex="34" multiple data-theme="b" data-mini="true" class="podInventory_RB" />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="podInventory_mobilegrid_213_row_4">
+                                                <!-- mobilegridcell_222 -->
+                                                <td id="podInventory_mobilegridcell_222" name="mobilegridcell_222" class="podInventory_mobilegridcell_222"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilelabel_239 -->
+                                                        <div name="mobilelabel_239" id="podInventory_mobilelabel_239" dsid="mobilelabel_239"
+                                                        data-role="appery_label" class="podInventory_mobilelabel_239">
+                                                            Fire Extinguisher
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_223 -->
+                                                <td id="podInventory_mobilegridcell_223" name="mobilegridcell_223" class="podInventory_mobilegridcell_223"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- FQ -->
+                                                        <div data-role="fieldcontain" class="podInventory_FQ ">
+                                                            <input type="text" name="FQ" dsid="FQ" value="" placeholder="ex. 1" id="podInventory_FQ"
+                                                            tabindex="28" multiple data-theme="b" data-mini="true" class="podInventory_FQ" />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_232 -->
+                                                <td id="podInventory_mobilegridcell_232" name="mobilegridcell_232" class="podInventory_mobilegridcell_232"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- FB -->
+                                                        <div data-role="fieldcontain" class="podInventory_FB ">
+                                                            <input type="text" name="FB" dsid="FB" value="" placeholder="ex. 1" id="podInventory_FB"
+                                                            tabindex="35" multiple data-theme="b" data-mini="true" class="podInventory_FB" />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="podInventory_mobilegrid_213_row_5">
+                                                <!-- mobilegridcell_224 -->
+                                                <td id="podInventory_mobilegridcell_224" name="mobilegridcell_224" class="podInventory_mobilegridcell_224"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilelabel_240 -->
+                                                        <div name="mobilelabel_240" id="podInventory_mobilelabel_240" dsid="mobilelabel_240"
+                                                        data-role="appery_label" class="podInventory_mobilelabel_240">
+                                                            Books
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_225 -->
+                                                <td id="podInventory_mobilegridcell_225" name="mobilegridcell_225" class="podInventory_mobilegridcell_225"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- BQ -->
+                                                        <div data-role="fieldcontain" class="podInventory_BQ ">
+                                                            <input type="text" name="BQ" dsid="BQ" value="" placeholder="ex. 1" id="podInventory_BQ"
+                                                            tabindex="29" multiple data-theme="b" data-mini="true" class="podInventory_BQ" />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_233 -->
+                                                <td id="podInventory_mobilegridcell_233" name="mobilegridcell_233" class="podInventory_mobilegridcell_233"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- BB -->
+                                                        <div data-role="fieldcontain" class="podInventory_BB ">
+                                                            <input type="text" name="BB" dsid="BB" value="" placeholder="ex. 1" id="podInventory_BB"
+                                                            tabindex="36" multiple data-theme="b" data-mini="true" class="podInventory_BB" />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="podInventory_mobilegrid_213_row_6">
+                                                <!-- mobilegridcell_226 -->
+                                                <td id="podInventory_mobilegridcell_226" name="mobilegridcell_226" class="podInventory_mobilegridcell_226"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilelabel_241 -->
+                                                        <div name="mobilelabel_241" id="podInventory_mobilelabel_241" dsid="mobilelabel_241"
+                                                        data-role="appery_label" class="podInventory_mobilelabel_241">
+                                                            First Aid Kits
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_227 -->
+                                                <td id="podInventory_mobilegridcell_227" name="mobilegridcell_227" class="podInventory_mobilegridcell_227"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- FAQ -->
+                                                        <div data-role="fieldcontain" class="podInventory_FAQ ">
+                                                            <input type="text" name="FAQ" dsid="FAQ" value="" placeholder="ex. 1" id="podInventory_FAQ"
+                                                            tabindex="30" multiple data-theme="b" data-mini="true" class="podInventory_FAQ" />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_234 -->
+                                                <td id="podInventory_mobilegridcell_234" name="mobilegridcell_234" class="podInventory_mobilegridcell_234"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- FAB -->
+                                                        <div data-role="fieldcontain" class="podInventory_FAB ">
+                                                            <input type="text" name="FAB" dsid="FAB" value="" placeholder="ex. 1" id="podInventory_FAB"
+                                                            tabindex="37" multiple data-theme="b" data-mini="true" class="podInventory_FAB" />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="podInventory_mobilegrid_213_row_7">
+                                                <!-- mobilegridcell_347 -->
+                                                <td id="podInventory_mobilegridcell_347" name="mobilegridcell_347" class="podInventory_mobilegridcell_347"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilelabel_350 -->
+                                                        <div name="mobilelabel_350" id="podInventory_mobilelabel_350" dsid="mobilelabel_350"
+                                                        data-role="appery_label" class="podInventory_mobilelabel_350">
+                                                            Speakers
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_348 -->
+                                                <td id="podInventory_mobilegridcell_348" name="mobilegridcell_348" class="podInventory_mobilegridcell_348"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- speakers_input -->
+                                                        <div data-role="fieldcontain" class="podInventory_speakers_input ">
+                                                            <input type="number" name="speakers_input" dsid="speakers_input" value="Input" placeholder="ex. 1"
+                                                            id="podInventory_speakers_input" tabindex="41" multiple data-theme="b" data-mini="true"
+                                                            class="podInventory_speakers_input" />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_349 -->
+                                                <td id="podInventory_mobilegridcell_349" name="mobilegridcell_349" class="podInventory_mobilegridcell_349"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- speakersBroken_input -->
+                                                        <div data-role="fieldcontain" class="podInventory_speakersBroken_input ">
+                                                            <input type="number" name="speakersBroken_input" dsid="speakersBroken_input" value="Input"
+                                                            placeholder="ex. 1" id="podInventory_speakersBroken_input" tabindex="42" multiple
+                                                            data-theme="b" data-mini="true" class="podInventory_speakersBroken_input" />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!-- submit --><!--
+                                    --><a data-role="button" name="submit" dsid="submit" class="redSimpleButton  podInventory_submit"
+                                    id="podInventory_submit" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                    x-apple-data-detectors="false" data-mini="false" data-theme="a" tabindex="14">
+                                    Submit
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

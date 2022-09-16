@@ -1,0 +1,497 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("../libs/jquerymobile/1.4.5/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer */
+.ui-content.adminCheckAttendance_mobilecontainer {
+	padding: 20px 5px 15px 5px;
+}
+/* mobilegrid_82 */
+.adminCheckAttendance_mobilegrid_82 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 150px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.adminCheckAttendance_mobilegrid_82_wrapper {
+
+}
+.adminCheckAttendance_mobilegrid_82 > tr > td {
+	vertical-align: top;
+}
+.adminCheckAttendance_mobilegrid_82_row_0, .adminCheckAttendance_mobilegrid_82_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_83 */
+.adminCheckAttendance_mobilegridcell_83 {
+	height:30px !important;
+	width:50px;
+	padding: 2px 2px 2px 2px;
+}
+.adminCheckAttendance_mobilegridcell_83 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilebutton_87 */
+#adminCheckAttendance_mobilebutton_87 {
+
+}
+.ui-btn.adminCheckAttendance_mobilebutton_87 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_84 */
+.adminCheckAttendance_mobilegridcell_84 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.adminCheckAttendance_mobilegridcell_84 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_88 */
+.adminCheckAttendance_mobilelabel_88 {
+	text-decoration: none; font-weight: normal; color: #ffffff; text-align: left; font-family: Helvetica; font-size: 20px;
+	margin: 10px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilelabel_91 */
+.adminCheckAttendance_mobilelabel_91 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 14px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* selectAccountType */
+.adminCheckAttendance_selectAccountType {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegrid_78 */
+.adminCheckAttendance_mobilegrid_78 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.adminCheckAttendance_mobilegrid_78_wrapper {
+
+}
+.adminCheckAttendance_mobilegrid_78 > tr > td {
+	vertical-align: top;
+}
+.adminCheckAttendance_mobilegrid_78_row_0, .adminCheckAttendance_mobilegrid_78_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_79 */
+.adminCheckAttendance_mobilegridcell_79 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 10px 2px 10px;
+}
+.adminCheckAttendance_mobilegridcell_79 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* learningPod_select */
+.adminCheckAttendance_learningPod_select {
+	margin: 20px 0px 20px 0px;
+}
+/* regionCoach */
+.adminCheckAttendance_regionCoach {
+	margin: 0px 0px 20px 0px;
+}
+/* coachGrid */
+.adminCheckAttendance_coachGrid {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.adminCheckAttendance_coachGrid_wrapper {
+
+}
+.adminCheckAttendance_coachGrid > tr > td {
+	vertical-align: top;
+}
+.adminCheckAttendance_coachGrid_row_0, .adminCheckAttendance_coachGrid_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_14 */
+.adminCheckAttendance_mobilegridcell_14 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.adminCheckAttendance_mobilegridcell_14 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilegrid_34 */
+.adminCheckAttendance_mobilegrid_34 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 8px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.adminCheckAttendance_mobilegrid_34_wrapper {
+
+}
+.adminCheckAttendance_mobilegrid_34 > tr > td {
+	vertical-align: top;
+}
+.adminCheckAttendance_mobilegrid_34_row_0, .adminCheckAttendance_mobilegrid_34_row_0 > td {
+	height: auto
+}
+/* mobilegridcell_35 */
+.adminCheckAttendance_mobilegridcell_35 {
+	height:auto !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.adminCheckAttendance_mobilegridcell_35 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_40 */
+.adminCheckAttendance_mobilelabel_40 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: left; font-family: Helvetica; font-size: 15px;
+	margin: 0px 0px 0px 10px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_36 */
+.adminCheckAttendance_mobilegridcell_36 {
+	height:auto !important;
+	width:15%;
+	padding: 2px 2px 2px 2px;
+}
+.adminCheckAttendance_mobilegridcell_36 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_41 */
+.adminCheckAttendance_mobilelabel_41 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 15px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_39 */
+.adminCheckAttendance_mobilegridcell_39 {
+	height:auto !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.adminCheckAttendance_mobilegridcell_39 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_42 */
+.adminCheckAttendance_mobilelabel_42 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 15px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_43 */
+.adminCheckAttendance_mobilegridcell_43 {
+	height:auto !important;
+	width:25%;
+	padding: 2px 2px 2px 2px;
+}
+.adminCheckAttendance_mobilegridcell_43 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* repeatCoachGrid */
+.adminCheckAttendance_repeatCoachGrid {
+	height: auto;
+	width:100%;
+	margin: 0px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.adminCheckAttendance_repeatCoachGrid_wrapper {
+
+}
+.adminCheckAttendance_repeatCoachGrid > tr > td {
+	vertical-align: top;
+}
+.adminCheckAttendance_repeatCoachGrid_row_0, .adminCheckAttendance_repeatCoachGrid_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_28 */
+.adminCheckAttendance_mobilegridcell_28 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.adminCheckAttendance_mobilegridcell_28 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* coachName */
+.adminCheckAttendance_coachName {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 13px;
+	margin: 4px 0px 0px 10px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* lastName2 */
+.adminCheckAttendance_lastName2 {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 13px;
+	margin: 0px 0px 4px 10px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_29 */
+.adminCheckAttendance_mobilegridcell_29 {
+	height:30px !important;
+	width:15%;
+	padding: 2px 2px 2px 2px;
+}
+.adminCheckAttendance_mobilegridcell_29 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* regionNumber */
+.adminCheckAttendance_regionNumber {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 12px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_33 */
+.adminCheckAttendance_mobilegridcell_33 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.adminCheckAttendance_mobilegridcell_33 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* villageName */
+.adminCheckAttendance_villageName {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 12px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_45 */
+.adminCheckAttendance_mobilegridcell_45 {
+	height:30px !important;
+	width:25%;
+	padding: 2px 2px 2px 2px;
+}
+.adminCheckAttendance_mobilegridcell_45 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* checkAttendance */
+#adminCheckAttendance_checkAttendance {
+
+}
+.ui-btn.adminCheckAttendance_checkAttendance {
+	margin: 8px 0px 0px 0px;
+}
+/* mobilefooter */
+.adminCheckAttendance_mobilefooter {
+	min-height:38px;
+}
+/* attendancePopup */
+.adminCheckAttendance_attendancePopup {
+	width: 80%; height: auto;
+}
+div.adminCheckAttendance_attendancePopup {
+	max-height: 100vh;
+	box-sizing: border-box;
+}
+div.adminCheckAttendance_attendancePopup .ui-popup-content-wrapper {
+	width:100%;
+	height:100%;
+	max-height: 99vh;
+	overflow:auto;
+	box-sizing: border-box;
+	padding: 20px 10px 10px 10px;
+}
+/* tendy */
+.adminCheckAttendance_tendy {
+	height: auto;
+	width:100%;
+	margin: 0px 0px 0px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.adminCheckAttendance_tendy_wrapper {
+
+}
+.adminCheckAttendance_tendy > tr > td {
+	vertical-align: top;
+}
+.adminCheckAttendance_tendy_row_0, .adminCheckAttendance_tendy_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_81 */
+.adminCheckAttendance_mobilegridcell_81 {
+	height:30px !important;
+	width:auto;
+	padding: 0px 0px 10px 0px;
+}
+.adminCheckAttendance_mobilegridcell_81 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* coachNameP */
+.adminCheckAttendance_coachNameP {
+	text-decoration: none; font-weight: normal; color: #4d9dd6; text-align: left; font-family: Helvetica; font-size: 18px;
+	margin: 0px 0px 0px 10px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* lastName */
+.adminCheckAttendance_lastName {
+	text-decoration: none; font-weight: normal; color: #4d9dd6; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 0px 0px 2px 10px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* villageNameP */
+.adminCheckAttendance_villageNameP {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: left; font-family: Helvetica; font-size: 14px;
+	margin: 0px 0px 0px 10px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* regionNameP */
+.adminCheckAttendance_regionNameP {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: left; font-family: Helvetica; font-size: 14px;
+	margin: 0px 0px 8px 10px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilelabel_70 */
+.adminCheckAttendance_mobilelabel_70 {
+	text-decoration: none; font-weight: normal; font-style: italic; color: #939393; text-align: left; font-family: Helvetica; font-size: 10px;
+	margin: 4px 0px 8px 10px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegrid_62 */
+.adminCheckAttendance_mobilegrid_62 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.adminCheckAttendance_mobilegrid_62_wrapper {
+
+}
+.adminCheckAttendance_mobilegrid_62 > tr > td {
+	vertical-align: top;
+}
+.adminCheckAttendance_mobilegrid_62_row_0, .adminCheckAttendance_mobilegrid_62_row_0 > td {
+	height: auto
+}
+/* mobilegridcell_63 */
+.adminCheckAttendance_mobilegridcell_63 {
+	height:auto !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.adminCheckAttendance_mobilegridcell_63 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_67 */
+.adminCheckAttendance_mobilelabel_67 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 15px;
+	margin: 0px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_64 */
+.adminCheckAttendance_mobilegridcell_64 {
+	height:auto !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.adminCheckAttendance_mobilegridcell_64 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_68 */
+.adminCheckAttendance_mobilelabel_68 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 15px;
+	margin: 0px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegrid_54 */
+.adminCheckAttendance_mobilegrid_54 {
+	height: auto;
+	width:100%;
+	margin: 1px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.adminCheckAttendance_mobilegrid_54_wrapper {
+
+}
+.adminCheckAttendance_mobilegrid_54 > tr > td {
+	vertical-align: top;
+}
+.adminCheckAttendance_mobilegrid_54_row_0, .adminCheckAttendance_mobilegrid_54_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_55 */
+.adminCheckAttendance_mobilegridcell_55 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+	background-color: #f2f2f2;
+}
+.adminCheckAttendance_mobilegridcell_55 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* dateLabel */
+.adminCheckAttendance_dateLabel {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 14px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_56 */
+.adminCheckAttendance_mobilegridcell_56 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+	background-color: #f2f2f2;
+}
+.adminCheckAttendance_mobilegridcell_56 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* status */
+.adminCheckAttendance_status {
+	text-decoration: none; font-weight: normal; color: #5fa65b; text-align: center; font-family: Helvetica; font-size: 14px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* noTendy */
+.adminCheckAttendance_noTendy {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}

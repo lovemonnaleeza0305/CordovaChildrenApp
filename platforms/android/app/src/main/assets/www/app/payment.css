@@ -1,0 +1,216 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("../libs/jquerymobile/1.4.5/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer */
+.ui-content.payment_mobilecontainer {
+	padding: 20px 10px 15px 10px;
+}
+/* mobilegrid_42 */
+.payment_mobilegrid_42 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 180px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.payment_mobilegrid_42_wrapper {
+
+}
+.payment_mobilegrid_42 > tr > td {
+	vertical-align: top;
+}
+.payment_mobilegrid_42_row_0, .payment_mobilegrid_42_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_43 */
+.payment_mobilegridcell_43 {
+	height:30px !important;
+	width:50px;
+	padding: 2px 2px 2px 2px;
+}
+.payment_mobilegridcell_43 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilebutton_47 */
+#payment_mobilebutton_47 {
+
+}
+.ui-btn.payment_mobilebutton_47 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_44 */
+.payment_mobilegridcell_44 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.payment_mobilegridcell_44 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_48 */
+.payment_mobilelabel_48 {
+	text-decoration: none; font-weight: normal; color: #ffffff; text-align: left; font-family: Helvetica; font-size: 22px;
+	margin: 7px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilelabel_36 */
+.payment_mobilelabel_36 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: left; font-family: Helvetica; font-size: 17px;
+	margin: 20px 0px 10px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilebutton_50 */
+#payment_mobilebutton_50 {
+
+}
+.ui-btn.payment_mobilebutton_50 {
+	margin: 4px 5px 4px 5px;
+}
+/* receiptType */
+.payment_receiptType {
+	margin: 4px 30px 0px 30px;
+}
+/* ifLabel */
+.payment_ifLabel {
+	text-decoration: none; font-weight: normal; color: #333333; text-align: center; font-family: Helvetica; font-size: 13px;
+	margin: 3px 0px 10px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* receiptNumberInput */
+.payment_receiptNumberInput {
+	margin: 0px 30px 5px 30px;
+}
+/* submitButton */
+#payment_submitButton {
+
+}
+.ui-btn.payment_submitButton {
+	margin: 20px 50px 15px 50px;
+}
+/* mobilelabel_49 */
+.payment_mobilelabel_49 {
+	text-decoration: none; font-weight: normal; font-style: italic; color: #333333; text-align: center; font-family: Helvetica; font-size: 9px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilebutton_51 */
+#payment_mobilebutton_51 {
+
+}
+.ui-btn.payment_mobilebutton_51 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilelabel_2 */
+.payment_mobilelabel_2 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: left; font-family: Helvetica; font-size: 17px;
+	margin: 4px 0px 10px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegrid_52 */
+.payment_mobilegrid_52 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.payment_mobilegrid_52_wrapper {
+
+}
+.payment_mobilegrid_52 > tr > td {
+	vertical-align: top;
+}
+.payment_mobilegrid_52_row_0, .payment_mobilegrid_52_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_53 */
+.payment_mobilegridcell_53 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 20px 2px 25px;
+}
+.payment_mobilegridcell_53 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilegrid_14 */
+.payment_mobilegrid_14 {
+	height: auto;
+	width:100%;
+	margin: 0px 0px 8px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.payment_mobilegrid_14_wrapper {
+
+}
+.payment_mobilegrid_14 > tr > td {
+	vertical-align: top;
+}
+.payment_mobilegrid_14_row_0, .payment_mobilegrid_14_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_15 */
+.payment_mobilegridcell_15 {
+	height:30px !important;
+	width:65%;
+	padding: 5px 2px 5px 0px;
+}
+.payment_mobilegridcell_15 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* typeLabel */
+.payment_typeLabel {
+	text-decoration: none; font-weight: normal; color: #ff725e; text-align: left; font-family: Helvetica; font-size: 17px;
+	margin: 2px 0px 0px 10px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* receiptNumber */
+.payment_receiptNumber {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: left; font-family: Helvetica; font-size: 14px;
+	margin: 2px 0px 0px 10px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_16 */
+.payment_mobilegridcell_16 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 10px 2px 0px;
+}
+.payment_mobilegridcell_16 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* statusLabel */
+.payment_statusLabel {
+	text-decoration: none; font-weight: normal; color: #6895d6; text-align: right; font-family: Helvetica; font-size: 15px;
+	margin: 5px 0px 5px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* dateLabel */
+.payment_dateLabel {
+	text-decoration: none; font-weight: normal; text-align: right; font-family: Helvetica; font-size: 14px;
+	margin: 2px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilefooter */
+.payment_mobilefooter {
+	min-height:38px;
+}

@@ -1,0 +1,922 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("../libs/jquerymobile/1.4.5/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer */
+.ui-content.addMyStudents_mobilecontainer {
+	padding: 20px 15px 15px 15px;
+}
+/* mobilegrid_136 */
+.addMyStudents_mobilegrid_136 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 180px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.addMyStudents_mobilegrid_136_wrapper {
+
+}
+.addMyStudents_mobilegrid_136 > tr > td {
+	vertical-align: top;
+}
+.addMyStudents_mobilegrid_136_row_0, .addMyStudents_mobilegrid_136_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_137 */
+.addMyStudents_mobilegridcell_137 {
+	height:30px !important;
+	width:50px;
+	padding: 2px 2px 2px 2px;
+}
+.addMyStudents_mobilegridcell_137 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilebutton_141 */
+#addMyStudents_mobilebutton_141 {
+
+}
+.ui-btn.addMyStudents_mobilebutton_141 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_138 */
+.addMyStudents_mobilegridcell_138 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.addMyStudents_mobilegridcell_138 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_41 */
+.addMyStudents_mobilelabel_41 {
+	text-decoration: none; font-weight: normal; color: #ffffff; text-align: left; font-family: Helvetica; font-size: 20px;
+	margin: 7px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilelabel_35 */
+.addMyStudents_mobilelabel_35 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 13px;
+	margin: 4px 0px 5px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* podSelectMenu */
+.addMyStudents_podSelectMenu {
+	margin: 4px 5px 5px 0px;
+}
+/* mobilelabel_153 */
+.addMyStudents_mobilelabel_153 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 13px;
+	margin: 0px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* regionSelectMenu */
+.addMyStudents_regionSelectMenu {
+	margin: 5px 5px 20px 0px;
+}
+/* resultsLabel */
+.addMyStudents_resultsLabel {
+	text-decoration: none; font-weight: normal; color: #d47474; text-align: center; font-family: Helvetica; font-size: 15px;
+	margin: 4px 0px 15px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* podChose */
+.addMyStudents_podChose {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 11px;
+	margin: 4px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegrid_2 */
+.addMyStudents_mobilegrid_2 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.addMyStudents_mobilegrid_2_wrapper {
+	display: none;
+}
+.addMyStudents_mobilegrid_2 > tr > td {
+	vertical-align: top;
+}
+.addMyStudents_mobilegrid_2_row_0, .addMyStudents_mobilegrid_2_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_3 */
+.addMyStudents_mobilegridcell_3 {
+	height:30px !important;
+	width:138px;
+	padding: 2px 2px 2px 2px;
+}
+.addMyStudents_mobilegridcell_3 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_8 */
+.addMyStudents_mobilelabel_8 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 15px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_7 */
+.addMyStudents_mobilegridcell_7 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.addMyStudents_mobilegridcell_7 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_9 */
+.addMyStudents_mobilelabel_9 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 15px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_10 */
+.addMyStudents_mobilegridcell_10 {
+	height:30px !important;
+	width:58px;
+	padding: 2px 2px 2px 2px;
+}
+.addMyStudents_mobilegridcell_10 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_11 */
+.addMyStudents_mobilelabel_11 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 15px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_57 */
+.addMyStudents_mobilegridcell_57 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.addMyStudents_mobilegridcell_57 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* searchResultGrid */
+.addMyStudents_searchResultGrid {
+	height: auto;
+	width:100%;
+	margin: 5px 0px 10px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.addMyStudents_searchResultGrid_wrapper {
+
+}
+.addMyStudents_searchResultGrid > tr > td {
+	vertical-align: top;
+}
+.addMyStudents_searchResultGrid_row_0, .addMyStudents_searchResultGrid_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_26 */
+.addMyStudents_mobilegridcell_26 {
+	height:30px !important;
+	width:138px;
+	padding: 2px 2px 2px 2px;
+	background-color: #fff2f2;
+}
+.addMyStudents_mobilegridcell_26 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* searchResultName */
+.addMyStudents_searchResultName {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 15px;
+	margin: 4px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* searchResultLastName */
+.addMyStudents_searchResultLastName {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 13px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* podName */
+.addMyStudents_podName {
+	text-decoration: none; font-weight: normal; color: #ff725e; text-align: left; font-family: Helvetica; font-size: 12px;
+	margin: 0px 8px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_27 */
+.addMyStudents_mobilegridcell_27 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+	background-color: #fff2f2;
+}
+.addMyStudents_mobilegridcell_27 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* searchResultPhone */
+.addMyStudents_searchResultPhone {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 14px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_30 */
+.addMyStudents_mobilegridcell_30 {
+	height:30px !important;
+	width:58px;
+	padding: 2px 2px 2px 2px;
+	background-color: #fff2f2;
+}
+.addMyStudents_mobilegridcell_30 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* searchResultGrade */
+.addMyStudents_searchResultGrade {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 14px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_36 */
+.addMyStudents_mobilegridcell_36 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+	background-color: #fff2f2;
+}
+.addMyStudents_mobilegridcell_36 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* addButton */
+#addMyStudents_addButton {
+
+}
+.ui-btn.addMyStudents_addButton {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilelabel_40 */
+.addMyStudents_mobilelabel_40 {
+	text-decoration: none; font-weight: normal; color: #4d9dd6; text-align: center; font-family: Helvetica; font-size: 22px;
+	margin: 30px 0px 10px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegrid_58 */
+.addMyStudents_mobilegrid_58 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.addMyStudents_mobilegrid_58_wrapper {
+
+}
+.addMyStudents_mobilegrid_58 > tr > td {
+	vertical-align: top;
+}
+.addMyStudents_mobilegrid_58_row_0, .addMyStudents_mobilegrid_58_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_59 */
+.addMyStudents_mobilegridcell_59 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.addMyStudents_mobilegridcell_59 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_64 */
+.addMyStudents_mobilelabel_64 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 15px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_60 */
+.addMyStudents_mobilegridcell_60 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.addMyStudents_mobilegridcell_60 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_66 */
+.addMyStudents_mobilelabel_66 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 15px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_63 */
+.addMyStudents_mobilegridcell_63 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.addMyStudents_mobilegridcell_63 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_68 */
+.addMyStudents_mobilelabel_68 {
+	text-decoration: none; font-weight: normal; color: #ff725e; text-align: center; font-family: Helvetica; font-size: 15px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_67 */
+.addMyStudents_mobilegridcell_67 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.addMyStudents_mobilegridcell_67 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* existingStudentGrid */
+.addMyStudents_existingStudentGrid {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 8px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.addMyStudents_existingStudentGrid_wrapper {
+
+}
+.addMyStudents_existingStudentGrid > tr > td {
+	vertical-align: top;
+}
+.addMyStudents_existingStudentGrid_row_0, .addMyStudents_existingStudentGrid_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_13 */
+.addMyStudents_mobilegridcell_13 {
+	height:30px !important;
+	width:auto;
+	padding: 4px 2px 4px 2px;
+}
+.addMyStudents_mobilegridcell_13 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* studentName_f */
+.addMyStudents_studentName_f {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 14px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* studentName_l */
+.addMyStudents_studentName_l {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 13px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_14 */
+.addMyStudents_mobilegridcell_14 {
+	height:30px !important;
+	width:auto;
+	padding: 4px 2px 4px 2px;
+}
+.addMyStudents_mobilegridcell_14 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* villageLabel */
+.addMyStudents_villageLabel {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 14px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_17 */
+.addMyStudents_mobilegridcell_17 {
+	height:30px !important;
+	width:auto;
+	padding: 4px 2px 4px 2px;
+}
+.addMyStudents_mobilegridcell_17 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* pointsNumber */
+.addMyStudents_pointsNumber {
+	text-decoration: none; font-weight: normal; color: #ff725e; text-align: center; font-family: Helvetica; font-size: 14px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_69 */
+.addMyStudents_mobilegridcell_69 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.addMyStudents_mobilegridcell_69 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* moreButton */
+#addMyStudents_moreButton {
+
+}
+.ui-btn.addMyStudents_moreButton {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilefooter */
+.addMyStudents_mobilefooter {
+	min-height:38px;
+}
+/* moreStudentInfoGrid */
+.addMyStudents_moreStudentInfoGrid {
+
+}
+div.addMyStudents_moreStudentInfoGrid {
+	max-height: 100vh;
+	box-sizing: border-box;
+}
+div.addMyStudents_moreStudentInfoGrid .ui-popup-content-wrapper {
+	width:100%;
+	height:100%;
+	max-height: 99vh;
+	overflow:auto;
+	box-sizing: border-box;
+	padding: 15px 10px 15px 10px;
+}
+/* studentNamePopup */
+.addMyStudents_studentNamePopup {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 17px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* student_usern */
+.addMyStudents_student_usern {
+	text-decoration: none; font-weight: normal; color: #ff725e; text-align: left; font-family: Helvetica; font-size: 13px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* phoneNumber */
+.addMyStudents_phoneNumber {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: left; font-family: Helvetica; font-size: 13px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* program */
+.addMyStudents_program {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: left; font-family: Helvetica; font-size: 13px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* grade */
+.addMyStudents_grade {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: left; font-family: Helvetica; font-size: 13px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilebutton_142 */
+#addMyStudents_mobilebutton_142 {
+	display: none;
+}
+.ui-btn.addMyStudents_mobilebutton_142 {
+	margin: 2px 5px 0px 0px;
+}
+/* mobilegrid_143 */
+.addMyStudents_mobilegrid_143 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.addMyStudents_mobilegrid_143_wrapper {
+	display: none;
+}
+.addMyStudents_mobilegrid_143 > tr > td {
+	vertical-align: top;
+}
+.addMyStudents_mobilegrid_143_row_0, .addMyStudents_mobilegrid_143_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_144 */
+.addMyStudents_mobilegridcell_144 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 10px 2px 10px;
+}
+.addMyStudents_mobilegridcell_144 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_150 */
+.addMyStudents_mobilelabel_150 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: left; font-family: Helvetica; font-size: 13px;
+	margin: 4px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* PR_username */
+.addMyStudents_PR_username {
+	margin: 0px 20px 4px 10px;
+}
+/* mobilelabel_151 */
+.addMyStudents_mobilelabel_151 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: left; font-family: Helvetica; font-size: 13px;
+	margin: 9px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* PR_password */
+.addMyStudents_PR_password {
+	margin: 2px 20px 4px 10px;
+}
+/* mobilebutton_152 */
+#addMyStudents_mobilebutton_152 {
+
+}
+.ui-btn.addMyStudents_mobilebutton_152 {
+	margin: 4px 5px 4px 5px;
+}
+/* successLabel */
+.addMyStudents_successLabel {
+	text-decoration: none; font-weight: normal; color: #0ca309; text-align: center; font-family: Helvetica; font-size: 15px;
+	margin: 10px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegrid_89 */
+.addMyStudents_mobilegrid_89 {
+	height: auto;
+	width:100%;
+	margin: 20px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.addMyStudents_mobilegrid_89_wrapper {
+
+}
+.addMyStudents_mobilegrid_89 > tr > td {
+	vertical-align: top;
+}
+.addMyStudents_mobilegrid_89_row_0, .addMyStudents_mobilegrid_89_row_0 > td {
+	height: auto
+}
+/* mobilegridcell_90 */
+.addMyStudents_mobilegridcell_90 {
+	height:auto !important;
+	width:auto;
+	padding: 0px 0px 0px 0px;
+}
+.addMyStudents_mobilegridcell_90 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* attendance */
+#addMyStudents_attendance {
+
+}
+.ui-btn.addMyStudents_attendance {
+	margin: 0px 0px 0px 0px;
+}
+/* mobilegridcell_91 */
+.addMyStudents_mobilegridcell_91 {
+	height:auto !important;
+	width:auto;
+	padding: 0px 0px 0px 0px;
+}
+.addMyStudents_mobilegridcell_91 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* lessons */
+#addMyStudents_lessons {
+
+}
+.ui-btn.addMyStudents_lessons {
+	margin: 0px 0px 0px 0px;
+}
+/* attendanceGrid */
+.addMyStudents_attendanceGrid {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.addMyStudents_attendanceGrid_wrapper {
+
+}
+.addMyStudents_attendanceGrid > tr > td {
+	vertical-align: top;
+}
+.addMyStudents_attendanceGrid_row_0, .addMyStudents_attendanceGrid_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_97 */
+.addMyStudents_mobilegridcell_97 {
+	height:30px !important;
+	width:auto;
+	padding: 10px 20px 2px 20px;
+}
+.addMyStudents_mobilegridcell_97 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* totalAttendance */
+.addMyStudents_totalAttendance {
+	text-decoration: none; font-weight: normal; color: #ff725e; text-align: center; font-family: Helvetica; font-size: 15px;
+	margin: 4px 0px 10px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegrid_101 */
+.addMyStudents_mobilegrid_101 {
+	height: auto;
+	width:100%;
+	margin: 0px 0px 0px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.addMyStudents_mobilegrid_101_wrapper {
+
+}
+.addMyStudents_mobilegrid_101 > tr > td {
+	vertical-align: top;
+}
+.addMyStudents_mobilegrid_101_row_0, .addMyStudents_mobilegrid_101_row_0 > td {
+	height: auto
+}
+/* mobilegridcell_102 */
+.addMyStudents_mobilegridcell_102 {
+	height:auto !important;
+	width:89px;
+	padding: 2px 2px 2px 2px;
+}
+.addMyStudents_mobilegridcell_102 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_106 */
+.addMyStudents_mobilelabel_106 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 14px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_103 */
+.addMyStudents_mobilegridcell_103 {
+	height:auto !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.addMyStudents_mobilegridcell_103 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_107 */
+.addMyStudents_mobilelabel_107 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: left; font-family: Helvetica; font-size: 14px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* repeatAttendanceGrid */
+.addMyStudents_repeatAttendanceGrid {
+	height: auto;
+	width:100%;
+	margin: 0px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.addMyStudents_repeatAttendanceGrid_wrapper {
+
+}
+.addMyStudents_repeatAttendanceGrid > tr > td {
+	vertical-align: top;
+}
+.addMyStudents_repeatAttendanceGrid_row_0, .addMyStudents_repeatAttendanceGrid_row_0 > td {
+	height: auto
+}
+/* mobilegridcell_109 */
+.addMyStudents_mobilegridcell_109 {
+	height:auto !important;
+	width:89px;
+	padding: 2px 2px 2px 2px;
+}
+.addMyStudents_mobilegridcell_109 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* date */
+.addMyStudents_date {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 14px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_110 */
+.addMyStudents_mobilegridcell_110 {
+	height:auto !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.addMyStudents_mobilegridcell_110 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* status */
+.addMyStudents_status {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 14px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* lessonsGrid */
+.addMyStudents_lessonsGrid {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.addMyStudents_lessonsGrid_wrapper {
+	display: none;
+}
+.addMyStudents_lessonsGrid > tr > td {
+	vertical-align: top;
+}
+.addMyStudents_lessonsGrid_row_0, .addMyStudents_lessonsGrid_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_115 */
+.addMyStudents_mobilegridcell_115 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 20px;
+}
+.addMyStudents_mobilegridcell_115 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* lessonsCompleteLabel */
+.addMyStudents_lessonsCompleteLabel {
+	text-decoration: none; font-weight: normal; color: #ff725e; text-align: center; font-family: Helvetica; font-size: 15px;
+	margin: 10px 0px 10px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegrid_120 */
+.addMyStudents_mobilegrid_120 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.addMyStudents_mobilegrid_120_wrapper {
+
+}
+.addMyStudents_mobilegrid_120 > tr > td {
+	vertical-align: top;
+}
+.addMyStudents_mobilegrid_120_row_0, .addMyStudents_mobilegrid_120_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_121 */
+.addMyStudents_mobilegridcell_121 {
+	height:30px !important;
+	width:89px;
+	padding: 2px 2px 2px 2px;
+}
+.addMyStudents_mobilegridcell_121 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_125 */
+.addMyStudents_mobilelabel_125 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: left; font-family: Helvetica; font-size: 15px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_122 */
+.addMyStudents_mobilegridcell_122 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.addMyStudents_mobilegridcell_122 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_126 */
+.addMyStudents_mobilelabel_126 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: left; font-family: Helvetica; font-size: 15px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* lessonsGridRepeat */
+.addMyStudents_lessonsGridRepeat {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.addMyStudents_lessonsGridRepeat_wrapper {
+
+}
+.addMyStudents_lessonsGridRepeat > tr > td {
+	vertical-align: top;
+}
+.addMyStudents_lessonsGridRepeat_row_0, .addMyStudents_lessonsGridRepeat_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_128 */
+.addMyStudents_mobilegridcell_128 {
+	height:30px !important;
+	width:89px;
+	padding: 2px 2px 2px 2px;
+}
+.addMyStudents_mobilegridcell_128 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* subject */
+.addMyStudents_subject {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 14px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_129 */
+.addMyStudents_mobilegridcell_129 {
+	height:30px !important;
+	width:173px;
+	padding: 2px 2px 2px 2px;
+}
+.addMyStudents_mobilegridcell_129 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* topic */
+.addMyStudents_topic {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 14px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_134 */
+.addMyStudents_mobilegridcell_134 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+	background-color: #e9f5e8;
+}
+.addMyStudents_mobilegridcell_134 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_135 */
+.addMyStudents_mobilelabel_135 {
+	text-decoration: none; font-weight: normal; color: #32802b; text-align: center; font-family: Helvetica; font-size: 13px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}

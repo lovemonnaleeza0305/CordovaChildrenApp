@@ -1,0 +1,116 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("../libs/jquerymobile/1.4.5/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer */
+.ui-content.Assessment_mobilecontainer {
+	padding: 20px 15px 15px 15px;
+}
+/* mobilegrid_11 */
+.Assessment_mobilegrid_11 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 150px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.Assessment_mobilegrid_11_wrapper {
+
+}
+.Assessment_mobilegrid_11 > tr > td {
+	vertical-align: top;
+}
+.Assessment_mobilegrid_11_row_0, .Assessment_mobilegrid_11_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_12 */
+.Assessment_mobilegridcell_12 {
+	height:30px !important;
+	width:55px;
+	padding: 2px 2px 2px 2px;
+}
+.Assessment_mobilegridcell_12 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilebutton_16 */
+#Assessment_mobilebutton_16 {
+
+}
+.ui-btn.Assessment_mobilebutton_16 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_13 */
+.Assessment_mobilegridcell_13 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.Assessment_mobilegridcell_13 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_17 */
+.Assessment_mobilelabel_17 {
+	text-decoration: none; font-weight: normal; color: #ffffff; text-align: left; font-family: Helvetica; font-size: 22px;
+	margin: 7px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* answers_grid */
+.Assessment_answers_grid {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.Assessment_answers_grid_wrapper {
+
+}
+.Assessment_answers_grid > tr > td {
+	vertical-align: top;
+}
+.Assessment_answers_grid_row_0, .Assessment_answers_grid_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_5 */
+.Assessment_mobilegridcell_5 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.Assessment_mobilegridcell_5 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobileimage_10 */
+.Assessment_mobileimage_10 {
+	margin: 4px 0px 4px 0px;
+	width: 80%; height: auto;
+	display: block;
+}
+/* answer_input */
+.Assessment_answer_input {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilebutton_9 */
+#Assessment_mobilebutton_9 {
+
+}
+.ui-btn.Assessment_mobilebutton_9 {
+	margin: 10px 5px 4px 5px;
+}
+/* elapsedTime */
+.Assessment_elapsedTime {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 13px;
+	margin: 4px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilefooter */
+.Assessment_mobilefooter {
+	min-height:38px;
+}

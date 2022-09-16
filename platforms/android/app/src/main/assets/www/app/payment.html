@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            payment
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- Enable all requests, inline styles, and eval() -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready data:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+        <!-- Uncomment link and meta tags below to activate PWA icons and theme color -->
+        <!-- link rel="manifest" href="../manifest.json" crossOrigin="use-credentials" -->
+        <!-- meta name="theme-color" content="#ffffff" -->
+        <link href="../css/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="../css/theme/ios7_Ios7_JQM_1_4_Theme/ios7_Ios7_JQM_1_4_Theme.css" rel="stylesheet"
+        />
+        <link href="../libs/apperyio/iphone-fix.css" rel="stylesheet" type="text/css" />
+        <link href="../libs/jquerymobile/1.4.5/jquery.mobile.structure-1.4.5.css" rel="stylesheet"
+        />
+        <link type="text/css" rel="stylesheet" href="../css/PDFPreview.css" />
+        <link type="text/css" rel="stylesheet" href="../css/styling1.css" />
+        <link type="text/css" rel="stylesheet" href="../css/Reports.css" />
+        <link type="text/css" rel="stylesheet" href="../css/loginFlowCSS.css" />
+        <link type="text/css" rel="stylesheet" href="../css/Navbar.css" />
+        <!-- Uncomment this script to activate service worker -->
+        <!-- <script>
+        if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('../sw.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.error('Error', err));
+        }
+        </script>
+        -->
+        <script type="text/javascript" src="../libs/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="../libs/store/json2.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-ajaxTransport.js">
+        </script>
+        <script type="text/javascript">
+            $(document).bind("mobileinit", function() {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1) {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                } else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1) {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                } else if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
+                    $.mobile.hashListeningEnabled = false;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="../libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.js">
+        </script>
+        <script type="text/javascript" src="../libs/apperyio/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="../libs/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/appery.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/login.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="../get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="../cordova.js">
+        </script>
+        <script type="text/javascript">
+            if (typeof cordova !== "undefined" && cordova.platformId === 'ios') {
+                document.documentElement.style.setProperty('--iphone-safe-area-inset-top', '44px');
+                document.documentElement.style.setProperty('--iphone-safe-area-inset-bottom', '34px');
+            }
+        </script>
+        <link href="../libs/apperyio/mobilebase.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="../js/services/model.js">
+        </script>
+        <script type="text/javascript" src="../js/Helper.js">
+        </script>
+        <script type="text/javascript" src="../js/services/service.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/databaseUtils.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+        </script>
+        <div data-role="page" style="min-height:686px;" dsid="payment" id="payment" class="type-interior"
+        data-theme="b">
+            <!-- mobilecontainer -->
+            <div data-role="content" id="payment_mobilecontainer" name="mobilecontainer" class="payment_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="b">
+                <link href="payment.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="payment.js">
+                </script>
+                <!-- mobilegrid_42 -->
+                <div class="payment_mobilegrid_42_wrapper" data-wrapper-for="mobilegrid_42">
+                    <table id="payment_mobilegrid_42" class="payment_mobilegrid_42" dsid="mobilegrid_42"
+                    name="mobilegrid_42" cellpadding=0 cellspacing=0>
+                        <col style="width:54px;" />
+                        <col style="width:auto;" />
+                        <tr class="payment_mobilegrid_42_row_0">
+                            <!-- mobilegridcell_43 -->
+                            <td id="payment_mobilegridcell_43" name="mobilegridcell_43" class="payment_mobilegridcell_43"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilebutton_47 --><!--
+                                    --><a data-role="button" name="mobilebutton_47" dsid="mobilebutton_47" class="backButtonIcon  payment_mobilebutton_47"
+                                    style='min-height:20px; ' id="payment_mobilebutton_47" data-corners="true" data-icon="carat-l"
+                                    data-iconpos="notext" x-apple-data-detectors="false" data-mini="false" data-theme="b"
+                                    tabindex="6">
+                                    Button
+                                    </a>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_44 -->
+                            <td id="payment_mobilegridcell_44" name="mobilegridcell_44" class="payment_mobilegridcell_44"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_48 -->
+                                    <div name="mobilelabel_48" id="payment_mobilelabel_48" dsid="mobilelabel_48" data-role="appery_label"
+                                    class="payment_mobilelabel_48">
+                                        Payments
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilelabel_36 -->
+                <div name="mobilelabel_36" id="payment_mobilelabel_36" dsid="mobilelabel_36" data-role="appery_label"
+                class="payment_mobilelabel_36">
+                    Add a New Payment
+                </div>
+                <!-- mobilebutton_50 --><!--
+                --><a data-role="button" name="mobilebutton_50" dsid="mobilebutton_50" class="backButtonNewDesign  payment_mobilebutton_50"
+                id="payment_mobilebutton_50" data-corners="true" data-icon="plus" data-iconpos="left"
+                x-apple-data-detectors="false" data-inline="true" data-mini="false" data-theme="b"
+                tabindex="7">
+                Add a New Payment
+                </a><!--
+                --><!-- receiptType -->
+                <div data-role="fieldcontain" class="payment_receiptType ">
+                    <select name="receiptType" id="payment_receiptType" dsid="receiptType" data-theme="b"
+                    data-role="appery_selectmenu" data-inline="false" data-mini="false" data-icon="carat-d"
+                    data-iconpos="right" data-native-menu="true" tabindex="5" appery-class="payment_receiptType">
+                        <option id="payment_receiptType-0" value="MMG" reRender="receiptType" dsid="receiptType-0">
+                            MMG
+                        </option>
+                        <option id="payment_receiptType-1" value="Receipt" reRender="receiptType" dsid="receiptType-1">
+                            Receipt
+                        </option>
+                        <option id="payment_receiptType-2" value="-" reRender="receiptType" dsid="receiptType-2"
+                        selected="selected">
+                            Select Payment Type
+                        </option>
+                    </select>
+                </div>
+                <!-- ifLabel -->
+                <div name="ifLabel" id="payment_ifLabel" dsid="ifLabel" data-role="appery_label"
+                class="payment_ifLabel">
+                    ⓘ If MMG search for STEM or enter code m20304
+                </div>
+                <!-- receiptNumberInput -->
+                <div data-role="fieldcontain" class="payment_receiptNumberInput ">
+                    <input type="text" name="receiptNumberInput" dsid="receiptNumberInput" value=""
+                    placeholder="MMG Number or Receipt Number" id="payment_receiptNumberInput" tabindex="1"
+                    multiple data-theme="b" data-mini="false" class="payment_receiptNumberInput" />
+                </div>
+                <!-- submitButton --><!--
+                --><a data-role="button" name="submitButton" dsid="submitButton" class="redSimpleButton  payment_submitButton"
+                id="payment_submitButton" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="true" data-theme="b" tabindex="4">
+                Submit Payment
+                </a><!--
+                --><!-- mobilelabel_49 -->
+                <div name="mobilelabel_49" id="payment_mobilelabel_49" dsid="mobilelabel_49" data-role="appery_label"
+                class="payment_mobilelabel_49">
+                    ------------------------------------------------------------------------------------------------------------------
+                </div>
+                <!-- mobilebutton_51 --><!--
+                --><a data-role="button" name="mobilebutton_51" dsid="mobilebutton_51" class="backButtonNewDesign  payment_mobilebutton_51"
+                id="payment_mobilebutton_51" data-corners="true" data-icon="bullets" data-iconpos="left"
+                x-apple-data-detectors="false" data-inline="true" data-mini="false" data-theme="b"
+                tabindex="8">
+                Your Payment History
+                </a><!--
+                --><!-- mobilelabel_2 -->
+                <div name="mobilelabel_2" id="payment_mobilelabel_2" dsid="mobilelabel_2" data-role="appery_label"
+                class="payment_mobilelabel_2">
+                    Your Payment History
+                </div>
+                <!-- mobilegrid_52 -->
+                <div class="payment_mobilegrid_52_wrapper" data-wrapper-for="mobilegrid_52">
+                    <table id="payment_mobilegrid_52" class="payment_mobilegrid_52" dsid="mobilegrid_52"
+                    name="mobilegrid_52" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <tr class="payment_mobilegrid_52_row_0">
+                            <!-- mobilegridcell_53 -->
+                            <td id="payment_mobilegridcell_53" name="mobilegridcell_53" class="payment_mobilegridcell_53"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilegrid_14 -->
+                                    <div class="payment_mobilegrid_14_wrapper" data-wrapper-for="mobilegrid_14">
+                                        <table id="payment_mobilegrid_14" class="roundRedGrid  payment_mobilegrid_14" dsid="mobilegrid_14"
+                                        name="mobilegrid_14" cellpadding=0 cellspacing=0>
+                                            <col style="width:65%;" />
+                                            <col style="width:auto;" />
+                                            <tr class="payment_mobilegrid_14_row_0">
+                                                <!-- mobilegridcell_15 -->
+                                                <td id="payment_mobilegridcell_15" name="mobilegridcell_15" class="payment_mobilegridcell_15"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- typeLabel -->
+                                                        <div name="typeLabel" id="payment_typeLabel" dsid="typeLabel" data-role="appery_label"
+                                                        class="payment_typeLabel">
+                                                            MMG
+                                                        </div>
+                                                        <!-- receiptNumber -->
+                                                        <div name="receiptNumber" id="payment_receiptNumber" dsid="receiptNumber" data-role="appery_label"
+                                                        class="payment_receiptNumber">
+                                                            Receipt/MMG #: 5678911011
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_16 -->
+                                                <td id="payment_mobilegridcell_16" name="mobilegridcell_16" class="payment_mobilegridcell_16"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- statusLabel -->
+                                                        <div name="statusLabel" id="payment_statusLabel" dsid="statusLabel" data-role="appery_label"
+                                                        class="payment_statusLabel">
+                                                            SUBMITTED
+                                                        </div>
+                                                        <!-- dateLabel -->
+                                                        <div name="dateLabel" id="payment_dateLabel" dsid="dateLabel" data-role="appery_label"
+                                                        class="payment_dateLabel">
+                                                            2021-01-23
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

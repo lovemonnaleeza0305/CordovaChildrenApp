@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            paymentHistories
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- Enable all requests, inline styles, and eval() -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready data:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+        <!-- Uncomment link and meta tags below to activate PWA icons and theme color -->
+        <!-- link rel="manifest" href="../manifest.json" crossOrigin="use-credentials" -->
+        <!-- meta name="theme-color" content="#ffffff" -->
+        <link href="../css/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="../css/theme/ios7_Ios7_JQM_1_4_Theme/ios7_Ios7_JQM_1_4_Theme.css" rel="stylesheet"
+        />
+        <link href="../libs/apperyio/iphone-fix.css" rel="stylesheet" type="text/css" />
+        <link href="../libs/jquerymobile/1.4.5/jquery.mobile.structure-1.4.5.css" rel="stylesheet"
+        />
+        <link type="text/css" rel="stylesheet" href="../css/PDFPreview.css" />
+        <link type="text/css" rel="stylesheet" href="../css/styling1.css" />
+        <link type="text/css" rel="stylesheet" href="../css/Reports.css" />
+        <link type="text/css" rel="stylesheet" href="../css/loginFlowCSS.css" />
+        <link type="text/css" rel="stylesheet" href="../css/Navbar.css" />
+        <!-- Uncomment this script to activate service worker -->
+        <!-- <script>
+        if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('../sw.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.error('Error', err));
+        }
+        </script>
+        -->
+        <script type="text/javascript" src="../libs/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="../libs/store/json2.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-ajaxTransport.js">
+        </script>
+        <script type="text/javascript">
+            $(document).bind("mobileinit", function() {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1) {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                } else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1) {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                } else if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
+                    $.mobile.hashListeningEnabled = false;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="../libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.js">
+        </script>
+        <script type="text/javascript" src="../libs/apperyio/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="../libs/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/appery.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/login.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="../get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="../cordova.js">
+        </script>
+        <script type="text/javascript">
+            if (typeof cordova !== "undefined" && cordova.platformId === 'ios') {
+                document.documentElement.style.setProperty('--iphone-safe-area-inset-top', '44px');
+                document.documentElement.style.setProperty('--iphone-safe-area-inset-bottom', '34px');
+            }
+        </script>
+        <link href="../libs/apperyio/mobilebase.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="../js/services/model.js">
+        </script>
+        <script type="text/javascript" src="../js/Helper.js">
+        </script>
+        <script type="text/javascript" src="../js/services/service.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/databaseUtils.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+        </script>
+        <div data-role="page" style="min-height:686px;" dsid="paymentHistories" id="paymentHistories"
+        class="type-interior" data-theme="b">
+            <!-- mobilecontainer -->
+            <div data-role="content" id="paymentHistories_mobilecontainer" name="mobilecontainer"
+            class="paymentHistories_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="b">
+                <link href="paymentHistories.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="paymentHistories.js">
+                </script>
+                <!-- mobilegrid_28 -->
+                <div class="paymentHistories_mobilegrid_28_wrapper" data-wrapper-for="mobilegrid_28">
+                    <table id="paymentHistories_mobilegrid_28" class="paymentHistories_mobilegrid_28"
+                    dsid="mobilegrid_28" name="mobilegrid_28" cellpadding=0 cellspacing=0>
+                        <col style="width:54px;" />
+                        <col style="width:auto;" />
+                        <tr class="paymentHistories_mobilegrid_28_row_0">
+                            <!-- mobilegridcell_29 -->
+                            <td id="paymentHistories_mobilegridcell_29" name="mobilegridcell_29" class="paymentHistories_mobilegridcell_29"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilebutton_33 --><!--
+                                    --><a data-role="button" name="mobilebutton_33" dsid="mobilebutton_33" class="backButtonIcon  paymentHistories_mobilebutton_33"
+                                    style='min-height:20px; ' id="paymentHistories_mobilebutton_33" data-corners="true"
+                                    data-icon="carat-l" data-iconpos="notext" x-apple-data-detectors="false" data-mini="false"
+                                    data-theme="b" tabindex="1">
+                                    Button
+                                    </a>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_30 -->
+                            <td id="paymentHistories_mobilegridcell_30" name="mobilegridcell_30" class="paymentHistories_mobilegridcell_30"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_34 -->
+                                    <div name="mobilelabel_34" id="paymentHistories_mobilelabel_34" dsid="mobilelabel_34"
+                                    data-role="appery_label" class="paymentHistories_mobilelabel_34">
+                                        Student Payments
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilegrid_17 -->
+                <div class="paymentHistories_mobilegrid_17_wrapper" data-wrapper-for="mobilegrid_17">
+                    <table id="paymentHistories_mobilegrid_17" class="paymentHistories_mobilegrid_17"
+                    dsid="mobilegrid_17" name="mobilegrid_17" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="paymentHistories_mobilegrid_17_row_0">
+                            <!-- mobilegridcell_18 -->
+                            <td id="paymentHistories_mobilegridcell_18" name="mobilegridcell_18" class="paymentHistories_mobilegridcell_18"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_27 -->
+                                    <div name="mobilelabel_27" id="paymentHistories_mobilelabel_27" dsid="mobilelabel_27"
+                                    data-role="appery_label" class="paymentHistories_mobilelabel_27">
+                                        Name
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_19 -->
+                            <td id="paymentHistories_mobilegridcell_19" name="mobilegridcell_19" class="paymentHistories_mobilegridcell_19"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_26 -->
+                                    <div name="mobilelabel_26" id="paymentHistories_mobilelabel_26" dsid="mobilelabel_26"
+                                    data-role="appery_label" class="paymentHistories_mobilelabel_26">
+                                        Number
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_22 -->
+                            <td id="paymentHistories_mobilegridcell_22" name="mobilegridcell_22" class="paymentHistories_mobilegridcell_22"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_25 -->
+                                    <div name="mobilelabel_25" id="paymentHistories_mobilelabel_25" dsid="mobilelabel_25"
+                                    data-role="appery_label" class="paymentHistories_mobilelabel_25">
+                                        Type
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_23 -->
+                            <td id="paymentHistories_mobilegridcell_23" name="mobilegridcell_23" class="paymentHistories_mobilegridcell_23"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_24 -->
+                                    <div name="mobilelabel_24" id="paymentHistories_mobilelabel_24" dsid="mobilelabel_24"
+                                    data-role="appery_label" class="paymentHistories_mobilelabel_24">
+                                        Status
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilegrid_2 -->
+                <div class="paymentHistories_mobilegrid_2_wrapper" data-wrapper-for="mobilegrid_2">
+                    <table id="paymentHistories_mobilegrid_2" class="roundRedGrid  paymentHistories_mobilegrid_2"
+                    dsid="mobilegrid_2" name="mobilegrid_2" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="paymentHistories_mobilegrid_2_row_0">
+                            <!-- mobilegridcell_3 -->
+                            <td id="paymentHistories_mobilegridcell_3" name="mobilegridcell_3" class="paymentHistories_mobilegridcell_3"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- firstName -->
+                                    <div name="firstName" id="paymentHistories_firstName" dsid="firstName" data-role="appery_label"
+                                    class="paymentHistories_firstName">
+                                    </div>
+                                    <!-- lastName -->
+                                    <div name="lastName" id="paymentHistories_lastName" dsid="lastName" data-role="appery_label"
+                                    class="paymentHistories_lastName">
+                                    </div>
+                                    <!-- program -->
+                                    <div name="program" id="paymentHistories_program" dsid="program" data-role="appery_label"
+                                    class="paymentHistories_program">
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_4 -->
+                            <td id="paymentHistories_mobilegridcell_4" name="mobilegridcell_4" class="paymentHistories_mobilegridcell_4"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- receiptNumber -->
+                                    <div name="receiptNumber" id="paymentHistories_receiptNumber" dsid="receiptNumber"
+                                    data-role="appery_label" class="paymentHistories_receiptNumber">
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_9 -->
+                            <td id="paymentHistories_mobilegridcell_9" name="mobilegridcell_9" class="paymentHistories_mobilegridcell_9"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- typeLabel -->
+                                    <div name="typeLabel" id="paymentHistories_typeLabel" dsid="typeLabel" data-role="appery_label"
+                                    class="paymentHistories_typeLabel">
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_14 -->
+                            <td id="paymentHistories_mobilegridcell_14" name="mobilegridcell_14" class="paymentHistories_mobilegridcell_14"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- statusLabel -->
+                                    <div name="statusLabel" id="paymentHistories_statusLabel" dsid="statusLabel" data-role="appery_label"
+                                    class="paymentHistories_statusLabel">
+                                    </div>
+                                    <!-- submissionDate -->
+                                    <div name="submissionDate" id="paymentHistories_submissionDate" dsid="submissionDate"
+                                    data-role="appery_label" class="paymentHistories_submissionDate">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

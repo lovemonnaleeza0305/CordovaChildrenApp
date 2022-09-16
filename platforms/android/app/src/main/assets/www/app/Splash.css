@@ -1,0 +1,33 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("../libs/jquerymobile/1.4.5/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainerkaren */
+.ui-content.Splash_mobilecontainerkaren {
+	padding: 50px 15px 15px 15px;
+}
+/* stemlogo */
+.Splash_stemlogo {
+	margin: 100px 0px 4px 0px;
+	width: 100%; height: auto;
+	display: block;
+}
+/* mobilebutton_5 */
+#Splash_mobilebutton_5 {
+
+}
+.ui-btn.Splash_mobilebutton_5 {
+	margin: 10px 10px 4px 20px;
+}
+/* mobilelabel_4 */
+.Splash_mobilelabel_4 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 12px;
+	margin: 20px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilefooter */
+.Splash_mobilefooter {
+	min-height:38px;
+}

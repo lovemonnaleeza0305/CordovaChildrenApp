@@ -1,0 +1,57 @@
+{
+  "name": "io.app.stemguyana",
+  "displayName": "",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cordova-ios": "^6.1.0",
+    "cordova-plugin-battery-status": "file:../5df45570-e9a1-479d-978b-deb350f290d0-plugins/cordova-plugin-battery-status-rel-2.0.3",
+    "cordova-plugin-camera": "file:../5df45570-e9a1-479d-978b-deb350f290d0-plugins/cordova-plugin-camera-rel-6.0.0",
+    "cordova-plugin-contacts": "file:../5df45570-e9a1-479d-978b-deb350f290d0-plugins/cordova-plugin-contacts-rel-3.0.1",
+    "cordova-plugin-device": "file:../5df45570-e9a1-479d-978b-deb350f290d0-plugins/cordova-plugin-device-rel-2.0.3",
+    "cordova-plugin-dialogs": "file:../5df45570-e9a1-479d-978b-deb350f290d0-plugins/cordova-plugin-dialogs-rel-2.0.2",
+    "cordova-plugin-file": "file:../5df45570-e9a1-479d-978b-deb350f290d0-plugins/cordova-plugin-file-rel-6.0.2",
+    "cordova-plugin-geolocation": "file:../5df45570-e9a1-479d-978b-deb350f290d0-plugins/cordova-plugin-geolocation-rel-4.1.0",
+    "cordova-plugin-globalization": "file:../5df45570-e9a1-479d-978b-deb350f290d0-plugins/cordova-plugin-globalization-rel-1.11.0",
+    "cordova-plugin-inappbrowser": "file:../5df45570-e9a1-479d-978b-deb350f290d0-plugins/cordova-plugin-inappbrowser-rel-5.0.0",
+    "cordova-plugin-network-information": "file:../5df45570-e9a1-479d-978b-deb350f290d0-plugins/cordova-plugin-network-information-rel-3.0.0",
+    "cordova-plugin-resource-generator": "file:../5df45570-e9a1-479d-978b-deb350f290d0-plugins/cordova-plugin-resource-generator",
+    "cordova-plugin-splashscreen": "file:../5df45570-e9a1-479d-978b-deb350f290d0-plugins/cordova-plugin-splashscreen-rel-5.0.2",
+    "cordova-plugin-vibration": "file:../5df45570-e9a1-479d-978b-deb350f290d0-plugins/cordova-plugin-vibration-rel-3.1.1",
+    "cordova-plugin-wkwebview-engine-allowfileaccess": "file:../5df45570-e9a1-479d-978b-deb350f290d0-plugins/cordova-plugin-wkwebview-engine-allowfileaccess-master"
+  },
+  "devDependencies": {
+    "cordova-android": "^10.1.0"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-battery-status": {},
+      "cordova-plugin-camera": {},
+      "cordova-plugin-contacts": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-dialogs": {},
+      "cordova-plugin-file": {},
+      "cordova-plugin-geolocation": {},
+      "cordova-plugin-globalization": {},
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-network-information": {},
+      "cordova-plugin-resource-generator": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-vibration": {},
+      "cordova-plugin-wkwebview-engine-allowfileaccess": {}
+    },
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  }
+}

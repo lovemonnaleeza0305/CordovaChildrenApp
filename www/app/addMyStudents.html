@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            addMyStudents
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- Enable all requests, inline styles, and eval() -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready data:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+        <!-- Uncomment link and meta tags below to activate PWA icons and theme color -->
+        <!-- link rel="manifest" href="../manifest.json" crossOrigin="use-credentials" -->
+        <!-- meta name="theme-color" content="#ffffff" -->
+        <link href="../css/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="../css/theme/ios7_Ios7_JQM_1_4_Theme/ios7_Ios7_JQM_1_4_Theme.css" rel="stylesheet"
+        />
+        <link href="../libs/apperyio/iphone-fix.css" rel="stylesheet" type="text/css" />
+        <link href="../libs/jquerymobile/1.4.5/jquery.mobile.structure-1.4.5.css" rel="stylesheet"
+        />
+        <link type="text/css" rel="stylesheet" href="../css/PDFPreview.css" />
+        <link type="text/css" rel="stylesheet" href="../css/styling1.css" />
+        <link type="text/css" rel="stylesheet" href="../css/Reports.css" />
+        <link type="text/css" rel="stylesheet" href="../css/loginFlowCSS.css" />
+        <link type="text/css" rel="stylesheet" href="../css/Navbar.css" />
+        <!-- Uncomment this script to activate service worker -->
+        <!-- <script>
+        if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('../sw.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.error('Error', err));
+        }
+        </script>
+        -->
+        <script type="text/javascript" src="../libs/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="../libs/store/json2.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-ajaxTransport.js">
+        </script>
+        <script type="text/javascript">
+            $(document).bind("mobileinit", function() {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1) {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                } else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1) {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                } else if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
+                    $.mobile.hashListeningEnabled = false;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="../libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.js">
+        </script>
+        <script type="text/javascript" src="../libs/apperyio/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="../libs/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/appery.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/login.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="../get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="../cordova.js">
+        </script>
+        <script type="text/javascript">
+            if (typeof cordova !== "undefined" && cordova.platformId === 'ios') {
+                document.documentElement.style.setProperty('--iphone-safe-area-inset-top', '44px');
+                document.documentElement.style.setProperty('--iphone-safe-area-inset-bottom', '34px');
+            }
+        </script>
+        <link href="../libs/apperyio/mobilebase.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="../js/services/model.js">
+        </script>
+        <script type="text/javascript" src="../js/Helper.js">
+        </script>
+        <script type="text/javascript" src="../js/services/service.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/databaseUtils.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+        </script>
+        <div data-role="page" style="min-height:686px;" dsid="addMyStudents" id="addMyStudents"
+        class="type-interior" data-theme="b">
+            <!-- mobilecontainer -->
+            <div data-role="content" id="addMyStudents_mobilecontainer" name="mobilecontainer"
+            class="addMyStudents_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="b">
+                <link href="addMyStudents.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="addMyStudents.js">
+                </script>
+                <!-- mobilegrid_136 -->
+                <div class="addMyStudents_mobilegrid_136_wrapper" data-wrapper-for="mobilegrid_136">
+                    <table id="addMyStudents_mobilegrid_136" class="addMyStudents_mobilegrid_136" dsid="mobilegrid_136"
+                    name="mobilegrid_136" cellpadding=0 cellspacing=0>
+                        <col style="width:54px;" />
+                        <col style="width:auto;" />
+                        <tr class="addMyStudents_mobilegrid_136_row_0">
+                            <!-- mobilegridcell_137 -->
+                            <td id="addMyStudents_mobilegridcell_137" name="mobilegridcell_137" class="addMyStudents_mobilegridcell_137"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilebutton_141 --><!--
+                                    --><a data-role="button" name="mobilebutton_141" dsid="mobilebutton_141" class="backButtonIcon  addMyStudents_mobilebutton_141"
+                                    style='min-height:20px; ' id="addMyStudents_mobilebutton_141" data-corners="true"
+                                    data-icon="carat-l" data-iconpos="notext" x-apple-data-detectors="false" data-mini="false"
+                                    data-theme="b" tabindex="11">
+                                    Button
+                                    </a>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_138 -->
+                            <td id="addMyStudents_mobilegridcell_138" name="mobilegridcell_138" class="addMyStudents_mobilegridcell_138"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_41 -->
+                                    <div name="mobilelabel_41" id="addMyStudents_mobilelabel_41" dsid="mobilelabel_41"
+                                    data-role="appery_label" class="addMyStudents_mobilelabel_41">
+                                        Add Students to My Club
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilelabel_35 -->
+                <div name="mobilelabel_35" id="addMyStudents_mobilelabel_35" dsid="mobilelabel_35"
+                data-role="appery_label" class="addMyStudents_mobilelabel_35">
+                    Search for students by region OR learning pod:
+                </div>
+                <!-- podSelectMenu -->
+                <div data-role="fieldcontain" class="addMyStudents_podSelectMenu ">
+                    <select name="podSelectMenu" id="addMyStudents_podSelectMenu" dsid="podSelectMenu"
+                    data-theme="g" data-role="appery_selectmenu" data-inline="false" data-mini="false"
+                    data-icon="carat-d" data-iconpos="right" data-native-menu="true" tabindex="16" appery-class="addMyStudents_podSelectMenu">
+                        <option id="addMyStudents_podSelectMenu-0" value="-" reRender="podSelectMenu" dsid="podSelectMenu-0"
+                        selected="selected">
+                            Select Learning Pod
+                        </option>
+                    </select>
+                </div>
+                <!-- mobilelabel_153 -->
+                <div name="mobilelabel_153" id="addMyStudents_mobilelabel_153" dsid="mobilelabel_153"
+                data-role="appery_label" class="addMyStudents_mobilelabel_153">
+                    or
+                </div>
+                <!-- regionSelectMenu -->
+                <div data-role="fieldcontain" class="addMyStudents_regionSelectMenu ">
+                    <select name="regionSelectMenu" id="addMyStudents_regionSelectMenu" dsid="regionSelectMenu"
+                    data-theme="a" data-role="appery_selectmenu" data-inline="false" data-mini="false"
+                    data-icon="carat-d" data-iconpos="right" data-native-menu="true" tabindex="4" appery-class="addMyStudents_regionSelectMenu">
+                        <option id="addMyStudents_regionSelectMenu-0" value="" reRender="regionSelectMenu"
+                        dsid="regionSelectMenu-0" selected="selected">
+                            Select Region
+                        </option>
+                        <option id="addMyStudents_regionSelectMenu-1" value="1" reRender="regionSelectMenu"
+                        dsid="regionSelectMenu-1">
+                            1
+                        </option>
+                        <option id="addMyStudents_regionSelectMenu-2" value="2" reRender="regionSelectMenu"
+                        dsid="regionSelectMenu-2">
+                            2
+                        </option>
+                        <option id="addMyStudents_regionSelectMenu-3" value="3" reRender="regionSelectMenu"
+                        dsid="regionSelectMenu-3">
+                            3
+                        </option>
+                        <option id="addMyStudents_regionSelectMenu-4" value="4" reRender="regionSelectMenu"
+                        dsid="regionSelectMenu-4">
+                            4
+                        </option>
+                        <option id="addMyStudents_regionSelectMenu-5" value="5" reRender="regionSelectMenu"
+                        dsid="regionSelectMenu-5">
+                            5
+                        </option>
+                        <option id="addMyStudents_regionSelectMenu-6" value="6" reRender="regionSelectMenu"
+                        dsid="regionSelectMenu-6">
+                            6
+                        </option>
+                        <option id="addMyStudents_regionSelectMenu-7" value="7" reRender="regionSelectMenu"
+                        dsid="regionSelectMenu-7">
+                            7
+                        </option>
+                        <option id="addMyStudents_regionSelectMenu-8" value="8" reRender="regionSelectMenu"
+                        dsid="regionSelectMenu-8">
+                            8
+                        </option>
+                        <option id="addMyStudents_regionSelectMenu-9" value="9" reRender="regionSelectMenu"
+                        dsid="regionSelectMenu-9">
+                            9
+                        </option>
+                        <option id="addMyStudents_regionSelectMenu-10" value="10" reRender="regionSelectMenu"
+                        dsid="regionSelectMenu-10">
+                            10
+                        </option>
+                    </select>
+                </div>
+                <!-- resultsLabel -->
+                <div name="resultsLabel" id="addMyStudents_resultsLabel" dsid="resultsLabel" data-role="appery_label"
+                class="addMyStudents_resultsLabel">
+                </div>
+                <!-- podChose -->
+                <div name="podChose" id="addMyStudents_podChose" dsid="podChose" data-role="appery_label"
+                class="addMyStudents_podChose">
+                </div>
+                <!-- mobilegrid_2 -->
+                <div class="addMyStudents_mobilegrid_2_wrapper" data-wrapper-for="mobilegrid_2">
+                    <table id="addMyStudents_mobilegrid_2" class="addMyStudents_mobilegrid_2" dsid="mobilegrid_2"
+                    name="mobilegrid_2" cellpadding=0 cellspacing=0>
+                        <col style="width:142px;" />
+                        <col style="width:auto;" />
+                        <col style="width:62px;" />
+                        <col style="width:auto;" />
+                        <tr class="addMyStudents_mobilegrid_2_row_0">
+                            <!-- mobilegridcell_3 -->
+                            <td id="addMyStudents_mobilegridcell_3" name="mobilegridcell_3" class="addMyStudents_mobilegridcell_3"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_8 -->
+                                    <div name="mobilelabel_8" id="addMyStudents_mobilelabel_8" dsid="mobilelabel_8"
+                                    data-role="appery_label" class="addMyStudents_mobilelabel_8">
+                                        Name
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_7 -->
+                            <td id="addMyStudents_mobilegridcell_7" name="mobilegridcell_7" class="addMyStudents_mobilegridcell_7"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_9 -->
+                                    <div name="mobilelabel_9" id="addMyStudents_mobilelabel_9" dsid="mobilelabel_9"
+                                    data-role="appery_label" class="addMyStudents_mobilelabel_9">
+                                        Phone
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_10 -->
+                            <td id="addMyStudents_mobilegridcell_10" name="mobilegridcell_10" class="addMyStudents_mobilegridcell_10"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_11 -->
+                                    <div name="mobilelabel_11" id="addMyStudents_mobilelabel_11" dsid="mobilelabel_11"
+                                    data-role="appery_label" class="addMyStudents_mobilelabel_11">
+                                        Grade
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_57 -->
+                            <td id="addMyStudents_mobilegridcell_57" name="mobilegridcell_57" class="addMyStudents_mobilegridcell_57"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- searchResultGrid -->
+                <div class="addMyStudents_searchResultGrid_wrapper" data-wrapper-for="searchResultGrid">
+                    <table id="addMyStudents_searchResultGrid" class="addMyStudents_searchResultGrid"
+                    dsid="searchResultGrid" name="searchResultGrid" cellpadding=0 cellspacing=0>
+                        <col style="width:142px;" />
+                        <col style="width:auto;" />
+                        <col style="width:62px;" />
+                        <col style="width:auto;" />
+                        <tr class="addMyStudents_searchResultGrid_row_0">
+                            <!-- mobilegridcell_26 -->
+                            <td id="addMyStudents_mobilegridcell_26" name="mobilegridcell_26" class="addMyStudents_mobilegridcell_26"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- searchResultName -->
+                                    <div name="searchResultName" id="addMyStudents_searchResultName" dsid="searchResultName"
+                                    data-role="appery_label" class="addMyStudents_searchResultName">
+                                    </div>
+                                    <!-- searchResultLastName -->
+                                    <div name="searchResultLastName" id="addMyStudents_searchResultLastName" dsid="searchResultLastName"
+                                    data-role="appery_label" class="addMyStudents_searchResultLastName">
+                                    </div>
+                                    <!-- podName -->
+                                    <div name="podName" id="addMyStudents_podName" dsid="podName" data-role="appery_label"
+                                    class="addMyStudents_podName">
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_27 -->
+                            <td id="addMyStudents_mobilegridcell_27" name="mobilegridcell_27" class="addMyStudents_mobilegridcell_27"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- searchResultPhone -->
+                                    <div name="searchResultPhone" id="addMyStudents_searchResultPhone" dsid="searchResultPhone"
+                                    data-role="appery_label" class="addMyStudents_searchResultPhone">
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_30 -->
+                            <td id="addMyStudents_mobilegridcell_30" name="mobilegridcell_30" class="addMyStudents_mobilegridcell_30"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- searchResultGrade -->
+                                    <div name="searchResultGrade" id="addMyStudents_searchResultGrade" dsid="searchResultGrade"
+                                    data-role="appery_label" class="addMyStudents_searchResultGrade">
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_36 -->
+                            <td id="addMyStudents_mobilegridcell_36" name="mobilegridcell_36" class="addMyStudents_mobilegridcell_36"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- addButton --><!--
+                                    --><a data-role="button" name="addButton" dsid="addButton" class="addMyStudents_addButton"
+                                    id="addMyStudents_addButton" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                    x-apple-data-detectors="false" data-inline="true" data-mini="true" data-theme="b"
+                                    tabindex="3">
+                                    + Add
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilelabel_40 -->
+                <div name="mobilelabel_40" id="addMyStudents_mobilelabel_40" dsid="mobilelabel_40"
+                data-role="appery_label" class="addMyStudents_mobilelabel_40">
+                    My Students
+                </div>
+                <!-- mobilegrid_58 -->
+                <div class="addMyStudents_mobilegrid_58_wrapper" data-wrapper-for="mobilegrid_58">
+                    <table id="addMyStudents_mobilegrid_58" class="addMyStudents_mobilegrid_58" dsid="mobilegrid_58"
+                    name="mobilegrid_58" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="addMyStudents_mobilegrid_58_row_0">
+                            <!-- mobilegridcell_59 -->
+                            <td id="addMyStudents_mobilegridcell_59" name="mobilegridcell_59" class="addMyStudents_mobilegridcell_59"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_64 -->
+                                    <div name="mobilelabel_64" id="addMyStudents_mobilelabel_64" dsid="mobilelabel_64"
+                                    data-role="appery_label" class="addMyStudents_mobilelabel_64">
+                                        Name
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_60 -->
+                            <td id="addMyStudents_mobilegridcell_60" name="mobilegridcell_60" class="addMyStudents_mobilegridcell_60"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_66 -->
+                                    <div name="mobilelabel_66" id="addMyStudents_mobilelabel_66" dsid="mobilelabel_66"
+                                    data-role="appery_label" class="addMyStudents_mobilelabel_66">
+                                        Grade
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_63 -->
+                            <td id="addMyStudents_mobilegridcell_63" name="mobilegridcell_63" class="addMyStudents_mobilegridcell_63"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_68 -->
+                                    <div name="mobilelabel_68" id="addMyStudents_mobilelabel_68" dsid="mobilelabel_68"
+                                    data-role="appery_label" class="addMyStudents_mobilelabel_68">
+                                        Points
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_67 -->
+                            <td id="addMyStudents_mobilegridcell_67" name="mobilegridcell_67" class="addMyStudents_mobilegridcell_67"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- existingStudentGrid -->
+                <div class="addMyStudents_existingStudentGrid_wrapper" data-wrapper-for="existingStudentGrid">
+                    <table id="addMyStudents_existingStudentGrid" class="roundRedGrid  addMyStudents_existingStudentGrid"
+                    dsid="existingStudentGrid" name="existingStudentGrid" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="addMyStudents_existingStudentGrid_row_0">
+                            <!-- mobilegridcell_13 -->
+                            <td id="addMyStudents_mobilegridcell_13" name="mobilegridcell_13" class="addMyStudents_mobilegridcell_13"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- studentName_f -->
+                                    <div name="studentName_f" id="addMyStudents_studentName_f" dsid="studentName_f"
+                                    data-role="appery_label" class="addMyStudents_studentName_f">
+                                    </div>
+                                    <!-- studentName_l -->
+                                    <div name="studentName_l" id="addMyStudents_studentName_l" dsid="studentName_l"
+                                    data-role="appery_label" class="addMyStudents_studentName_l">
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_14 -->
+                            <td id="addMyStudents_mobilegridcell_14" name="mobilegridcell_14" class="addMyStudents_mobilegridcell_14"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- villageLabel -->
+                                    <div name="villageLabel" id="addMyStudents_villageLabel" dsid="villageLabel" data-role="appery_label"
+                                    class="addMyStudents_villageLabel">
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_17 -->
+                            <td id="addMyStudents_mobilegridcell_17" name="mobilegridcell_17" class="addMyStudents_mobilegridcell_17"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- pointsNumber -->
+                                    <div name="pointsNumber" id="addMyStudents_pointsNumber" dsid="pointsNumber" data-role="appery_label"
+                                    class="addMyStudents_pointsNumber">
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_69 -->
+                            <td id="addMyStudents_mobilegridcell_69" name="mobilegridcell_69" class="addMyStudents_mobilegridcell_69"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- moreButton --><!--
+                                    --><a data-role="button" name="moreButton" dsid="moreButton" class="redSimpleButton  addMyStudents_moreButton"
+                                    id="addMyStudents_moreButton" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                    x-apple-data-detectors="false" data-mini="false" data-theme="g" tabindex="10">
+                                    More
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- moreStudentInfoGrid -->
+            <div data-role="popup" name="moreStudentInfoGrid" dsid="moreStudentInfoGrid" id="addMyStudents_moreStudentInfoGrid"
+            class="addMyStudents_moreStudentInfoGrid" data-corners="true" data-dismissible="true"
+            data-overlay-theme="" data-theme="" data-shadow="true" data-tolerance="30,15,30,15">
+                <div class="ui-popup-content-wrapper">
+                    <!-- studentNamePopup -->
+                    <div name="studentNamePopup" id="addMyStudents_studentNamePopup" dsid="studentNamePopup"
+                    data-role="appery_label" class="addMyStudents_studentNamePopup">
+                    </div>
+                    <!-- student_usern -->
+                    <div name="student_usern" id="addMyStudents_student_usern" dsid="student_usern"
+                    data-role="appery_label" class="addMyStudents_student_usern">
+                    </div>
+                    <!-- phoneNumber -->
+                    <div name="phoneNumber" id="addMyStudents_phoneNumber" dsid="phoneNumber" data-role="appery_label"
+                    class="addMyStudents_phoneNumber">
+                    </div>
+                    <!-- program -->
+                    <div name="program" id="addMyStudents_program" dsid="program" data-role="appery_label"
+                    class="addMyStudents_program">
+                    </div>
+                    <!-- grade -->
+                    <div name="grade" id="addMyStudents_grade" dsid="grade" data-role="appery_label"
+                    class="addMyStudents_grade">
+                    </div>
+                    <!-- mobilebutton_142 --><!--
+                    --><a data-role="button" name="mobilebutton_142" dsid="mobilebutton_142" class="redSmallButton  addMyStudents_mobilebutton_142"
+                    id="addMyStudents_mobilebutton_142" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                    x-apple-data-detectors="false" data-inline="true" data-mini="false" data-theme="b"
+                    tabindex="12">
+                    Reset Password
+                    </a><!--
+                    --><!-- mobilegrid_143 -->
+                    <div class="addMyStudents_mobilegrid_143_wrapper" data-wrapper-for="mobilegrid_143">
+                        <table id="addMyStudents_mobilegrid_143" class="roundRedGrid  addMyStudents_mobilegrid_143"
+                        dsid="mobilegrid_143" name="mobilegrid_143" cellpadding=0 cellspacing=0>
+                            <col style="width:auto;" />
+                            <tr class="addMyStudents_mobilegrid_143_row_0">
+                                <!-- mobilegridcell_144 -->
+                                <td id="addMyStudents_mobilegridcell_144" name="mobilegridcell_144" class="addMyStudents_mobilegridcell_144"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- mobilelabel_150 -->
+                                        <div name="mobilelabel_150" id="addMyStudents_mobilelabel_150" dsid="mobilelabel_150"
+                                        data-role="appery_label" class="addMyStudents_mobilelabel_150">
+                                            Please verify your username
+                                        </div>
+                                        <!-- PR_username -->
+                                        <div data-role="fieldcontain" class="addMyStudents_PR_username ">
+                                            <input type="text" name="PR_username" dsid="PR_username" value="" placeholder="Enter Username"
+                                            id="addMyStudents_PR_username" tabindex="14" multiple data-theme="b" data-mini="true"
+                                            class="addMyStudents_PR_username" />
+                                        </div>
+                                        <!-- mobilelabel_151 -->
+                                        <div name="mobilelabel_151" id="addMyStudents_mobilelabel_151" dsid="mobilelabel_151"
+                                        data-role="appery_label" class="addMyStudents_mobilelabel_151">
+                                            Enter NEW password for this student
+                                        </div>
+                                        <!-- PR_password -->
+                                        <div data-role="fieldcontain" class="addMyStudents_PR_password ">
+                                            <input type="text" name="PR_password" dsid="PR_password" value="" placeholder="Password"
+                                            id="addMyStudents_PR_password" tabindex="13" multiple data-theme="b" data-mini="true"
+                                            class="addMyStudents_PR_password" />
+                                        </div>
+                                        <!-- mobilebutton_152 --><!--
+                                        --><a data-role="button" name="mobilebutton_152" dsid="mobilebutton_152" class="redSimpleButton  addMyStudents_mobilebutton_152"
+                                        id="addMyStudents_mobilebutton_152" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                        x-apple-data-detectors="false" data-mini="false" data-theme="b" tabindex="15">
+                                        Submit Password Reset
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- successLabel -->
+                    <div name="successLabel" id="addMyStudents_successLabel" dsid="successLabel" data-role="appery_label"
+                    class="addMyStudents_successLabel">
+                        Updated Successfully!
+                    </div>
+                    <!-- mobilegrid_89 -->
+                    <div class="addMyStudents_mobilegrid_89_wrapper" data-wrapper-for="mobilegrid_89">
+                        <table id="addMyStudents_mobilegrid_89" class="addMyStudents_mobilegrid_89" dsid="mobilegrid_89"
+                        name="mobilegrid_89" cellpadding=0 cellspacing=0>
+                            <col style="width:auto;" />
+                            <col style="width:auto;" />
+                            <tr class="addMyStudents_mobilegrid_89_row_0">
+                                <!-- mobilegridcell_90 -->
+                                <td id="addMyStudents_mobilegridcell_90" name="mobilegridcell_90" class="addMyStudents_mobilegridcell_90"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- attendance --><!--
+                                        --><a data-role="button" name="attendance" dsid="attendance" class="clicked  addMyStudents_attendance"
+                                        id="addMyStudents_attendance" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                        x-apple-data-detectors="false" data-mini="true" data-theme="a" tabindex="8">
+                                        Attendance Log
+                                        </a>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_91 -->
+                                <td id="addMyStudents_mobilegridcell_91" name="mobilegridcell_91" class="addMyStudents_mobilegridcell_91"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- lessons --><!--
+                                        --><a data-role="button" name="lessons" dsid="lessons" class="notClicked  addMyStudents_lessons"
+                                        id="addMyStudents_lessons" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                        x-apple-data-detectors="false" data-mini="true" data-theme="b" tabindex="9">
+                                        Completed Lessons
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- attendanceGrid -->
+                    <div class="addMyStudents_attendanceGrid_wrapper" data-wrapper-for="attendanceGrid">
+                        <table id="addMyStudents_attendanceGrid" class="addMyStudents_attendanceGrid" dsid="attendanceGrid"
+                        name="attendanceGrid" cellpadding=0 cellspacing=0>
+                            <col style="width:auto;" />
+                            <tr class="addMyStudents_attendanceGrid_row_0">
+                                <!-- mobilegridcell_97 -->
+                                <td id="addMyStudents_mobilegridcell_97" name="mobilegridcell_97" class="addMyStudents_mobilegridcell_97"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- totalAttendance -->
+                                        <div name="totalAttendance" id="addMyStudents_totalAttendance" dsid="totalAttendance"
+                                        data-role="appery_label" class="addMyStudents_totalAttendance">
+                                        </div>
+                                        <!-- mobilegrid_101 -->
+                                        <div class="addMyStudents_mobilegrid_101_wrapper" data-wrapper-for="mobilegrid_101">
+                                            <table id="addMyStudents_mobilegrid_101" class="addMyStudents_mobilegrid_101" dsid="mobilegrid_101"
+                                            name="mobilegrid_101" cellpadding=0 cellspacing=0>
+                                                <col style="width:93px;" />
+                                                <col style="width:auto;" />
+                                                <tr class="addMyStudents_mobilegrid_101_row_0">
+                                                    <!-- mobilegridcell_102 -->
+                                                    <td id="addMyStudents_mobilegridcell_102" name="mobilegridcell_102" class="addMyStudents_mobilegridcell_102"
+                                                    colspan=1 rowspan=1>
+                                                        <div class="cell-wrapper">
+                                                            <!-- mobilelabel_106 -->
+                                                            <div name="mobilelabel_106" id="addMyStudents_mobilelabel_106" dsid="mobilelabel_106"
+                                                            data-role="appery_label" class="addMyStudents_mobilelabel_106">
+                                                                Date
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <!-- mobilegridcell_103 -->
+                                                    <td id="addMyStudents_mobilegridcell_103" name="mobilegridcell_103" class="addMyStudents_mobilegridcell_103"
+                                                    colspan=1 rowspan=1>
+                                                        <div class="cell-wrapper">
+                                                            <!-- mobilelabel_107 -->
+                                                            <div name="mobilelabel_107" id="addMyStudents_mobilelabel_107" dsid="mobilelabel_107"
+                                                            data-role="appery_label" class="addMyStudents_mobilelabel_107">
+                                                                Status
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <!-- repeatAttendanceGrid -->
+                                        <div class="addMyStudents_repeatAttendanceGrid_wrapper" data-wrapper-for="repeatAttendanceGrid">
+                                            <table id="addMyStudents_repeatAttendanceGrid" class="addMyStudents_repeatAttendanceGrid"
+                                            dsid="repeatAttendanceGrid" name="repeatAttendanceGrid" cellpadding=0 cellspacing=0>
+                                                <col style="width:93px;" />
+                                                <col style="width:auto;" />
+                                                <tr class="addMyStudents_repeatAttendanceGrid_row_0">
+                                                    <!-- mobilegridcell_109 -->
+                                                    <td id="addMyStudents_mobilegridcell_109" name="mobilegridcell_109" class="addMyStudents_mobilegridcell_109"
+                                                    colspan=1 rowspan=1>
+                                                        <div class="cell-wrapper">
+                                                            <!-- date -->
+                                                            <div name="date" id="addMyStudents_date" dsid="date" data-role="appery_label" class="addMyStudents_date">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <!-- mobilegridcell_110 -->
+                                                    <td id="addMyStudents_mobilegridcell_110" name="mobilegridcell_110" class="addMyStudents_mobilegridcell_110"
+                                                    colspan=1 rowspan=1>
+                                                        <div class="cell-wrapper">
+                                                            <!-- status -->
+                                                            <div name="status" id="addMyStudents_status" dsid="status" data-role="appery_label"
+                                                            class="addMyStudents_status">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- lessonsGrid -->
+                    <div class="addMyStudents_lessonsGrid_wrapper" data-wrapper-for="lessonsGrid">
+                        <table id="addMyStudents_lessonsGrid" class="addMyStudents_lessonsGrid" dsid="lessonsGrid"
+                        name="lessonsGrid" cellpadding=0 cellspacing=0>
+                            <col style="width:auto;" />
+                            <tr class="addMyStudents_lessonsGrid_row_0">
+                                <!-- mobilegridcell_115 -->
+                                <td id="addMyStudents_mobilegridcell_115" name="mobilegridcell_115" class="addMyStudents_mobilegridcell_115"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- lessonsCompleteLabel -->
+                                        <div name="lessonsCompleteLabel" id="addMyStudents_lessonsCompleteLabel" dsid="lessonsCompleteLabel"
+                                        data-role="appery_label" class="addMyStudents_lessonsCompleteLabel">
+                                        </div>
+                                        <!-- mobilegrid_120 -->
+                                        <div class="addMyStudents_mobilegrid_120_wrapper" data-wrapper-for="mobilegrid_120">
+                                            <table id="addMyStudents_mobilegrid_120" class="addMyStudents_mobilegrid_120" dsid="mobilegrid_120"
+                                            name="mobilegrid_120" cellpadding=0 cellspacing=0>
+                                                <col style="width:93px;" />
+                                                <col style="width:auto;" />
+                                                <tr class="addMyStudents_mobilegrid_120_row_0">
+                                                    <!-- mobilegridcell_121 -->
+                                                    <td id="addMyStudents_mobilegridcell_121" name="mobilegridcell_121" class="addMyStudents_mobilegridcell_121"
+                                                    colspan=1 rowspan=1>
+                                                        <div class="cell-wrapper">
+                                                            <!-- mobilelabel_125 -->
+                                                            <div name="mobilelabel_125" id="addMyStudents_mobilelabel_125" dsid="mobilelabel_125"
+                                                            data-role="appery_label" class="addMyStudents_mobilelabel_125">
+                                                                Subject
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <!-- mobilegridcell_122 -->
+                                                    <td id="addMyStudents_mobilegridcell_122" name="mobilegridcell_122" class="addMyStudents_mobilegridcell_122"
+                                                    colspan=1 rowspan=1>
+                                                        <div class="cell-wrapper">
+                                                            <!-- mobilelabel_126 -->
+                                                            <div name="mobilelabel_126" id="addMyStudents_mobilelabel_126" dsid="mobilelabel_126"
+                                                            data-role="appery_label" class="addMyStudents_mobilelabel_126">
+                                                                Topic
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <!-- lessonsGridRepeat -->
+                                        <div class="addMyStudents_lessonsGridRepeat_wrapper" data-wrapper-for="lessonsGridRepeat">
+                                            <table id="addMyStudents_lessonsGridRepeat" class="addMyStudents_lessonsGridRepeat"
+                                            dsid="lessonsGridRepeat" name="lessonsGridRepeat" cellpadding=0 cellspacing=0>
+                                                <col style="width:93px;" />
+                                                <col style="width:177px;" />
+                                                <col style="width:auto;" />
+                                                <tr class="addMyStudents_lessonsGridRepeat_row_0">
+                                                    <!-- mobilegridcell_128 -->
+                                                    <td id="addMyStudents_mobilegridcell_128" name="mobilegridcell_128" class="addMyStudents_mobilegridcell_128"
+                                                    colspan=1 rowspan=1>
+                                                        <div class="cell-wrapper">
+                                                            <!-- subject -->
+                                                            <div name="subject" id="addMyStudents_subject" dsid="subject" data-role="appery_label"
+                                                            class="addMyStudents_subject">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <!-- mobilegridcell_129 -->
+                                                    <td id="addMyStudents_mobilegridcell_129" name="mobilegridcell_129" class="addMyStudents_mobilegridcell_129"
+                                                    colspan=1 rowspan=1>
+                                                        <div class="cell-wrapper">
+                                                            <!-- topic -->
+                                                            <div name="topic" id="addMyStudents_topic" dsid="topic" data-role="appery_label"
+                                                            class="addMyStudents_topic">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <!-- mobilegridcell_134 -->
+                                                    <td id="addMyStudents_mobilegridcell_134" name="mobilegridcell_134" class="addMyStudents_mobilegridcell_134"
+                                                    colspan=1 rowspan=1>
+                                                        <div class="cell-wrapper">
+                                                            <!-- mobilelabel_135 -->
+                                                            <div name="mobilelabel_135" id="addMyStudents_mobilelabel_135" dsid="mobilelabel_135"
+                                                            data-role="appery_label" class="addMyStudents_mobilelabel_135">
+                                                                DONE
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

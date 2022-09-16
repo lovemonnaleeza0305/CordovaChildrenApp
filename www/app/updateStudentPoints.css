@@ -1,0 +1,270 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("../libs/jquerymobile/1.4.5/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer */
+.ui-content.updateStudentPoints_mobilecontainer {
+	padding: 20px 5px 15px 5px;
+}
+/* mobilegrid_35 */
+.updateStudentPoints_mobilegrid_35 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 160px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.updateStudentPoints_mobilegrid_35_wrapper {
+
+}
+.updateStudentPoints_mobilegrid_35 > tr > td {
+	vertical-align: top;
+}
+.updateStudentPoints_mobilegrid_35_row_0, .updateStudentPoints_mobilegrid_35_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_36 */
+.updateStudentPoints_mobilegridcell_36 {
+	height:30px !important;
+	width:50px;
+	padding: 2px 2px 2px 2px;
+}
+.updateStudentPoints_mobilegridcell_36 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilebutton_40 */
+#updateStudentPoints_mobilebutton_40 {
+
+}
+.ui-btn.updateStudentPoints_mobilebutton_40 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_37 */
+.updateStudentPoints_mobilegridcell_37 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.updateStudentPoints_mobilegridcell_37 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_41 */
+.updateStudentPoints_mobilelabel_41 {
+	text-decoration: none; font-weight: normal; color: #ffffff; text-align: left; font-family: Helvetica; font-size: 20px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegrid_9 */
+.updateStudentPoints_mobilegrid_9 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.updateStudentPoints_mobilegrid_9_wrapper {
+
+}
+.updateStudentPoints_mobilegrid_9 > tr > td {
+	vertical-align: top;
+}
+.updateStudentPoints_mobilegrid_9_row_0, .updateStudentPoints_mobilegrid_9_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_10 */
+.updateStudentPoints_mobilegridcell_10 {
+	height:30px !important;
+	width:90px;
+	padding: 2px 0px 2px 0px;
+}
+.updateStudentPoints_mobilegridcell_10 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_16 */
+.updateStudentPoints_mobilelabel_16 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 12px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_11 */
+.updateStudentPoints_mobilegridcell_11 {
+	height:30px !important;
+	width:70px;
+	padding: 2px 0px 2px 0px;
+}
+.updateStudentPoints_mobilegridcell_11 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_17 */
+.updateStudentPoints_mobilelabel_17 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 12px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_14 */
+.updateStudentPoints_mobilegridcell_14 {
+	height:30px !important;
+	width:90px;
+	padding: 2px 0px 2px 0px;
+}
+.updateStudentPoints_mobilegridcell_14 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_18 */
+.updateStudentPoints_mobilelabel_18 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 12px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_15 */
+.updateStudentPoints_mobilegridcell_15 {
+	height:30px !important;
+	width:115px;
+	padding: 2px 0px 2px 0px;
+}
+.updateStudentPoints_mobilegridcell_15 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_19 */
+.updateStudentPoints_mobilelabel_19 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 12px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_34 */
+.updateStudentPoints_mobilegridcell_34 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.updateStudentPoints_mobilegridcell_34 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilegrid_2 */
+.updateStudentPoints_mobilegrid_2 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.updateStudentPoints_mobilegrid_2_wrapper {
+
+}
+.updateStudentPoints_mobilegrid_2 > tr > td {
+	vertical-align: top;
+}
+.updateStudentPoints_mobilegrid_2_row_0, .updateStudentPoints_mobilegrid_2_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_3 */
+.updateStudentPoints_mobilegridcell_3 {
+	height:30px !important;
+	width:90px;
+	padding: 2px 2px 2px 2px;
+}
+.updateStudentPoints_mobilegridcell_3 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* firstName */
+.updateStudentPoints_firstName {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 14px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* lastName */
+.updateStudentPoints_lastName {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 12px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* attendance_id */
+.updateStudentPoints_attendance_id {
+	text-decoration: none; font-weight: normal; color: #963838; text-align: center; font-family: Helvetica; font-size: 12px;
+	margin: 4px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_4 */
+.updateStudentPoints_mobilegridcell_4 {
+	height:30px !important;
+	width:70px;
+	padding: 2px 2px 2px 2px;
+}
+.updateStudentPoints_mobilegridcell_4 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* date */
+.updateStudentPoints_date {
+	text-decoration: none; font-weight: normal; color: #3767ad; text-align: center; font-family: Helvetica; font-size: 13px;
+	margin: 10px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_7 */
+.updateStudentPoints_mobilegridcell_7 {
+	height:30px !important;
+	width:90px;
+	padding: 2px 2px 2px 2px;
+}
+.updateStudentPoints_mobilegridcell_7 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* projectPoints */
+.updateStudentPoints_projectPoints {
+	margin: 5px 5px 0px 5px;
+}
+/* mobilegridcell_8 */
+.updateStudentPoints_mobilegridcell_8 {
+	height:30px !important;
+	width:90px;
+	padding: 2px 2px 2px 2px;
+}
+.updateStudentPoints_mobilegridcell_8 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* participationPoints */
+.updateStudentPoints_participationPoints {
+	margin: 5px 5px 0px 5px;
+}
+/* mobilegridcell_32 */
+.updateStudentPoints_mobilegridcell_32 {
+	height:30px !important;
+	width:auto;
+	padding: 10px 2px 2px 2px;
+}
+.updateStudentPoints_mobilegridcell_32 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* updateButton */
+#updateStudentPoints_updateButton {
+
+}
+.ui-btn.updateStudentPoints_updateButton {
+	margin: 0px 0px 0px 0px;
+}
+/* mobilefooter */
+.updateStudentPoints_mobilefooter {
+	min-height:38px;
+}

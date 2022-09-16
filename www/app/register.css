@@ -1,0 +1,96 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("../libs/jquerymobile/1.4.5/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer */
+.ui-content.register_mobilecontainer {
+	padding: 20px 15px 15px 15px;
+}
+/* mobilebutton_17 */
+#register_mobilebutton_17 {
+
+}
+.ui-btn.register_mobilebutton_17 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilelabel_15 */
+.register_mobilelabel_15 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 120px 0px 10px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegrid_3 */
+.register_mobilegrid_3 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.register_mobilegrid_3_wrapper {
+
+}
+.register_mobilegrid_3 > tr > td {
+	vertical-align: top;
+}
+.register_mobilegrid_3_row_0, .register_mobilegrid_3_row_0 > td {
+	height: 30px
+}
+.register_mobilegrid_3_row_1, .register_mobilegrid_3_row_1 > td {
+	height: 30px
+}
+/* mobilegridcell_4 */
+.register_mobilegridcell_4 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.register_mobilegridcell_4 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* username_reg */
+.register_username_reg {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilelabel_13 */
+.register_mobilelabel_13 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 12px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_6 */
+.register_mobilegridcell_6 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.register_mobilegridcell_6 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* pass_reg */
+.register_pass_reg {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilelabel_14 */
+.register_mobilelabel_14 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 12px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilebutton_12 */
+#register_mobilebutton_12 {
+
+}
+.ui-btn.register_mobilebutton_12 {
+	margin: 20px 5px 4px 5px;
+}
+/* mobilefooter */
+.register_mobilefooter {
+	min-height:38px;
+}

@@ -1,0 +1,125 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("../libs/jquerymobile/1.4.5/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* close_button */
+#PDFPreview_close_button {
+
+}
+.ui-btn.PDFPreview_close_button {
+
+}
+/* mobilecontainer */
+.ui-content.PDFPreview_mobilecontainer {
+	padding: 15px 10px 20px 10px;
+}
+/* mobilegrid_6 */
+.PDFPreview_mobilegrid_6 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.PDFPreview_mobilegrid_6_wrapper {
+
+}
+.PDFPreview_mobilegrid_6 > tr > td {
+	vertical-align: top;
+}
+.PDFPreview_mobilegrid_6_row_0, .PDFPreview_mobilegrid_6_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_7 */
+.PDFPreview_mobilegridcell_7 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.PDFPreview_mobilegridcell_7 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilebutton_12 */
+#PDFPreview_mobilebutton_12 {
+
+}
+.ui-btn.PDFPreview_mobilebutton_12 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_11 */
+.PDFPreview_mobilegridcell_11 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.PDFPreview_mobilegridcell_11 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* completeButton */
+#PDFPreview_completeButton {
+
+}
+.ui-btn.PDFPreview_completeButton {
+	margin: 8px 0px 0px 10px;
+}
+/* alreadyMarkedLabel */
+.PDFPreview_alreadyMarkedLabel {
+	text-decoration: none; font-weight: normal; color: #ff572e; text-align: center; font-family: Helvetica; font-size: 11px;
+	margin: 10px 5px 10px 5px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* pdf_wrapper */
+.PDFPreview_pdf_wrapper {
+	margin: 0px 0px 0px 0px;
+	font-weight: normal;
+	width: 100%; height: auto;
+}
+div.PDFPreview_pdf_wrapper {
+	overflow: auto;
+}
+/* mobilefooter */
+.PDFPreview_mobilefooter {
+	min-height:38px;
+}
+/* plusTenPopup2 */
+.PDFPreview_plusTenPopup2 {
+	width: 60%;
+}
+div.PDFPreview_plusTenPopup2 {
+	max-height: 100vh;
+	box-sizing: border-box;
+}
+div.PDFPreview_plusTenPopup2 .ui-popup-content-wrapper {
+	width:100%;
+	height:100%;
+	max-height: 99vh;
+	overflow:auto;
+	box-sizing: border-box;
+	padding: 10px 10px 10px 10px;
+}
+/* mobilelabel_4 */
+.PDFPreview_mobilelabel_4 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 14px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilelabel_3 */
+.PDFPreview_mobilelabel_3 {
+	text-decoration: none; font-weight: normal; color: #ff572e; text-align: center; font-family: Helvetica; font-size: 32px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilelabel_5 */
+.PDFPreview_mobilelabel_5 {
+	text-decoration: none; font-weight: normal; color: #ffffff; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}

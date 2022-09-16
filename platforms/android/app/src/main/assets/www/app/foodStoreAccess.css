@@ -1,0 +1,200 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("../libs/jquerymobile/1.4.5/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer */
+.ui-content.foodStoreAccess_mobilecontainer {
+	padding: 20px 15px 15px 15px;
+}
+/* mobilegrid_72 */
+.foodStoreAccess_mobilegrid_72 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 150px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.foodStoreAccess_mobilegrid_72_wrapper {
+
+}
+.foodStoreAccess_mobilegrid_72 > tr > td {
+	vertical-align: top;
+}
+.foodStoreAccess_mobilegrid_72_row_0, .foodStoreAccess_mobilegrid_72_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_73 */
+.foodStoreAccess_mobilegridcell_73 {
+	height:30px !important;
+	width:50px;
+	padding: 2px 2px 2px 2px;
+}
+.foodStoreAccess_mobilegridcell_73 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilebutton_77 */
+#foodStoreAccess_mobilebutton_77 {
+
+}
+.ui-btn.foodStoreAccess_mobilebutton_77 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_74 */
+.foodStoreAccess_mobilegridcell_74 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.foodStoreAccess_mobilegridcell_74 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_14 */
+.foodStoreAccess_mobilelabel_14 {
+	text-decoration: none; font-weight: normal; color: #ffffff; text-align: left; font-family: Helvetica; font-size: 18px;
+	margin: 7px 0px 15px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegrid_211 */
+.foodStoreAccess_mobilegrid_211 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.foodStoreAccess_mobilegrid_211_wrapper {
+
+}
+.foodStoreAccess_mobilegrid_211 > tr > td {
+	vertical-align: top;
+}
+.foodStoreAccess_mobilegrid_211_row_0, .foodStoreAccess_mobilegrid_211_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_212 */
+.foodStoreAccess_mobilegridcell_212 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.foodStoreAccess_mobilegridcell_212 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_223 */
+.foodStoreAccess_mobilelabel_223 {
+	text-decoration: none; font-weight: bold; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_213 */
+.foodStoreAccess_mobilegridcell_213 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.foodStoreAccess_mobilegridcell_213 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_224 */
+.foodStoreAccess_mobilelabel_224 {
+	text-decoration: none; font-weight: bold; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_221 */
+.foodStoreAccess_mobilegridcell_221 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.foodStoreAccess_mobilegridcell_221 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* users_grid */
+.foodStoreAccess_users_grid {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.foodStoreAccess_users_grid_wrapper {
+
+}
+.foodStoreAccess_users_grid > tr > td {
+	vertical-align: top;
+}
+.foodStoreAccess_users_grid_row_0, .foodStoreAccess_users_grid_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_217 */
+.foodStoreAccess_mobilegridcell_217 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.foodStoreAccess_mobilegridcell_217 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* name_label */
+.foodStoreAccess_name_label {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_218 */
+.foodStoreAccess_mobilegridcell_218 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.foodStoreAccess_mobilegridcell_218 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* pod_label */
+.foodStoreAccess_pod_label {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_222 */
+.foodStoreAccess_mobilegridcell_222 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.foodStoreAccess_mobilegridcell_222 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* approve_button */
+#foodStoreAccess_approve_button {
+	display: none;
+}
+.ui-btn.foodStoreAccess_approve_button {
+	margin: 4px 5px 4px 5px;
+}
+/* disapprove_button */
+#foodStoreAccess_disapprove_button {
+	display: none;
+}
+.ui-btn.foodStoreAccess_disapprove_button {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilefooter */
+.foodStoreAccess_mobilefooter {
+	min-height:38px;
+}

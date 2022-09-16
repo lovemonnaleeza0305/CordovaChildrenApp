@@ -1,0 +1,255 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("../libs/jquerymobile/1.4.5/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer */
+.ui-content.paymentHistories_mobilecontainer {
+	padding: 20px 10px 15px 10px;
+}
+/* mobilegrid_28 */
+.paymentHistories_mobilegrid_28 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 160px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.paymentHistories_mobilegrid_28_wrapper {
+
+}
+.paymentHistories_mobilegrid_28 > tr > td {
+	vertical-align: top;
+}
+.paymentHistories_mobilegrid_28_row_0, .paymentHistories_mobilegrid_28_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_29 */
+.paymentHistories_mobilegridcell_29 {
+	height:30px !important;
+	width:50px;
+	padding: 2px 2px 2px 2px;
+}
+.paymentHistories_mobilegridcell_29 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilebutton_33 */
+#paymentHistories_mobilebutton_33 {
+
+}
+.ui-btn.paymentHistories_mobilebutton_33 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_30 */
+.paymentHistories_mobilegridcell_30 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.paymentHistories_mobilegridcell_30 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_34 */
+.paymentHistories_mobilelabel_34 {
+	text-decoration: none; font-weight: normal; color: #ffffff; text-align: left; font-family: Helvetica; font-size: 20px;
+	margin: 9px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegrid_17 */
+.paymentHistories_mobilegrid_17 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 10px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.paymentHistories_mobilegrid_17_wrapper {
+
+}
+.paymentHistories_mobilegrid_17 > tr > td {
+	vertical-align: top;
+}
+.paymentHistories_mobilegrid_17_row_0, .paymentHistories_mobilegrid_17_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_18 */
+.paymentHistories_mobilegridcell_18 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.paymentHistories_mobilegridcell_18 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_27 */
+.paymentHistories_mobilelabel_27 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 15px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_19 */
+.paymentHistories_mobilegridcell_19 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.paymentHistories_mobilegridcell_19 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_26 */
+.paymentHistories_mobilelabel_26 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 15px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_22 */
+.paymentHistories_mobilegridcell_22 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.paymentHistories_mobilegridcell_22 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_25 */
+.paymentHistories_mobilelabel_25 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 15px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_23 */
+.paymentHistories_mobilegridcell_23 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.paymentHistories_mobilegridcell_23 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_24 */
+.paymentHistories_mobilelabel_24 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 15px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegrid_2 */
+.paymentHistories_mobilegrid_2 {
+	height: auto;
+	width:100%;
+	margin: 0px 0px 8px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.paymentHistories_mobilegrid_2_wrapper {
+
+}
+.paymentHistories_mobilegrid_2 > tr > td {
+	vertical-align: top;
+}
+.paymentHistories_mobilegrid_2_row_0, .paymentHistories_mobilegrid_2_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_3 */
+.paymentHistories_mobilegridcell_3 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 10px;
+}
+.paymentHistories_mobilegridcell_3 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* firstName */
+.paymentHistories_firstName {
+	text-decoration: none; font-weight: normal; color: #ff572e; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* lastName */
+.paymentHistories_lastName {
+	text-decoration: none; font-weight: normal; color: #ff725e; text-align: left; font-family: Helvetica; font-size: 14px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* program */
+.paymentHistories_program {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: left; font-family: Helvetica; font-size: 12px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_4 */
+.paymentHistories_mobilegridcell_4 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.paymentHistories_mobilegridcell_4 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* receiptNumber */
+.paymentHistories_receiptNumber {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 13px;
+	margin: 10px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_9 */
+.paymentHistories_mobilegridcell_9 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.paymentHistories_mobilegridcell_9 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* typeLabel */
+.paymentHistories_typeLabel {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 13px;
+	margin: 10px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_14 */
+.paymentHistories_mobilegridcell_14 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 10px 2px 2px;
+}
+.paymentHistories_mobilegridcell_14 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* statusLabel */
+.paymentHistories_statusLabel {
+	text-decoration: none; font-weight: normal; color: #4d9dd6; text-align: left; font-family: Helvetica; font-size: 13px;
+	margin: 10px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* submissionDate */
+.paymentHistories_submissionDate {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: left; font-family: Helvetica; font-size: 12px;
+	margin: 0px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilefooter */
+.paymentHistories_mobilefooter {
+	min-height:38px;
+}

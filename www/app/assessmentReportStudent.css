@@ -1,0 +1,144 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("../libs/jquerymobile/1.4.5/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer */
+.ui-content.assessmentReportStudent_mobilecontainer {
+	padding: 20px 15px 15px 15px;
+}
+/* mobilegrid_44 */
+.assessmentReportStudent_mobilegrid_44 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 140px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.assessmentReportStudent_mobilegrid_44_wrapper {
+
+}
+.assessmentReportStudent_mobilegrid_44 > tr > td {
+	vertical-align: top;
+}
+.assessmentReportStudent_mobilegrid_44_row_0, .assessmentReportStudent_mobilegrid_44_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_45 */
+.assessmentReportStudent_mobilegridcell_45 {
+	height:30px !important;
+	width:50px;
+	padding: 2px 2px 2px 2px;
+}
+.assessmentReportStudent_mobilegridcell_45 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilebutton_49 */
+#assessmentReportStudent_mobilebutton_49 {
+
+}
+.ui-btn.assessmentReportStudent_mobilebutton_49 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_46 */
+.assessmentReportStudent_mobilegridcell_46 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.assessmentReportStudent_mobilegridcell_46 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_50 */
+.assessmentReportStudent_mobilelabel_50 {
+	text-decoration: none; font-weight: normal; color: #ffffff; text-align: left; font-family: Helvetica; font-size: 20px;
+	margin: 9px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* repeatGrid */
+.assessmentReportStudent_repeatGrid {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 8px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.assessmentReportStudent_repeatGrid_wrapper {
+
+}
+.assessmentReportStudent_repeatGrid > tr > td {
+	vertical-align: top;
+}
+.assessmentReportStudent_repeatGrid_row_0, .assessmentReportStudent_repeatGrid_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_55 */
+.assessmentReportStudent_mobilegridcell_55 {
+	height:30px !important;
+	width:184px;
+	padding: 5px 2px 5px 10px;
+}
+.assessmentReportStudent_mobilegridcell_55 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* subject_output */
+.assessmentReportStudent_subject_output {
+	text-decoration: none; font-weight: normal; color: #ff725e; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* timeElapsed */
+.assessmentReportStudent_timeElapsed {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: left; font-family: Helvetica; font-size: 14px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* dateCompleted */
+.assessmentReportStudent_dateCompleted {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 13px;
+	margin: 0px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_59 */
+.assessmentReportStudent_mobilegridcell_59 {
+	height:30px !important;
+	width:auto;
+	padding: 5px 10px 5px 2px;
+}
+.assessmentReportStudent_mobilegridcell_59 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* percentageCorrect */
+.assessmentReportStudent_percentageCorrect {
+	text-decoration: none; font-weight: normal; color: #333333; text-align: right; font-family: Helvetica; font-size: 17px;
+	margin: 4px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* totalCorrect */
+.assessmentReportStudent_totalCorrect {
+	text-decoration: none; font-weight: normal; color: #4d9dd6; text-align: right; font-family: Helvetica; font-size: 14px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* none */
+.assessmentReportStudent_none {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilefooter */
+.assessmentReportStudent_mobilefooter {
+	min-height:38px;
+}

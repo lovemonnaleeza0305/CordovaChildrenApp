@@ -1,0 +1,56 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-battery-status": {
+      "PACKAGE_NAME": "io.app.stemguyana"
+    },
+    "cordova-plugin-camera": {
+      "ANDROIDX_CORE_VERSION": "1.6.+",
+      "PACKAGE_NAME": "io.app.stemguyana"
+    },
+    "cordova-plugin-contacts": {
+      "PACKAGE_NAME": "io.app.stemguyana"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "io.app.stemguyana"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "io.app.stemguyana"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "io.app.stemguyana"
+    },
+    "cordova-plugin-geolocation": {
+      "GPS_REQUIRED": "true",
+      "PACKAGE_NAME": "io.app.stemguyana"
+    },
+    "cordova-plugin-globalization": {
+      "PACKAGE_NAME": "io.app.stemguyana"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "io.app.stemguyana"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "io.app.stemguyana"
+    },
+    "cordova-plugin-resource-generator": {
+      "PACKAGE_NAME": "io.app.stemguyana"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "io.app.stemguyana"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "io.app.stemguyana"
+    },
+    "cordova-plugin-wkwebview-engine-allowfileaccess": {
+      "PACKAGE_NAME": "io.app.stemguyana"
+    }
+  },
+  "dependent_plugins": {}
+}

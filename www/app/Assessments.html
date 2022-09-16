@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            Assessments
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- Enable all requests, inline styles, and eval() -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready data:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+        <!-- Uncomment link and meta tags below to activate PWA icons and theme color -->
+        <!-- link rel="manifest" href="../manifest.json" crossOrigin="use-credentials" -->
+        <!-- meta name="theme-color" content="#ffffff" -->
+        <link href="../css/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="../css/theme/ios7_Ios7_JQM_1_4_Theme/ios7_Ios7_JQM_1_4_Theme.css" rel="stylesheet"
+        />
+        <link href="../libs/apperyio/iphone-fix.css" rel="stylesheet" type="text/css" />
+        <link href="../libs/jquerymobile/1.4.5/jquery.mobile.structure-1.4.5.css" rel="stylesheet"
+        />
+        <link type="text/css" rel="stylesheet" href="../css/PDFPreview.css" />
+        <link type="text/css" rel="stylesheet" href="../css/styling1.css" />
+        <link type="text/css" rel="stylesheet" href="../css/Reports.css" />
+        <link type="text/css" rel="stylesheet" href="../css/loginFlowCSS.css" />
+        <link type="text/css" rel="stylesheet" href="../css/Navbar.css" />
+        <!-- Uncomment this script to activate service worker -->
+        <!-- <script>
+        if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('../sw.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.error('Error', err));
+        }
+        </script>
+        -->
+        <script type="text/javascript" src="../libs/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="../libs/store/json2.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-ajaxTransport.js">
+        </script>
+        <script type="text/javascript">
+            $(document).bind("mobileinit", function() {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1) {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                } else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1) {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                } else if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
+                    $.mobile.hashListeningEnabled = false;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="../libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.js">
+        </script>
+        <script type="text/javascript" src="../libs/apperyio/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="../libs/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/appery.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/login.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="../get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="../cordova.js">
+        </script>
+        <script type="text/javascript">
+            if (typeof cordova !== "undefined" && cordova.platformId === 'ios') {
+                document.documentElement.style.setProperty('--iphone-safe-area-inset-top', '44px');
+                document.documentElement.style.setProperty('--iphone-safe-area-inset-bottom', '34px');
+            }
+        </script>
+        <link href="../libs/apperyio/mobilebase.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="../js/services/model.js">
+        </script>
+        <script type="text/javascript" src="../js/Helper.js">
+        </script>
+        <script type="text/javascript" src="../js/services/service.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/databaseUtils.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="Assessments" id="Assessments"
+        class="type-interior" data-theme="b">
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Assessments_mobilecontainer" name="mobilecontainer"
+            class="Assessments_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="b">
+                <link href="Assessments.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="Assessments.js">
+                </script>
+                <!-- mobilegrid_11 -->
+                <div class="Assessments_mobilegrid_11_wrapper" data-wrapper-for="mobilegrid_11">
+                    <table id="Assessments_mobilegrid_11" class="Assessments_mobilegrid_11" dsid="mobilegrid_11"
+                    name="mobilegrid_11" cellpadding=0 cellspacing=0>
+                        <col style="width:54px;" />
+                        <col style="width:147px;" />
+                        <tr class="Assessments_mobilegrid_11_row_0">
+                            <!-- mobilegridcell_12 -->
+                            <td id="Assessments_mobilegridcell_12" name="mobilegridcell_12" class="Assessments_mobilegridcell_12"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilebutton_10 --><!--
+                                    --><a data-role="button" name="mobilebutton_10" dsid="mobilebutton_10" class="backButtonIcon  Assessments_mobilebutton_10"
+                                    style='min-height:20px; ' id="Assessments_mobilebutton_10" data-corners="true" data-icon="carat-l"
+                                    data-iconpos="notext" x-apple-data-detectors="false" data-mini="false" data-theme="b"
+                                    tabindex="5">
+                                    Back
+                                    </a>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_13 -->
+                            <td id="Assessments_mobilegridcell_13" name="mobilegridcell_13" class="Assessments_mobilegridcell_13"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_16 -->
+                                    <div name="mobilelabel_16" id="Assessments_mobilelabel_16" dsid="mobilelabel_16"
+                                    data-role="appery_label" class="Assessments_mobilelabel_16">
+                                        Assessments
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilegrid_4 -->
+                <div class="Assessments_mobilegrid_4_wrapper" data-wrapper-for="mobilegrid_4">
+                    <table id="Assessments_mobilegrid_4" class="Assessments_mobilegrid_4" dsid="mobilegrid_4"
+                    name="mobilegrid_4" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <tr class="Assessments_mobilegrid_4_row_0">
+                            <!-- mobilegridcell_5 -->
+                            <td id="Assessments_mobilegridcell_5" name="mobilegridcell_5" class="Assessments_mobilegridcell_5"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_17 -->
+                                    <div name="mobilelabel_17" id="Assessments_mobilelabel_17" dsid="mobilelabel_17"
+                                    data-role="appery_label" class="Assessments_mobilelabel_17">
+                                        Select grade and subject to search
+                                    </div>
+                                    <!-- subject_select -->
+                                    <div data-role="fieldcontain" class="Assessments_subject_select ">
+                                        <select name="subject_select" id="Assessments_subject_select" dsid="subject_select"
+                                        data-theme="b" data-role="appery_selectmenu" data-inline="false" data-mini="false"
+                                        data-icon="carat-d" data-iconpos="right" data-native-menu="true" tabindex="3" appery-class="Assessments_subject_select">
+                                            <option id="Assessments_subject_select-0" value="Maths" reRender="subject_select"
+                                            dsid="subject_select-0">
+                                                Maths
+                                            </option>
+                                            <option id="Assessments_subject_select-1" value="English" reRender="subject_select"
+                                            dsid="subject_select-1">
+                                                English
+                                            </option>
+                                            <option id="Assessments_subject_select-2" value="Science" reRender="subject_select"
+                                            dsid="subject_select-2">
+                                                Science
+                                            </option>
+                                            <option id="Assessments_subject_select-3" value="Integrated Science" reRender="subject_select"
+                                            dsid="subject_select-3">
+                                                Integrated Science
+                                            </option>
+                                            <option id="Assessments_subject_select-4" value="-" reRender="subject_select" dsid="subject_select-4"
+                                            selected="selected">
+                                                Select Subject
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="Assessments_mobilegrid_4_row_1">
+                            <!-- mobilegridcell_7 -->
+                            <td id="Assessments_mobilegridcell_7" name="mobilegridcell_7" class="Assessments_mobilegridcell_7"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- grade_select -->
+                                    <div data-role="fieldcontain" class="Assessments_grade_select ">
+                                        <select name="grade_select" id="Assessments_grade_select" dsid="grade_select" data-theme="b"
+                                        data-role="appery_selectmenu" data-inline="false" data-mini="false" data-icon="carat-d"
+                                        data-iconpos="right" data-native-menu="true" tabindex="4" appery-class="Assessments_grade_select">
+                                            <option id="Assessments_grade_select-0" value="1" reRender="grade_select" dsid="grade_select-0">
+                                                Grade 1
+                                            </option>
+                                            <option id="Assessments_grade_select-1" value="2" reRender="grade_select" dsid="grade_select-1">
+                                                Grade 2
+                                            </option>
+                                            <option id="Assessments_grade_select-2" value="3" reRender="grade_select" dsid="grade_select-2">
+                                                Grade 3
+                                            </option>
+                                            <option id="Assessments_grade_select-3" value="4" reRender="grade_select" dsid="grade_select-3">
+                                                Grade 4
+                                            </option>
+                                            <option id="Assessments_grade_select-4" value="5" reRender="grade_select" dsid="grade_select-4">
+                                                Grade 5
+                                            </option>
+                                            <option id="Assessments_grade_select-5" value="6" reRender="grade_select" dsid="grade_select-5">
+                                                Grade 6
+                                            </option>
+                                            <option id="Assessments_grade_select-6" value="7" reRender="grade_select" dsid="grade_select-6">
+                                                Grade 7
+                                            </option>
+                                            <option id="Assessments_grade_select-7" value="8" reRender="grade_select" dsid="grade_select-7">
+                                                Grade 8
+                                            </option>
+                                            <option id="Assessments_grade_select-8" value="9" reRender="grade_select" dsid="grade_select-8">
+                                                Grade 9
+                                            </option>
+                                            <option id="Assessments_grade_select-9" value="10" reRender="grade_select" dsid="grade_select-9">
+                                                Grade 10
+                                            </option>
+                                            <option id="Assessments_grade_select-10" value="-" reRender="grade_select" dsid="grade_select-10"
+                                            selected="selected">
+                                                Select Grade
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilebutton_9 --><!--
+                --><a data-role="button" name="mobilebutton_9" dsid="mobilebutton_9" class="redSimpleButton  Assessments_mobilebutton_9"
+                id="Assessments_mobilebutton_9" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="false" data-theme="b" tabindex="1">
+                Submit
+                </a>
+            </div>
+        </div>
+    </body>
+
+</html>

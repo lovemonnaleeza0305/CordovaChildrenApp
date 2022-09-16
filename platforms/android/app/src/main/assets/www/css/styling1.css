@@ -1,0 +1,66 @@
+.centerComponent {
+    margin: auto!important;
+}
+
+
+.prizeImage {
+ border-radius: 10px!important;  
+ margin: auto!important;
+}
+
+.leftGrid {
+    overflow:hidden!important;
+    float:left;
+}
+
+
+.attendanceDoneButton {
+    border: 1px;
+    border-color: #42a13a!important;
+    background: #42a13a!important;
+}
+
+.lessonCompletedButton {
+    border: 1px;
+    border-color: #42a13a!important;
+    background: #42a13a!important;
+}
+
+.checkedPoints {
+    border: 1px;
+    border-color: #f57e42!important;
+    background: #f57e42!important;
+}
+
+.alreadyAdded {
+    background: #149414 !important;
+    color: #ffffff!important;
+    border-width: 0px!important;
+}
+
+.clicked {
+    background: #2e97ff!important;
+    color: #ffffff!important;
+}
+
+.notClicked {
+    background: #ffffff!important;
+    color: #2e97ff!important;
+}
+
+.checkTendy {
+    border: 1px;
+    border-color: #42a13a!important;
+    background: #42a13a!important;
+    color: #fff!important;
+}
+
+
+#store_plusQty_button,
+#store_minusQty_button{
+	float:left;
+}
+
+.AdminFeedback_message_grid_wrapper:nth-child(odd){
+	background:rgb(200, 200,200, 0.5);
+}

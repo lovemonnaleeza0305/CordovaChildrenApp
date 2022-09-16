@@ -1,0 +1,10 @@
+#PDFPreview_mobilecontainer{
+	padding:0!important;
+}
+#PDFPreview_pdf_wrapper {
+    overflow: hidden;	
+}
+#PDFPreview_pdf_wrapper iframe{
+    width: 100%;
+    height: -webkit-calc(100vh - 55px);
+}

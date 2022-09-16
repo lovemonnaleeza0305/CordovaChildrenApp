@@ -1,0 +1,179 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("../libs/jquerymobile/1.4.5/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainerstem */
+.ui-content.Login_mobilecontainerstem {
+	padding: 180px 15px 15px 15px;
+}
+/* mobilelabel_35 */
+.Login_mobilelabel_35 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 15px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegrid_2 */
+.Login_mobilegrid_2 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.Login_mobilegrid_2_wrapper {
+
+}
+.Login_mobilegrid_2 > tr > td {
+	vertical-align: top;
+}
+.Login_mobilegrid_2_row_0, .Login_mobilegrid_2_row_0 > td {
+	height: 30px
+}
+.Login_mobilegrid_2_row_1, .Login_mobilegrid_2_row_1 > td {
+	height: 30px
+}
+/* mobilegridcell_3 */
+.Login_mobilegridcell_3 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.Login_mobilegridcell_3 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* phone_usnme */
+.Login_phone_usnme {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilegridcell_5 */
+.Login_mobilegridcell_5 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.Login_mobilegridcell_5 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* paswd */
+.Login_paswd {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilebutton_7 */
+#Login_mobilebutton_7 {
+
+}
+.ui-btn.Login_mobilebutton_7 {
+	margin: 4px 2px 4px 2px;
+}
+/* mobilelabel_34 */
+.Login_mobilelabel_34 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilebutton_33 */
+#Login_mobilebutton_33 {
+
+}
+.ui-btn.Login_mobilebutton_33 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilefooter */
+.Login_mobilefooter {
+	min-height:38px;
+}
+/* updateProfilePopup */
+.Login_updateProfilePopup {
+
+}
+div.Login_updateProfilePopup {
+	max-height: 100vh;
+	box-sizing: border-box;
+}
+div.Login_updateProfilePopup .ui-popup-content-wrapper {
+	width:100%;
+	height:100%;
+	max-height: 99vh;
+	overflow:auto;
+	box-sizing: border-box;
+	padding: 30px 15px 20px 15px;
+}
+/* mobilelabel_28 */
+.Login_mobilelabel_28 {
+	text-decoration: none; font-weight: normal; color: #4d9dd6; text-align: center; font-family: Helvetica; font-size: 18px;
+	margin: 4px 0px 15px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilelabel_21 */
+.Login_mobilelabel_21 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 13px;
+	margin: 4px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* gradeSelect */
+.Login_gradeSelect {
+	margin: 0px 5px 4px 5px;
+}
+/* mobilelabel_29 */
+.Login_mobilelabel_29 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 13px;
+	margin: 10px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* programSelect */
+.Login_programSelect {
+	margin: 0px 5px 4px 5px;
+}
+/* mobilelabel_24 */
+.Login_mobilelabel_24 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 13px;
+	margin: 10px 30px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* podNameSelect */
+.Login_podNameSelect {
+	margin: 0px 5px 4px 5px;
+}
+/* mobilelabel_25 */
+.Login_mobilelabel_25 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 13px;
+	margin: 10px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* genderSelect */
+.Login_genderSelect {
+	margin: 0px 5px 4px 5px;
+}
+/* activeLabel */
+.Login_activeLabel {
+	text-decoration: none; font-weight: normal; color: #37c545; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 10px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* pod_id */
+.Login_pod_id {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilebutton_32 */
+#Login_mobilebutton_32 {
+
+}
+.ui-btn.Login_mobilebutton_32 {
+	margin: 20px 5px 4px 5px;
+}

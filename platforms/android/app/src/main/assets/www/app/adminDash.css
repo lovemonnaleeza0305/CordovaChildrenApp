@@ -1,0 +1,106 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("../libs/jquerymobile/1.4.5/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer */
+.ui-content.adminDash_mobilecontainer {
+	padding: 20px 15px 15px 15px;
+}
+/* mobilegrid_7 */
+.adminDash_mobilegrid_7 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 170px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.adminDash_mobilegrid_7_wrapper {
+
+}
+.adminDash_mobilegrid_7 > tr > td {
+	vertical-align: top;
+}
+.adminDash_mobilegrid_7_row_0, .adminDash_mobilegrid_7_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_8 */
+.adminDash_mobilegridcell_8 {
+	height:30px !important;
+	width:50px;
+	padding: 2px 2px 2px 2px;
+}
+.adminDash_mobilegridcell_8 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilebutton_12 */
+#adminDash_mobilebutton_12 {
+
+}
+.ui-btn.adminDash_mobilebutton_12 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_9 */
+.adminDash_mobilegridcell_9 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.adminDash_mobilegridcell_9 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_13 */
+.adminDash_mobilelabel_13 {
+	text-decoration: none; font-weight: normal; color: #ffffff; text-align: left; font-family: Helvetica; font-size: 20px;
+	margin: 10px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilebutton_2 */
+#adminDash_mobilebutton_2 {
+
+}
+.ui-btn.adminDash_mobilebutton_2 {
+	margin: 4px 5px 8px 5px;
+}
+/* mobilebutton_5 */
+#adminDash_mobilebutton_5 {
+
+}
+.ui-btn.adminDash_mobilebutton_5 {
+	margin: 4px 5px 8px 5px;
+}
+/* mobilebutton_6 */
+#adminDash_mobilebutton_6 {
+
+}
+.ui-btn.adminDash_mobilebutton_6 {
+	margin: 4px 5px 4px 5px;
+}
+/* feedback_button */
+#adminDash_feedback_button {
+
+}
+.ui-btn.adminDash_feedback_button {
+	margin: 4px 5px 4px 5px;
+}
+/* foodStoreAccess_button */
+#adminDash_foodStoreAccess_button {
+
+}
+.ui-btn.adminDash_foodStoreAccess_button {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilebutton_14 */
+#adminDash_mobilebutton_14 {
+
+}
+.ui-btn.adminDash_mobilebutton_14 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilefooter */
+.adminDash_mobilefooter {
+	min-height:38px;
+}

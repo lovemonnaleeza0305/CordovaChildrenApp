@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            registerProfile
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- Enable all requests, inline styles, and eval() -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready data:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+        <!-- Uncomment link and meta tags below to activate PWA icons and theme color -->
+        <!-- link rel="manifest" href="../manifest.json" crossOrigin="use-credentials" -->
+        <!-- meta name="theme-color" content="#ffffff" -->
+        <link href="../css/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="../css/theme/ios7_Ios7_JQM_1_4_Theme/ios7_Ios7_JQM_1_4_Theme.css" rel="stylesheet"
+        />
+        <link href="../libs/apperyio/iphone-fix.css" rel="stylesheet" type="text/css" />
+        <link href="../libs/jquerymobile/1.4.5/jquery.mobile.structure-1.4.5.css" rel="stylesheet"
+        />
+        <link type="text/css" rel="stylesheet" href="../css/PDFPreview.css" />
+        <link type="text/css" rel="stylesheet" href="../css/styling1.css" />
+        <link type="text/css" rel="stylesheet" href="../css/Reports.css" />
+        <link type="text/css" rel="stylesheet" href="../css/loginFlowCSS.css" />
+        <link type="text/css" rel="stylesheet" href="../css/Navbar.css" />
+        <!-- Uncomment this script to activate service worker -->
+        <!-- <script>
+        if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('../sw.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.error('Error', err));
+        }
+        </script>
+        -->
+        <script type="text/javascript" src="../libs/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="../libs/store/json2.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-ajaxTransport.js">
+        </script>
+        <script type="text/javascript">
+            $(document).bind("mobileinit", function() {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1) {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                } else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1) {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                } else if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
+                    $.mobile.hashListeningEnabled = false;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="../libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.js">
+        </script>
+        <script type="text/javascript" src="../libs/apperyio/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="../libs/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/appery.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/login.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="../get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="../cordova.js">
+        </script>
+        <script type="text/javascript">
+            if (typeof cordova !== "undefined" && cordova.platformId === 'ios') {
+                document.documentElement.style.setProperty('--iphone-safe-area-inset-top', '44px');
+                document.documentElement.style.setProperty('--iphone-safe-area-inset-bottom', '34px');
+            }
+        </script>
+        <link href="../libs/apperyio/mobilebase.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="../js/services/model.js">
+        </script>
+        <script type="text/javascript" src="../js/Helper.js">
+        </script>
+        <script type="text/javascript" src="../js/services/service.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/databaseUtils.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="registerProfile" id="registerProfile"
+        class="type-interior" data-theme="b">
+            <!-- mobilecontainer -->
+            <div data-role="content" id="registerProfile_mobilecontainer" name="mobilecontainer"
+            class="registerProfile_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="b">
+                <link href="registerProfile.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="registerProfile.js">
+                </script>
+                <!-- mobilebutton_71 --><!--
+                --><a data-role="button" name="mobilebutton_71" dsid="mobilebutton_71" class="backButtonNewDesign  registerProfile_mobilebutton_71"
+                id="registerProfile_mobilebutton_71" data-corners="true" data-icon="carat-l" data-iconpos="left"
+                x-apple-data-detectors="false" data-inline="true" data-mini="true" data-theme="b"
+                tabindex="19">
+                Back
+                </a><!--
+                --><!-- mobilelabel_64 -->
+                <div name="mobilelabel_64" id="registerProfile_mobilelabel_64" dsid="mobilelabel_64"
+                data-role="appery_label" class="registerProfile_mobilelabel_64">
+                    Create Your Profile
+                </div>
+                <!-- mobilelabel_56 -->
+                <div name="mobilelabel_56" id="registerProfile_mobilelabel_56" dsid="mobilelabel_56"
+                data-role="appery_label" class="registerProfile_mobilelabel_56">
+                    Part 1: Your Information
+                </div>
+                <!-- chooseAccountTypeSelect -->
+                <div data-role="fieldcontain" class="registerProfile_chooseAccountTypeSelect ">
+                    <select name="chooseAccountTypeSelect" id="registerProfile_chooseAccountTypeSelect"
+                    dsid="chooseAccountTypeSelect" data-theme="g" data-role="appery_selectmenu" data-inline="false"
+                    data-mini="false" data-icon="carat-d" data-iconpos="right" data-native-menu="true"
+                    tabindex="15" appery-class="registerProfile_chooseAccountTypeSelect">
+                        <option id="registerProfile_chooseAccountTypeSelect-0" value="-" reRender="chooseAccountTypeSelect"
+                        dsid="chooseAccountTypeSelect-0" selected="selected">
+                            Select Account Type
+                        </option>
+                        <option id="registerProfile_chooseAccountTypeSelect-1" value="Coach" reRender="chooseAccountTypeSelect"
+                        dsid="chooseAccountTypeSelect-1">
+                            Coach
+                        </option>
+                        <option id="registerProfile_chooseAccountTypeSelect-2" value="Student" reRender="chooseAccountTypeSelect"
+                        dsid="chooseAccountTypeSelect-2">
+                            Student
+                        </option>
+                        <option id="registerProfile_chooseAccountTypeSelect-3" value="Teacher" reRender="chooseAccountTypeSelect"
+                        dsid="chooseAccountTypeSelect-3">
+                            Teacher
+                        </option>
+                        <option id="registerProfile_chooseAccountTypeSelect-4" value="Parent Academy" reRender="chooseAccountTypeSelect"
+                        dsid="chooseAccountTypeSelect-4">
+                            Parent Academy
+                        </option>
+                        <option id="registerProfile_chooseAccountTypeSelect-5" value="Volunteer" reRender="chooseAccountTypeSelect"
+                        dsid="chooseAccountTypeSelect-5">
+                            Volunteer
+                        </option>
+                        <option id="registerProfile_chooseAccountTypeSelect-6" value="Evaluator" reRender="chooseAccountTypeSelect"
+                        dsid="chooseAccountTypeSelect-6">
+                            Evaluator
+                        </option>
+                    </select>
+                </div>
+                <!-- hideUntilGrid -->
+                <div class="registerProfile_hideUntilGrid_wrapper" data-wrapper-for="hideUntilGrid">
+                    <table id="registerProfile_hideUntilGrid" class="registerProfile_hideUntilGrid"
+                    dsid="hideUntilGrid" name="hideUntilGrid" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <tr class="registerProfile_hideUntilGrid_row_0">
+                            <!-- mobilegridcell_39 -->
+                            <td id="registerProfile_mobilegridcell_39" name="mobilegridcell_39" class="registerProfile_mobilegridcell_39"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilegrid_32 -->
+                                    <div class="registerProfile_mobilegrid_32_wrapper" data-wrapper-for="mobilegrid_32">
+                                        <table id="registerProfile_mobilegrid_32" class="registerProfile_mobilegrid_32"
+                                        dsid="mobilegrid_32" name="mobilegrid_32" cellpadding=0 cellspacing=0>
+                                            <col style="width:auto;" />
+                                            <col style="width:auto;" />
+                                            <tr class="registerProfile_mobilegrid_32_row_0">
+                                                <!-- mobilegridcell_33 -->
+                                                <td id="registerProfile_mobilegridcell_33" name="mobilegridcell_33" class="registerProfile_mobilegridcell_33"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- nameF -->
+                                                        <div data-role="fieldcontain" class="registerProfile_nameF ">
+                                                            <input type="text" name="nameF" dsid="nameF" value="" placeholder="First Name" id="registerProfile_nameF"
+                                                            tabindex="1" multiple data-theme="b" class="inputRedOutline  registerProfile_nameF"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_34 -->
+                                                <td id="registerProfile_mobilegridcell_34" name="mobilegridcell_34" class="registerProfile_mobilegridcell_34"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- nameL -->
+                                                        <div data-role="fieldcontain" class="registerProfile_nameL ">
+                                                            <input type="text" name="nameL" dsid="nameL" value="" placeholder="Last Name" id="registerProfile_nameL"
+                                                            tabindex="3" multiple data-theme="b" class="inputRedOutline  registerProfile_nameL"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!-- town -->
+                                    <div data-role="fieldcontain" class="registerProfile_town ">
+                                        <input type="text" name="town" dsid="town" value="" placeholder="Name Of Village / Town"
+                                        id="registerProfile_town" tabindex="5" multiple data-theme="b" class="inputRedOutline  registerProfile_town"
+                                        />
+                                    </div>
+                                    <!-- phone -->
+                                    <div data-role="fieldcontain" class="registerProfile_phone ">
+                                        <input type="text" name="phone" dsid="phone" value="" placeholder="Phone Number"
+                                        id="registerProfile_phone" tabindex="6" multiple data-theme="b" class="inputRedOutline  registerProfile_phone"
+                                        />
+                                    </div>
+                                    <!-- email -->
+                                    <div data-role="fieldcontain" class="registerProfile_email ">
+                                        <input type="email" name="email" dsid="email" value="" placeholder="Email" id="registerProfile_email"
+                                        tabindex="7" multiple data-theme="b" class="inputRedOutline  registerProfile_email"
+                                        />
+                                    </div>
+                                    <!-- childSchool -->
+                                    <div data-role="fieldcontain" class="registerProfile_childSchool ">
+                                        <input type="text" name="childSchool" dsid="childSchool" value="" placeholder="Your School"
+                                        id="registerProfile_childSchool" tabindex="10" multiple data-theme="b" class="inputRedOutline  registerProfile_childSchool"
+                                        />
+                                    </div>
+                                    <!-- mobilelabel_70 -->
+                                    <div name="mobilelabel_70" id="registerProfile_mobilelabel_70" dsid="mobilelabel_70"
+                                    data-role="appery_label" class="registerProfile_mobilelabel_70">
+                                        Part 2: Program Information
+                                    </div>
+                                    <!-- programSelect -->
+                                    <div data-role="fieldcontain" class="registerProfile_programSelect ">
+                                        <select name="programSelect" id="registerProfile_programSelect" dsid="programSelect"
+                                        data-theme="h" data-role="appery_selectmenu" data-inline="false" data-mini="false"
+                                        data-icon="carat-d" data-iconpos="right" data-native-menu="true" tabindex="14" appery-class="registerProfile_programSelect">
+                                            <option id="registerProfile_programSelect-0" value="-" reRender="programSelect"
+                                            dsid="programSelect-0" selected="selected">
+                                                Select Your Program
+                                            </option>
+                                            <option id="registerProfile_programSelect-1" value="Summer Camp" reRender="programSelect"
+                                            dsid="programSelect-1">
+                                                Summer Camp
+                                            </option>
+                                            <option id="registerProfile_programSelect-2" value="Virtual Academy" reRender="programSelect"
+                                            dsid="programSelect-2">
+                                                Virtual Academy (Sat/Sun)
+                                            </option>
+                                            <option id="registerProfile_programSelect-3" value="Learning Pod" reRender="programSelect"
+                                            dsid="programSelect-3">
+                                                Learning Pod
+                                            </option>
+                                            <option id="registerProfile_programSelect-4" value="STEM Club" reRender="programSelect"
+                                            dsid="programSelect-4">
+                                                STEM Club
+                                            </option>
+                                            <option id="registerProfile_programSelect-5" value="Parents - Use Lesson Plans"
+                                            reRender="programSelect" dsid="programSelect-5">
+                                                Parents - Use Lesson Plans
+                                            </option>
+                                            <option id="registerProfile_programSelect-6" value="Teacher - Use Lesson Plans"
+                                            reRender="programSelect" dsid="programSelect-6">
+                                                Teacher - Use Lesson Plans
+                                            </option>
+                                            <option id="registerProfile_programSelect-7" value="Learning Pod - Home" reRender="programSelect"
+                                            dsid="programSelect-7">
+                                                Learning Pod - Home
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <!-- hidePod -->
+                                    <div class="registerProfile_hidePod_wrapper" data-wrapper-for="hidePod">
+                                        <table id="registerProfile_hidePod" class="registerProfile_hidePod" dsid="hidePod"
+                                        name="hidePod" cellpadding=0 cellspacing=0>
+                                            <col style="width:auto;" />
+                                            <tr class="registerProfile_hidePod_row_0">
+                                                <!-- mobilegridcell_47 -->
+                                                <td id="registerProfile_mobilegridcell_47" name="mobilegridcell_47" class="registerProfile_mobilegridcell_47"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- selectPod3 -->
+                                                        <div data-role="fieldcontain" class="registerProfile_selectPod3 ">
+                                                            <select name="selectPod3" id="registerProfile_selectPod3" dsid="selectPod3" data-theme="h"
+                                                            data-role="appery_selectmenu" data-inline="false" data-mini="false" data-icon="carat-d"
+                                                            data-iconpos="right" data-native-menu="true" tabindex="18" appery-class="registerProfile_selectPod3">
+                                                                <option id="registerProfile_selectPod3-0" value="-" reRender="selectPod3" dsid="selectPod3-0"
+                                                                selected="selected">
+                                                                    Choose Your Learning Pod
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                        <!-- podId -->
+                                                        <div name="podId" id="registerProfile_podId" dsid="podId" data-role="appery_label"
+                                                        class="registerProfile_podId">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!-- region_select -->
+                                    <div data-role="fieldcontain" class="registerProfile_region_select ">
+                                        <select name="region_select" id="registerProfile_region_select" dsid="region_select"
+                                        data-theme="h" data-role="appery_selectmenu" data-inline="false" data-mini="false"
+                                        data-icon="carat-d" data-iconpos="right" data-native-menu="true" tabindex="9" appery-class="registerProfile_region_select">
+                                            <option id="registerProfile_region_select-0" value="1" reRender="region_select"
+                                            dsid="region_select-0">
+                                                Region 1
+                                            </option>
+                                            <option id="registerProfile_region_select-1" value="2" reRender="region_select"
+                                            dsid="region_select-1">
+                                                Region 2
+                                            </option>
+                                            <option id="registerProfile_region_select-2" value="3" reRender="region_select"
+                                            dsid="region_select-2">
+                                                Region 3
+                                            </option>
+                                            <option id="registerProfile_region_select-3" value="4" reRender="region_select"
+                                            dsid="region_select-3">
+                                                Region 4
+                                            </option>
+                                            <option id="registerProfile_region_select-4" value="5" reRender="region_select"
+                                            dsid="region_select-4">
+                                                Region 5
+                                            </option>
+                                            <option id="registerProfile_region_select-5" value="6" reRender="region_select"
+                                            dsid="region_select-5">
+                                                Region 6
+                                            </option>
+                                            <option id="registerProfile_region_select-6" value="7" reRender="region_select"
+                                            dsid="region_select-6">
+                                                Region 7
+                                            </option>
+                                            <option id="registerProfile_region_select-7" value="8" reRender="region_select"
+                                            dsid="region_select-7">
+                                                Region 8
+                                            </option>
+                                            <option id="registerProfile_region_select-8" value="9" reRender="region_select"
+                                            dsid="region_select-8">
+                                                Region 9
+                                            </option>
+                                            <option id="registerProfile_region_select-9" value="10" reRender="region_select"
+                                            dsid="region_select-9">
+                                                Region 10
+                                            </option>
+                                            <option id="registerProfile_region_select-10" value="" reRender="region_select"
+                                            dsid="region_select-10" selected="selected">
+                                                Select Your Region
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <!-- hideGrade -->
+                                    <div class="registerProfile_hideGrade_wrapper" data-wrapper-for="hideGrade">
+                                        <table id="registerProfile_hideGrade" class="registerProfile_hideGrade" dsid="hideGrade"
+                                        name="hideGrade" cellpadding=0 cellspacing=0>
+                                            <col style="width:auto;" />
+                                            <tr class="registerProfile_hideGrade_row_0">
+                                                <!-- mobilegridcell_52 -->
+                                                <td id="registerProfile_mobilegridcell_52" name="mobilegridcell_52" class="registerProfile_mobilegridcell_52"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- selectGrade -->
+                                                        <div data-role="fieldcontain" class="registerProfile_selectGrade ">
+                                                            <select name="selectGrade" id="registerProfile_selectGrade" dsid="selectGrade" data-theme="h"
+                                                            data-role="appery_selectmenu" data-inline="false" data-mini="false" data-icon="carat-d"
+                                                            data-iconpos="right" data-native-menu="true" tabindex="13" appery-class="registerProfile_selectGrade">
+                                                                <option id="registerProfile_selectGrade-0" value="5" reRender="selectGrade" dsid="selectGrade-0">
+                                                                    5th Grade
+                                                                </option>
+                                                                <option id="registerProfile_selectGrade-1" value="4" reRender="selectGrade" dsid="selectGrade-1">
+                                                                    4th Grade
+                                                                </option>
+                                                                <option id="registerProfile_selectGrade-2" value="3" reRender="selectGrade" dsid="selectGrade-2">
+                                                                    3rd Grade
+                                                                </option>
+                                                                <option id="registerProfile_selectGrade-3" value="1" reRender="selectGrade" dsid="selectGrade-3">
+                                                                    1st Grade
+                                                                </option>
+                                                                <option id="registerProfile_selectGrade-4" value="2" reRender="selectGrade" dsid="selectGrade-4">
+                                                                    2nd Grade
+                                                                </option>
+                                                                <option id="registerProfile_selectGrade-5" value="6" reRender="selectGrade" dsid="selectGrade-5">
+                                                                    6th Grade
+                                                                </option>
+                                                                <option id="registerProfile_selectGrade-6" value="7" reRender="selectGrade" dsid="selectGrade-6">
+                                                                    7th Grade
+                                                                </option>
+                                                                <option id="registerProfile_selectGrade-7" value="8" reRender="selectGrade" dsid="selectGrade-7">
+                                                                    8th Grade
+                                                                </option>
+                                                                <option id="registerProfile_selectGrade-8" value="9" reRender="selectGrade" dsid="selectGrade-8">
+                                                                    9th Grade
+                                                                </option>
+                                                                <option id="registerProfile_selectGrade-9" value="10" reRender="selectGrade" dsid="selectGrade-9">
+                                                                    10th Grade
+                                                                </option>
+                                                                <option id="registerProfile_selectGrade-10" value="" reRender="selectGrade" dsid="selectGrade-10"
+                                                                selected="selected">
+                                                                    Select Student Grade
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilebutton_19 --><!--
+                --><a data-role="button" name="mobilebutton_19" dsid="mobilebutton_19" class="blueSubmitButton  registerProfile_mobilebutton_19"
+                id="registerProfile_mobilebutton_19" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="false" data-theme="a" tabindex="8">
+                Create Account
+                </a>
+            </div>
+            <!-- errorpopup -->
+            <div data-role="popup" name="errorpopup" dsid="errorpopup" id="registerProfile_errorpopup"
+            class="registerProfile_errorpopup" data-corners="true" data-dismissible="true" data-overlay-theme=""
+            data-theme="f" data-shadow="true" data-tolerance="30,15,30,15">
+                <div class="ui-popup-content-wrapper">
+                    <!-- mobilelabel_28 -->
+                    <div name="mobilelabel_28" id="registerProfile_mobilelabel_28" dsid="mobilelabel_28"
+                    data-role="appery_label" class="registerProfile_mobilelabel_28">
+                        Information Incomplete
+                    </div>
+                    <!-- errorMessage -->
+                    <div name="errorMessage" id="registerProfile_errorMessage" dsid="errorMessage" data-role="appery_label"
+                    class="registerProfile_errorMessage">
+                    </div>
+                    <!-- mobilelabel_29 -->
+                    <div name="mobilelabel_29" id="registerProfile_mobilelabel_29" dsid="mobilelabel_29"
+                    data-role="appery_label" class="registerProfile_mobilelabel_29">
+                        --------------------------------------------
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,125 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("../libs/jquerymobile/1.4.5/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer */
+.ui-content.AdminFeedback_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* mobilegrid_18 */
+.AdminFeedback_mobilegrid_18 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.AdminFeedback_mobilegrid_18_wrapper {
+
+}
+.AdminFeedback_mobilegrid_18 > tr > td {
+	vertical-align: top;
+}
+.AdminFeedback_mobilegrid_18_row_0, .AdminFeedback_mobilegrid_18_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_19 */
+.AdminFeedback_mobilegridcell_19 {
+	height:30px !important;
+	width:50px;
+	padding: 2px 2px 2px 2px;
+}
+.AdminFeedback_mobilegridcell_19 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilebutton_23 */
+#AdminFeedback_mobilebutton_23 {
+
+}
+.ui-btn.AdminFeedback_mobilebutton_23 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_20 */
+.AdminFeedback_mobilegridcell_20 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.AdminFeedback_mobilegridcell_20 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_24 */
+.AdminFeedback_mobilelabel_24 {
+	text-decoration: none; font-weight: normal; color: #ffffff; text-align: left; font-family: Helvetica; font-size: 20px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* message_grid */
+.AdminFeedback_message_grid {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.AdminFeedback_message_grid_wrapper {
+
+}
+.AdminFeedback_message_grid > tr > td {
+	vertical-align: top;
+}
+.AdminFeedback_message_grid_row_0, .AdminFeedback_message_grid_row_0 > td {
+	height: 30px
+}
+.AdminFeedback_message_grid_row_1, .AdminFeedback_message_grid_row_1 > td {
+	height: 30px
+}
+/* mobilegridcell_8 */
+.AdminFeedback_mobilegridcell_8 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.AdminFeedback_mobilegridcell_8 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* username_label */
+.AdminFeedback_username_label {
+	text-decoration: none; font-weight: bold; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* phoneNumber_label */
+.AdminFeedback_phoneNumber_label {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_16 */
+.AdminFeedback_mobilegridcell_16 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.AdminFeedback_mobilegridcell_16 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* message_label */
+.AdminFeedback_message_label {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilefooter */
+.AdminFeedback_mobilefooter {
+	min-height:38px;
+}

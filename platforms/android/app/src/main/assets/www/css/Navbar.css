@@ -1,0 +1,35 @@
+.navbarClass li a{
+    border-width: 0px !important;
+    background: #91bf3c !important;
+}
+
+
+.ui-footer{
+    background-color: #91bf3c  !important;
+    border-width: 0px !important;
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);    
+}
+
+[dsid=logout].ui-btn-active{
+    -webkit-box-shadow: inset 0px 4px 0px #ffffff!important;
+    -moz-box-shadow: inset 0px 4px 0px #ffffff!important;
+    box-shadow: inset 0px 4px 0px #ffffff!important;
+
+}
+
+
+
+[dsid=home_home].ui-btn-active{
+    -webkit-box-shadow: inset 0px 4px 0px #ffffff!important;
+    -moz-box-shadow: inset 0px 4px 0px #ffffff!important;
+    box-shadow: inset 0px 4px 0px #ffffff!important;
+
+}
+
+[dsid=account_home].ui-btn-active{
+    -webkit-box-shadow: inset 0px 4px 0px #ffffff!important;
+    -moz-box-shadow: inset 0px 4px 0px #ffffff!important;
+    box-shadow: inset 0px 4px 0px #ffffff!important;
+
+}

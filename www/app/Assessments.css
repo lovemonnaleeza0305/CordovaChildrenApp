@@ -1,0 +1,126 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("../libs/jquerymobile/1.4.5/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer */
+.ui-content.Assessments_mobilecontainer {
+	padding: 20px 15px 15px 15px;
+}
+/* mobilegrid_11 */
+.Assessments_mobilegrid_11 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.Assessments_mobilegrid_11_wrapper {
+
+}
+.Assessments_mobilegrid_11 > tr > td {
+	vertical-align: top;
+}
+.Assessments_mobilegrid_11_row_0, .Assessments_mobilegrid_11_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_12 */
+.Assessments_mobilegridcell_12 {
+	height:30px !important;
+	width:50px;
+	padding: 2px 2px 2px 2px;
+}
+.Assessments_mobilegridcell_12 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilebutton_10 */
+#Assessments_mobilebutton_10 {
+
+}
+.ui-btn.Assessments_mobilebutton_10 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_13 */
+.Assessments_mobilegridcell_13 {
+	height:30px !important;
+	width:143px;
+	padding: 2px 2px 2px 2px;
+}
+.Assessments_mobilegridcell_13 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_16 */
+.Assessments_mobilelabel_16 {
+	text-decoration: none; font-weight: normal; color: #ffffff; text-align: left; font-family: Helvetica; font-size: 20px;
+	margin: 7px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegrid_4 */
+.Assessments_mobilegrid_4 {
+	height: auto;
+	width:100%;
+	margin: 170px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.Assessments_mobilegrid_4_wrapper {
+
+}
+.Assessments_mobilegrid_4 > tr > td {
+	vertical-align: top;
+}
+.Assessments_mobilegrid_4_row_0, .Assessments_mobilegrid_4_row_0 > td {
+	height: 30px
+}
+.Assessments_mobilegrid_4_row_1, .Assessments_mobilegrid_4_row_1 > td {
+	height: 30px
+}
+/* mobilegridcell_5 */
+.Assessments_mobilegridcell_5 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.Assessments_mobilegridcell_5 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_17 */
+.Assessments_mobilelabel_17 {
+	text-decoration: none; font-weight: normal; color: #939393; text-align: center; font-family: Helvetica; font-size: 14px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* subject_select */
+.Assessments_subject_select {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_7 */
+.Assessments_mobilegridcell_7 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.Assessments_mobilegridcell_7 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* grade_select */
+.Assessments_grade_select {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilebutton_9 */
+#Assessments_mobilebutton_9 {
+
+}
+.ui-btn.Assessments_mobilebutton_9 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilefooter */
+.Assessments_mobilefooter {
+	min-height:38px;
+}

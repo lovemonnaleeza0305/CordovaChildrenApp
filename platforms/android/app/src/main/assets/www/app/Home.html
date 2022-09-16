@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            Home
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- Enable all requests, inline styles, and eval() -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready data:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+        <!-- Uncomment link and meta tags below to activate PWA icons and theme color -->
+        <!-- link rel="manifest" href="../manifest.json" crossOrigin="use-credentials" -->
+        <!-- meta name="theme-color" content="#ffffff" -->
+        <link href="../css/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="../css/theme/ios7_Ios7_JQM_1_4_Theme/ios7_Ios7_JQM_1_4_Theme.css" rel="stylesheet"
+        />
+        <link href="../libs/apperyio/iphone-fix.css" rel="stylesheet" type="text/css" />
+        <link href="../libs/jquerymobile/1.4.5/jquery.mobile.structure-1.4.5.css" rel="stylesheet"
+        />
+        <link type="text/css" rel="stylesheet" href="../css/PDFPreview.css" />
+        <link type="text/css" rel="stylesheet" href="../css/styling1.css" />
+        <link type="text/css" rel="stylesheet" href="../css/Reports.css" />
+        <link type="text/css" rel="stylesheet" href="../css/loginFlowCSS.css" />
+        <link type="text/css" rel="stylesheet" href="../css/Navbar.css" />
+        <!-- Uncomment this script to activate service worker -->
+        <!-- <script>
+        if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('../sw.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.error('Error', err));
+        }
+        </script>
+        -->
+        <script type="text/javascript" src="../libs/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="../libs/store/json2.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-ajaxTransport.js">
+        </script>
+        <script type="text/javascript">
+            $(document).bind("mobileinit", function() {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1) {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                } else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1) {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                } else if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
+                    $.mobile.hashListeningEnabled = false;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="../libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.js">
+        </script>
+        <script type="text/javascript" src="../libs/apperyio/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="../libs/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/appery.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/login.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="../get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="../cordova.js">
+        </script>
+        <script type="text/javascript">
+            if (typeof cordova !== "undefined" && cordova.platformId === 'ios') {
+                document.documentElement.style.setProperty('--iphone-safe-area-inset-top', '44px');
+                document.documentElement.style.setProperty('--iphone-safe-area-inset-bottom', '34px');
+            }
+        </script>
+        <link href="../libs/apperyio/mobilebase.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="../js/services/model.js">
+        </script>
+        <script type="text/javascript" src="../js/Helper.js">
+        </script>
+        <script type="text/javascript" src="../js/services/service.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/databaseUtils.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+        </script>
+        <div data-role="page" style="min-height:686px;" dsid="Home" id="Home" class="type-interior"
+        data-theme="b">
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Home_mobilecontainer" name="mobilecontainer" class="Home_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="b">
+                <link href="Home.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="Home.js">
+                </script>
+                <!-- mobilegrid_78 -->
+                <div class="Home_mobilegrid_78_wrapper" data-wrapper-for="mobilegrid_78">
+                    <table id="Home_mobilegrid_78" class="Home_mobilegrid_78" dsid="mobilegrid_78" name="mobilegrid_78"
+                    cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:10%;" />
+                        <col style="width:27%;" />
+                        <tr class="Home_mobilegrid_78_row_0">
+                            <!-- mobilegridcell_79 -->
+                            <td id="Home_mobilegridcell_79" name="mobilegridcell_79" class="Home_mobilegridcell_79"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- welcomeLabel -->
+                                    <div name="welcomeLabel" id="Home_welcomeLabel" dsid="welcomeLabel" data-role="appery_label"
+                                    class="Home_welcomeLabel">
+                                        Welcome Asha
+                                    </div>
+                                    <!-- accountTypeDisplay -->
+                                    <div name="accountTypeDisplay" id="Home_accountTypeDisplay" dsid="accountTypeDisplay"
+                                    data-role="appery_label" class="Home_accountTypeDisplay">
+                                    </div>
+                                    <!-- myPoints -->
+                                    <div name="myPoints" id="Home_myPoints" dsid="myPoints" data-role="appery_label"
+                                    class="Home_myPoints">
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_80 -->
+                            <td id="Home_mobilegridcell_80" name="mobilegridcell_80" class="Home_mobilegridcell_80"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- attendanceButton --><!--
+                                    --><a data-role="button" name="attendanceButton" dsid="attendanceButton" class="attendanceIcon  Home_attendanceButton"
+                                    style='min-height:20px; ' id="Home_attendanceButton" data-corners="true" data-icon="check"
+                                    data-iconpos="notext" x-apple-data-detectors="false" data-mini="true" data-theme="d"
+                                    tabindex="7">
+                                    PRESENT
+                                    </a>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_84 -->
+                            <td id="Home_mobilegridcell_84" name="mobilegridcell_84" class="Home_mobilegridcell_84"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- attendLabel -->
+                                    <div name="attendLabel" id="Home_attendLabel" dsid="attendLabel" data-role="appery_label"
+                                    class="floatRight  Home_attendLabel">
+                                        Mark Today's Attendance
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- alreadyGrid -->
+                <div class="Home_alreadyGrid_wrapper" data-wrapper-for="alreadyGrid">
+                    <table id="Home_alreadyGrid" class="Home_alreadyGrid" dsid="alreadyGrid" name="alreadyGrid"
+                    cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <tr class="Home_alreadyGrid_row_0">
+                            <!-- mobilegridcell_29 -->
+                            <td id="Home_mobilegridcell_29" name="mobilegridcell_29" class="Home_mobilegridcell_29"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_33 -->
+                                    <div name="mobilelabel_33" id="Home_mobilelabel_33" dsid="mobilelabel_33" data-role="appery_label"
+                                    class="Home_mobilelabel_33">
+                                        You've already recorded your attendance today
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilegrid_2 -->
+                <div class="Home_mobilegrid_2_wrapper" data-wrapper-for="mobilegrid_2">
+                    <table id="Home_mobilegrid_2" class="Home_mobilegrid_2" dsid="mobilegrid_2" name="mobilegrid_2"
+                    cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="Home_mobilegrid_2_row_0">
+                            <!-- mobilegridcell_3 -->
+                            <td id="Home_mobilegridcell_3" name="mobilegridcell_3" class="Home_mobilegridcell_3"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobileimage_64 -->
+                                    <img class="centerComponent  Home_mobileimage_64" src="../img/lessons.png" id="Home_mobileimage_64"
+                                    dsid="mobileimage_64" name="mobileimage_64" />
+                                    <!-- mobilelabel_85 -->
+                                    <div name="mobilelabel_85" id="Home_mobilelabel_85" dsid="mobilelabel_85" data-role="appery_label"
+                                    class="Home_mobilelabel_85">
+                                        Lessons
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_4 -->
+                            <td id="Home_mobilegridcell_4" name="mobilegridcell_4" class="Home_mobilegridcell_4"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobileimage_65 -->
+                                    <img class="centerComponent  Home_mobileimage_65" src="../img/assessments_1646438518.png"
+                                    id="Home_mobileimage_65" dsid="mobileimage_65" name="mobileimage_65" />
+                                    <!-- mobilelabel_86 -->
+                                    <div name="mobilelabel_86" id="Home_mobilelabel_86" dsid="mobilelabel_86" data-role="appery_label"
+                                    class="Home_mobilelabel_86">
+                                        Assessments
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="Home_mobilegrid_2_row_1">
+                            <!-- mobilegridcell_5 -->
+                            <td id="Home_mobilegridcell_5" name="mobilegridcell_5" class="Home_mobilegridcell_5"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobileimage_66 -->
+                                    <img class="centerComponent  Home_mobileimage_66" src="../img/payment.png" id="Home_mobileimage_66"
+                                    dsid="mobileimage_66" name="mobileimage_66" />
+                                    <!-- mobilelabel_87 -->
+                                    <div name="mobilelabel_87" id="Home_mobilelabel_87" dsid="mobilelabel_87" data-role="appery_label"
+                                    class="Home_mobilelabel_87">
+                                        Payments
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_6 -->
+                            <td id="Home_mobilegridcell_6" name="mobilegridcell_6" class="Home_mobilegridcell_6"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobileimage_67 -->
+                                    <img class="centerComponent  Home_mobileimage_67" src="../img/store_1646438519.png"
+                                    id="Home_mobileimage_67" dsid="mobileimage_67" name="mobileimage_67" />
+                                    <!-- mobilelabel_88 -->
+                                    <div name="mobilelabel_88" id="Home_mobilelabel_88" dsid="mobilelabel_88" data-role="appery_label"
+                                    class="Home_mobilelabel_88">
+                                        Store
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="Home_mobilegrid_2_row_2">
+                            <!-- store_volunteer_cell -->
+                            <td id="Home_store_volunteer_cell" name="store_volunteer_cell" class="Home_store_volunteer_cell"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobileimage_93 -->
+                                    <img class="centerComponent  Home_mobileimage_93" src="../img/store_food.png" id="Home_mobileimage_93"
+                                    dsid="mobileimage_93" name="mobileimage_93" />
+                                    <!-- mobilelabel_94 -->
+                                    <div name="mobilelabel_94" id="Home_mobilelabel_94" dsid="mobilelabel_94" data-role="appery_label"
+                                    class="Home_mobilelabel_94">
+                                        Food
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_92 -->
+                            <td id="Home_mobilegridcell_92" name="mobilegridcell_92" class="Home_mobilegridcell_92"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilegrid_89 -->
+                <div class="Home_mobilegrid_89_wrapper" data-wrapper-for="mobilegrid_89">
+                    <table id="Home_mobilegrid_89" class="Home_mobilegrid_89" dsid="mobilegrid_89" name="mobilegrid_89"
+                    cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <tr class="Home_mobilegrid_89_row_0">
+                            <!-- mobilegridcell_90 -->
+                            <td id="Home_mobilegridcell_90" name="mobilegridcell_90" class="Home_mobilegridcell_90"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- showOrders --><!--
+                                    --><a data-role="button" name="showOrders" dsid="showOrders" class="blueHomeButton  Home_showOrders"
+                                    id="Home_showOrders" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                    x-apple-data-detectors="false" data-inline="true" data-mini="true" data-theme="b"
+                                    tabindex="6">
+                                    Show Orders
+                                    </a><!--
+                                    --><!-- updateStudentPoints --><!--
+                                    --><a data-role="button" name="updateStudentPoints" dsid="updateStudentPoints" class="blueHomeButton  Home_updateStudentPoints"
+                                    id="Home_updateStudentPoints" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                    x-apple-data-detectors="false" data-mini="false" data-theme="b" tabindex="8">
+                                    Update Student Points
+                                    </a><!--
+                                    --><!-- manageStudents --><!--
+                                    --><a data-role="button" name="manageStudents" dsid="manageStudents" class="blueHomeButton  Home_manageStudents"
+                                    id="Home_manageStudents" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                    x-apple-data-detectors="false" data-mini="false" data-theme="b" tabindex="11">
+                                    Manage My Students
+                                    </a><!--
+                                    --><!-- mobilebutton_71 --><!--
+                                    --><a data-role="button" name="mobilebutton_71" dsid="mobilebutton_71" class="blueHomeButton  Home_mobilebutton_71"
+                                    id="Home_mobilebutton_71" data-corners="true" data-icon="info" data-iconpos="right"
+                                    x-apple-data-detectors="false" data-mini="false" data-theme="g" tabindex="15">
+                                    Submit Your Feedback
+                                    </a><!--
+                                    --><!-- evalPodButton --><!--
+                                    --><a data-role="button" name="evalPodButton" dsid="evalPodButton" class="blueHomeButton  Home_evalPodButton"
+                                    id="Home_evalPodButton" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                    x-apple-data-detectors="false" data-mini="false" data-theme="a" tabindex="13">
+                                    Evaluate a Learning Pod
+                                    </a><!--
+                                    --><!-- inventory --><!--
+                                    --><a data-role="button" name="inventory" dsid="inventory" class="blueHomeButton  Home_inventory"
+                                    id="Home_inventory" data-corners="false" data-icon="none" data-iconpos='nowhere'
+                                    x-apple-data-detectors="false" data-mini="false" data-theme="b" tabindex="18">
+                                    Inventory
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- myAttendance --><!--
+                --><a data-role="button" name="myAttendance" dsid="myAttendance" class="redSimpleButton  Home_myAttendance"
+                id="Home_myAttendance" data-corners="true" data-icon="calendar" data-iconpos="right"
+                x-apple-data-detectors="false" data-mini="false" data-theme="f" tabindex="9">
+                Check My Attendance
+                </a>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="Home_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="Home_mobilefooter" data-theme="b">
+                <!-- mobilenavbar_14 -->
+                <div data-role="navbar" id="Home_mobilenavbar_14" name="mobilenavbar_14" dsid="mobilenavbar_14"
+                class="navbarClass  Home_mobilenavbar_14" data-theme="g" style="position: relative;">
+                    <ul>
+                        <!-- logout -->
+                        <li>
+                            <a data-theme="g" data-icon="user" id="Home_logout" dsid="logout" name="logout">
+                            LOGOUT
+                            </a>
+                        </li>
+                        <!-- home_home -->
+                        <li>
+                            <a data-theme="g" data-icon="star" id="Home_home_home" dsid="home_home" name="home_home">
+                            Reports
+                            </a>
+                        </li>
+                        <!-- account_home -->
+                        <li>
+                            <a data-theme="g" data-icon="info" id="Home_account_home" dsid="account_home" name="account_home">
+                            Admin
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- plusTenPopUp -->
+            <div data-role="popup" name="plusTenPopUp" dsid="plusTenPopUp" id="Home_plusTenPopUp"
+            class="popupDesign  Home_plusTenPopUp" data-corners="true" data-dismissible="true"
+            data-overlay-theme="" data-theme="" data-shadow="true" data-tolerance="30,15,30,15">
+                <div class="ui-popup-content-wrapper">
+                    <!-- mobilelabel_36 -->
+                    <div name="mobilelabel_36" id="Home_mobilelabel_36" dsid="mobilelabel_36" data-role="appery_label"
+                    class="Home_mobilelabel_36">
+                        Thanks for marking your attendance, you've earned TEN POINTS!
+                    </div>
+                    <!-- mobilelabel_35 -->
+                    <div name="mobilelabel_35" id="Home_mobilelabel_35" dsid="mobilelabel_35" data-role="appery_label"
+                    class="Home_mobilelabel_35">
+                        +10pts
+                    </div>
+                    <!-- mobilelabel_38 -->
+                    <div name="mobilelabel_38" id="Home_mobilelabel_38" dsid="mobilelabel_38" data-role="appery_label"
+                    class="Home_mobilelabel_38">
+                        ----------------------------------
+                    </div>
+                </div>
+            </div>
+            <!-- mobilepopup_41 -->
+            <div data-role="popup" name="mobilepopup_41" dsid="mobilepopup_41" id="Home_mobilepopup_41"
+            class="popupDesign  Home_mobilepopup_41" data-corners="true" data-dismissible="true"
+            data-overlay-theme="" data-theme="" data-shadow="true" data-tolerance="30,10,30,10">
+                <div class="ui-popup-content-wrapper">
+                    <!-- mobilegrid_43 -->
+                    <div class="Home_mobilegrid_43_wrapper" data-wrapper-for="mobilegrid_43">
+                        <table id="Home_mobilegrid_43" class="Home_mobilegrid_43" dsid="mobilegrid_43" name="mobilegrid_43"
+                        cellpadding=0 cellspacing=0>
+                            <col style="width:25%;" />
+                            <col style="width:25%;" />
+                            <col style="width:25%;" />
+                            <col style="width:25%;" />
+                            <tr class="Home_mobilegrid_43_row_0">
+                                <!-- mobilegridcell_44 -->
+                                <td id="Home_mobilegridcell_44" name="mobilegridcell_44" class="Home_mobilegridcell_44"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- mobilelabel_49 -->
+                                        <div name="mobilelabel_49" id="Home_mobilelabel_49" dsid="mobilelabel_49" data-role="appery_label"
+                                        class="Home_mobilelabel_49">
+                                            Date
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_45 -->
+                                <td id="Home_mobilegridcell_45" name="mobilegridcell_45" class="Home_mobilegridcell_45"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- mobilelabel_50 -->
+                                        <div name="mobilelabel_50" id="Home_mobilelabel_50" dsid="mobilelabel_50" data-role="appery_label"
+                                        class="Home_mobilelabel_50">
+                                            Attendance
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_48 -->
+                                <td id="Home_mobilegridcell_48" name="mobilegridcell_48" class="Home_mobilegridcell_48"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- mobilelabel_61 -->
+                                        <div name="mobilelabel_61" id="Home_mobilelabel_61" dsid="mobilelabel_61" data-role="appery_label"
+                                        class="Home_mobilelabel_61">
+                                            Participation (pts)
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_60 -->
+                                <td id="Home_mobilegridcell_60" name="mobilegridcell_60" class="Home_mobilegridcell_60"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- mobilelabel_62 -->
+                                        <div name="mobilelabel_62" id="Home_mobilelabel_62" dsid="mobilelabel_62" data-role="appery_label"
+                                        class="Home_mobilelabel_62">
+                                            Project (pts)
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- mobilegrid_51 -->
+                    <div class="Home_mobilegrid_51_wrapper" data-wrapper-for="mobilegrid_51">
+                        <table id="Home_mobilegrid_51" class="Home_mobilegrid_51" dsid="mobilegrid_51" name="mobilegrid_51"
+                        cellpadding=0 cellspacing=0>
+                            <col style="width:25%;" />
+                            <col style="width:25%;" />
+                            <col style="width:25%;" />
+                            <col style="width:25%;" />
+                            <tr class="Home_mobilegrid_51_row_0">
+                                <!-- mobilegridcell_52 -->
+                                <td id="Home_mobilegridcell_52" name="mobilegridcell_52" class="Home_mobilegridcell_52"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- dateLabel -->
+                                        <div name="dateLabel" id="Home_dateLabel" dsid="dateLabel" data-role="appery_label"
+                                        class="Home_dateLabel">
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_53 -->
+                                <td id="Home_mobilegridcell_53" name="mobilegridcell_53" class="Home_mobilegridcell_53"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- attendanceLabel -->
+                                        <div name="attendanceLabel" id="Home_attendanceLabel" dsid="attendanceLabel" data-role="appery_label"
+                                        class="Home_attendanceLabel">
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_56 -->
+                                <td id="Home_mobilegridcell_56" name="mobilegridcell_56" class="Home_mobilegridcell_56"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- participation -->
+                                        <div name="participation" id="Home_participation" dsid="participation" data-role="appery_label"
+                                        class="Home_participation">
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_59 -->
+                                <td id="Home_mobilegridcell_59" name="mobilegridcell_59" class="Home_mobilegridcell_59"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- project -->
+                                        <div name="project" id="Home_project" dsid="project" data-role="appery_label" class="Home_project">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- feedbackPopup -->
+            <div data-role="popup" name="feedbackPopup" dsid="feedbackPopup" id="Home_feedbackPopup"
+            class="popupDesign  Home_feedbackPopup" data-corners="true" data-dismissible="true"
+            data-overlay-theme="" data-theme="" data-shadow="true" data-tolerance="30,15,30,15">
+                <div class="ui-popup-content-wrapper">
+                    <!-- mobilelabel_73 -->
+                    <div name="mobilelabel_73" id="Home_mobilelabel_73" dsid="mobilelabel_73" data-role="appery_label"
+                    class="Home_mobilelabel_73">
+                        Submit Your Feedback
+                    </div>
+                    <!-- mobilelabel_74 -->
+                    <div name="mobilelabel_74" id="Home_mobilelabel_74" dsid="mobilelabel_74" data-role="appery_label"
+                    class="Home_mobilelabel_74">
+                        Give us your advice, comments, feedback, questions, and everything in between...
+                    </div>
+                    <!-- feedbackText -->
+                    <div data-role="fieldcontain" class="Home_feedbackText ">
+                        <textarea name="feedbackText" id="Home_feedbackText" data-mini="true" tabindex="16"
+                        dsid="feedbackText" data-theme="b" placeholder="Type your feedback here..." class="Home_feedbackText">
+</textarea>
+                    </div>
+                    <!-- phoneNumber_input -->
+                    <div data-role="fieldcontain" class="Home_phoneNumber_input ">
+                        <input type="tel" name="phoneNumber_input" dsid="phoneNumber_input" value="" placeholder="Type your phone number here..."
+                        id="Home_phoneNumber_input" tabindex="19" multiple data-theme="b" data-mini="true"
+                        class="Home_phoneNumber_input" />
+                    </div>
+                    <!-- mobilebutton_76 --><!--
+                    --><a data-role="button" name="mobilebutton_76" dsid="mobilebutton_76" class="blueSubmitButton  Home_mobilebutton_76"
+                    id="Home_mobilebutton_76" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                    x-apple-data-detectors="false" data-mini="false" data-theme="a" tabindex="17">
+                    Submit 
+                    </a><!--
+                    --><!-- success -->
+                    <div name="success" id="Home_success" dsid="success" data-role="appery_label" class="Home_success">
+                        Submitted Successfully!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
